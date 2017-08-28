@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+T**dinerqr**
+_descripcion_
+Se desea crear una aplicación web la cual permite realizar pedidos en la mesa del restaurante sin
+necesidad de un mesero en la cual el usuario para utilizar la aplicación escanee un código QR
+como identificación de la mesa en la que se encuentra, para poder ordenar el cliente tiene que
+tener una cuenta registrada, además de eso también desplegará las promociones además una
+sección de sugerencias del dia.
 
-Things you may want to cover:
+**equipo :** pixels 
+_integrantes_
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Sergio Alexander Gil Medina
+- Pedro Camilo Berrio Pinzon
+- Juan Davis Porras Palencia
+- Daniel felipe Bueno Calderon
+- Diego Alejando gomez Parra
+-
