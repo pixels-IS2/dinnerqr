@@ -1,6 +1,6 @@
 # README
 
-T**dinerqr**
+**dinerqr**
 _descripcion_
 Se desea crear una aplicación web la cual permite realizar pedidos en la mesa del restaurante sin
 necesidad de un mesero en la cual el usuario para utilizar la aplicación escanee un código QR
