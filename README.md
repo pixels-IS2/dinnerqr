@@ -8,7 +8,7 @@ como identificación de la mesa en la que se encuentra, para poder ordenar el cl
 tener una cuenta registrada, además de eso también desplegará las promociones además una
 sección de sugerencias del dia.
 
-**equipo :** pixels 
+**equipo:** pixels 
 _integrantes_
 
 - Sergio Alexander Gil Medina
