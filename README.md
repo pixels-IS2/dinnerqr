@@ -13,7 +13,6 @@ _integrantes_
 
 - Sergio Alexander Gil Medina
 - Pedro Camilo Berrio Pinzon
-- Juan Davis Porras Palencia
-- Daniel felipe Bueno Calderon
-- Diego Alejando gomez Parra
--
+- Juan David Porras Palencia
+- Daniel Felipe Bueno Calderon
+- Diego Alejandro Gomez Parra
