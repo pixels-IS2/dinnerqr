@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170902183213) do
+=======
+ActiveRecord::Schema.define(version: 20170905125907) do
+>>>>>>> 7d2727f2a440335236850b5fd32a7798c621a323
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -30,6 +34,12 @@ ActiveRecord::Schema.define(version: 20170902183213) do
     t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
+=======
+    t.date "birthdate"
+    t.integer "identification_type"
+    t.integer "gender"
+>>>>>>> 7d2727f2a440335236850b5fd32a7798c621a323
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

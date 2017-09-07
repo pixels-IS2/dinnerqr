@@ -6,6 +6,13 @@ Rails.application.config.assets.version = '1.0'
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
 # Add Yarn node_modules folder to the asset load path.
+Rails.application.config.assets.precompile += %w( login_stylesheet.css )
+
+Rails.application.config.assets.precompile += %w( font-awesome.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap-theme.min.css )
+Rails.application.config.assets.precompile += %w( font.awesome.min.css )
+
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Precompile additional assets.
