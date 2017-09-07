@@ -7,7 +7,7 @@
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Universal - All In 1 Template</title>
+    <title>DinnerQr</title>
    <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -25,11 +25,6 @@ _________________________________________________________ -->
             <div id="top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-5 contact">
-                            <p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
-                            <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>  <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-                            </p>
-                        </div>
                         <div class="col-xs-7">
                             <div class="social">
                                 <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
@@ -39,8 +34,13 @@ _________________________________________________________ -->
                             </div>
 
                             <div class="login">
-                                <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
-                                <a href="customer-register.html"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
+                                <% if user_signed_in? %>
+                                  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   
+                                  <%= link_to('Edit registration', edit_user_registration_path) %>
+                                <% else %>
+                                 <%= link_to('Login', new_user_session_path)  %>  
+                                  <%= link_to('Register', new_user_registration_path)  %>
+                                <% end %>
                             </div>
 
                         </div>
@@ -60,11 +60,11 @@ _________________________________________________________ -->
                     <div class="container">
                         <div class="navbar-header">
 
-                            <a class="navbar-brand home" href="index.html">
+                            <a class="navbar-brand home" href="/">
                               
-                                <%= image_tag "logo.png", :alt => "Universal logo", :class => "hidden-xs hidden-sm"%>
-                                <%= image_tag "logo-small.png", :alt => "Universal logo", :class => "visible-xs visible-sm"%>
-                                <span class="sr-only">Universal - go to homepage</span>
+                                <%= image_tag "logo.png", :alt => "Dinnerqr logo", :class => "hidden-xs hidden-sm"%>
+                                <%= image_tag "logo.png", :alt => "Dinnerqr logo", :class => "visible-xs visible-sm"%>
+                                <span class="sr-only">Dinnerqr - go to homepage</span>
                             </a>
                             <div class="navbar-buttons">
                                 <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -84,12 +84,6 @@ _________________________________________________________ -->
                                         <li><a href="index.html">Option 1: Default Page</a>
                                         </li>
                                         <li><a href="index2.html">Option 2: Application</a>
-                                        </li>
-                                        <li><a href="index3.html">Option 3: Startup</a>
-                                        </li>
-                                        <li><a href="index4.html">Option 4: Agency</a>
-                                        </li>
-                                        <li><a href="index5.html">Option 5: Portfolio</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -111,27 +105,6 @@ _________________________________________________________ -->
                                                             </li>
                                                             <li><a href="template-buttons.html">Buttons</a>
                                                             </li>
-                                                            <li><a href="template-content-boxes.html">Content boxes</a>
-                                                            </li>
-                                                            <li><a href="template-blocks.html">Horizontal blocks</a>
-                                                            </li>
-                                                            <li><a href="template-pagination.html">Pagination</a>
-                                                            </li>
-                                                            <li><a href="template-tabs.html">Tabs</a>
-                                                            </li>
-                                                            <li><a href="template-typography.html">Typography</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Header variations</h5>
-                                                        <ul>
-                                                            <li><a href="template-header-default.html">Default sticky header</a>
-                                                            </li>
-                                                            <li><a href="template-header-nosticky.html">No sticky header</a>
-                                                            </li>
-                                                            <li><a href="template-header-light.html">Light header</a>
-                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -139,62 +112,9 @@ _________________________________________________________ -->
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown use-yamm yamm-fw">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="yamm-content">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                      
-                                                          
-                                                        <%= image_tag "template-homepage.png", :alt => "", :class => "img-responsive hidden-xs"%>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Portfolio</h5>
-                                                        <ul>
-                                                            <li><a href="portfolio-2.html">2 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-2.html">2 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-3.html">3 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-3.html">3 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-4.html">4 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-4.html">4 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-detail.html">Portfolio - detail</a>
-                                                            </li>
-                                                            <li><a href="portfolio-detail-2.html">Portfolio - detail 2</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>About</h5>
-                                                        <ul>
-                                                            <li><a href="about.html">About us</a>
-                                                            </li>
-                                                            <li><a href="team.html">Our team</a>
-                                                            </li>
-                                                            <li><a href="team-member.html">Team member</a>
-                                                            </li>
-                                                            <li><a href="services.html">Services</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Marketing</h5>
-                                                        <ul>
-                                                            <li><a href="packages.html">Packages</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
+                                
                                 <!-- ========== FULL WIDTH MEGAMENU ================== -->
+                                <!--
                                 <li class="dropdown use-yamm yamm-fw">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">All Pages <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
@@ -329,10 +249,11 @@ _________________________________________________________ -->
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- /.yamm-content -->
+                                            <!-- /.yamm-content 
                                         </li>
                                     </ul>
                                 </li>
+                                -->
                                 <!-- ========== FULL WIDTH MEGAMENU END ================== -->
 
                                 <li class="dropdown">
@@ -432,64 +353,28 @@ _________________________________________________________ -->
                             <div class="row">
                                 <div class="col-sm-5 right">
                                     <p>
-                                        <%= image_tag "logo.png", :alt => ""%>
+                                        <!-- <%= image_tag "logo2.png", :alt => ""%> -->
                                     </p>
-                                    <h1>Multipurpose responsive theme</h1>
-                                    <p>Business. Corporate. Agency.
-                                        <br />Portfolio. Blog. E-commerce.</p>
+                                    <p><br /><br /><br /><br /><br /><br />nueva forma de pedir tus platos.
+                                        <br />Tus ordenes como las pediste.</p>
                                 </div>
                                 <div class="col-sm-7">
-                                    <%= image_tag "template-homepage.png", :alt => "", :class => "img-responsive"%>
+                                    <%= image_tag "comidaa.png", :alt => "", :class => "img-responsive"%>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="row">
-
-                                <div class="col-sm-7 text-center">
-                                    <%= image_tag "template-mac.png", :alt => "", :class => "img-responsive"%>
-                                </div>
-
-                                <div class="col-sm-5">
-                                    <h2>46 HTML pages full of features</h2>
-                                    <ul class="list-style-none">
-                                        <li>Sliders and carousels</li>
-                                        <li>4 Header variations</li>
-                                        <li>Google maps, Forms, Megamenu, CSS3 Animations and much more</li>
-                                        <li>+ 11 extra pages showing template features</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-5 right">
-                                    <h1>Design</h1>
-                                    <ul class="list-style-none">
-                                        <li>Clean and elegant design</li>
-                                        <li>Full width and boxed mode</li>
-                                        <li>Easily readable Roboto font and awesome icons</li>
-                                        <li>7 preprepared colour variations</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-7">
-                                    <%= image_tag "template-easy-customize.png", :alt => "", :class => "img-responsive"%>
-                                    ">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="item">
                             <div class="row">
                                 <div class="col-sm-7">
                                     
-                                    <%= image_tag "template-easy-code.png", :alt => "", :class => "img-responsive"%>
+                                    <%= image_tag "QR_code_for_QRpedia.png",:height => "12", :alt => "", :class => "img-responsive"%>
                                 </div>
                                 <div class="col-sm-5">
-                                    <h1>Easy to customize</h1>
+                                    <h1><br /><br />QR friendly</h1>
                                     <ul class="list-style-none">
-                                        <li>7 preprepared colour variations.</li>
-                                        <li>Easily to change fonts</li>
+                                        <li>Utiliza los QRcodes.</li>
+                                        <li>Solo necesitas un lector y ¡listo!</li>
                                     </ul>
                                 </div>
                             </div>
@@ -529,47 +414,18 @@ _________________________________________________________ -->
                         <div class="col-md-4">
                             <div class="box-simple">
                                 <div class="icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>SEO and SEM</h3>
-                                <p>Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box-simple">
-                                <div class="icon">
                                     <i class="fa fa-lightbulb-o"></i>
                                 </div>
                                 <h3>Consulting</h3>
                                 <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="box-simple">
-                                <div class="icon">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <h3>Email Marketing</h3>
-                                <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil. Prepare garrets it expense windows shewing do an.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box-simple">
-                                <div class="icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <h3>UX</h3>
-                                <p>Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect.</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
-
+<!--
         <section class="bar background-pentagon no-mb">
             <div class="container">
                 <div class="row">
@@ -581,8 +437,8 @@ _________________________________________________________ -->
                         <p class="lead">We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.</p>
 
 
-                        <!-- *** TESTIMONIALS CAROUSEL ***
- _________________________________________________________ -->
+                         *** TESTIMONIALS CAROUSEL ***
+ _________________________________________________________ 
 
                         <ul class="owl-carousel testimonials same-height-row">
                             <li class="item">
@@ -679,153 +535,33 @@ _________________________________________________________ -->
                         </ul>
                         <!-- /.owl-carousel -->
 
-                        <!-- *** TESTIMONIALS CAROUSEL END *** -->
+                        <!-- *** TESTIMONIALS CAROUSEL END *** 
                     </div>
 
                 </div>
             </div>
         </section>
+        -->
         <!-- /.bar -->
 
-        <section class="bar background-image-fixed-2 no-mb color-white text-center">
-            <div class="dark-mask"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="icon icon-lg"><i class="fa fa-file-code-o"></i>
-                        </div>
-                        <h3 class="text-uppercase">Do you want to see more?</h3>
-                        <p class="lead">We have prepared for you more than 40 different HTML pages, including 5 variations of homepage.</p>
-                        <p class="text-center">
-                            <a href="index2.html" class="btn btn-template-transparent-black btn-lg">Check other homepage</a>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+       
 
         <section class="bar background-white no-mb">
             <div class="container">
 
                 <div class="col-md-12">
                     <div class="heading text-center">
-                        <h2>From our blog</h2>
+                        <h2>Y porque usar dinerqr¿?</h2>
                     </div>
 
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                        mi vitae est. Mauris placerat eleifend leo. <span class="accent">Check our blog!</span>
+                    <p class="lead">cansado de que necesites tener que esperar que el mesero se acuerde de tu existencia para hacer un pedido, 
+                    cansado de que te traigan el pedido que no es y luedo tener que comerlo, si todo esto te ha pasado entonces Dinnerqr es para ti  <span class="accent">Check our blog!</span>
                     </p>
 
                     <!-- *** BLOG HOMEPAGE ***
 _________________________________________________________ -->
 
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box-image-text blog">
-                                <div class="top">
-                                    <div class="image">
-                                        <%= image_tag "portfolio-4.jpg", :alt => "", :class => "img-responsive"%>
-                                    </div>
-                                    <div class="bg"></div>
-                                    <div class="text">
-                                        <p class="buttons">
-                                            <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h4><a href="blog-post.html">Fashion now</a></h4>
-                                    <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                                    </p>
-                                    <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                                    <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- /.box-image-text -->
-
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box-image-text blog">
-                                <div class="top">
-                                    <div class="image">
-                                        <%= image_tag "portfolio-3.jpg", :alt => "", :class => "img-responsive"%>
-                                    </div>
-                                    <div class="bg"></div>
-                                    <div class="text">
-                                        <p class="buttons">
-                                            <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h4><a href="blog-post.html">Fashion now</a></h4>
-                                    <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                                    </p>
-                                    <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                                    <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- /.box-image-text -->
-
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box-image-text blog">
-                                <div class="top">
-                                    <div class="image">
-                                        <%= image_tag "portfolio-5.jpg", :alt => "", :class => "img-responsive"%>
-                                    </div>
-                                    <div class="bg"></div>
-                                    <div class="text">
-                                        <p class="buttons">
-                                            <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h4><a href="blog-post.html">What to do</a></h4>
-                                    <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                                    </p>
-                                    <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                                    <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- /.box-image-text -->
-
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="box-image-text blog">
-                                <div class="top">
-                                    <div class="image">
-                                        <%= image_tag "portfolio-6.jpg", :alt => "", :class => "img-responsive"%>
-                                    </div>
-                                    <div class="bg"></div>
-                                    <div class="text">
-                                        <p class="buttons">
-                                            <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h4><a href="blog-post.html">5 ways to look awesome</a></h4>
-                                    <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                                    </p>
-                                    <p class="intro">Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people.</p>
-                                    <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- /.box-image-text -->
-
-                        </div>
-
-                    </div>
+                    
                     <!-- /.row -->
 
                     <!-- *** BLOG HOMEPAGE END *** -->
@@ -836,7 +572,7 @@ _________________________________________________________ -->
             <!-- /.container -->
         </section>
         <!-- /.bar -->
-
+<!--
         <section class="bar background-gray no-mb">
             <div class="container">
                 <div class="row">
@@ -865,34 +601,20 @@ _________________________________________________________ -->
                                 <%= image_tag "customer-6.png", :alt => "", :class => "img-responsive"%>
                             </li>
                         </ul>
-                        <!-- /.owl-carousel -->
+                        <!-- /.owl-carousels
                     </div>
 
                 </div>
             </div>
         </section>
-
+-->
 
         <!-- *** GET IT ***
 _________________________________________________________ -->
 
-        <div id="get-it">
-            <div class="container">
-                <div class="col-md-8 col-sm-12">
-                    <h3>Do you want cool website like this one?</h3>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="#" class="btn btn-template-transparent-primary">Buy this template now</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- *** GET IT END *** -->
-
 
         <!-- *** FOOTER ***
-_________________________________________________________ -->
+_________________________________________________________ 
 
         <footer id="footer">
             <div class="container">
@@ -917,13 +639,13 @@ _________________________________________________________ -->
                     </span>
 
                         </div>
-                        <!-- /input-group -->
+                        <!-- /input-group 
                     </form>
 
                     <hr class="hidden-md hidden-lg hidden-sm">
 
                 </div>
-                <!-- /.col-md-3 -->
+                <!-- /.col-md-3 
 
                 <div class="col-md-3 col-sm-6">
 
@@ -967,13 +689,12 @@ _________________________________________________________ -->
                     <hr class="hidden-md hidden-lg">
 
                 </div>
-                <!-- /.col-md-3 -->
-
+                <!-- /.col-md-3 
                 <div class="col-md-3 col-sm-6">
 
                     <h4>Contact</h4>
 
-                    <p><strong>Universal Ltd.</strong>
+                    <p><strong>Dinnerqr Ltd.</strong>
                         <br>13/25 New Avenue
                         <br>Newtown upon River
                         <br>45Y 73J
@@ -987,7 +708,7 @@ _________________________________________________________ -->
                     <hr class="hidden-md hidden-lg hidden-sm">
 
                 </div>
-                <!-- /.col-md-3 -->
+                <!-- /.col-md-3 
 
 
 
@@ -1029,9 +750,9 @@ _________________________________________________________ -->
                     </div>
 
                 </div>
-                <!-- /.col-md-3 -->
+                <!-- /.col-md-3 
             </div>
-            <!-- /.container -->
+            <!-- /.container 
         </footer>
         <!-- /#footer -->
 
@@ -1039,7 +760,7 @@ _________________________________________________________ -->
 
         <!-- *** COPYRIGHT ***
 _________________________________________________________ -->
-
+<!--
         <div id="copyright">
             <div class="container">
                 <div class="col-md-12">
@@ -1055,7 +776,7 @@ _________________________________________________________ -->
 
         <!-- *** COPYRIGHT END *** -->
 
-
+-->
 
     </div>
     <!-- /#all -->
