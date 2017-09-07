@@ -1,13 +1,12 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|openwebicons|zocial);
-
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
 }
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
 }
 
 .omb_login .omb_socialButtons a {
@@ -18,23 +17,25 @@
     color: white;
 	opacity:1;
 }
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
 
-.form-signin{
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
-
-
-.login-input {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.login-input-pass {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
 }
 .omb_login .omb_loginOr .omb_spanOr {
 	display: block;
@@ -47,17 +48,11 @@
 	text-align: center;
 }
 
-
-.signup-input {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
 }
-
-.signup-input-confirm {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.omb_login .omb_loginForm  .help-block {
+    color: red;
 }
 
 

@@ -33,10 +33,8 @@
 		        </a>
 	        </div>
 		</div>
+<br><br>
 
-	<div class="container text-center">
-	    <form class="form-signin" data-ember-action="2">
-	    	<h2 class="form-signin-heading">Ingresa</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -53,13 +51,13 @@
     		      <%= f.password_field :password, autocomplete: "off", placeholder: "contraseña" %>
 				</div>
         	       <span class="help-block">Password error</span>
-
+<br><br>
        		   <div class="actions">
-   			       <%= f.submit "Ingresa" %>
+   			       <%= f.submit "Ingresa", :class=>"btn btn-lg btn-block" %>
          		 </div>
       		 </div>
        	</div>
-
+<br>
   <% if devise_mapping.rememberable? -%>
    	<div class="row omb_row-sm-offset-3">
 			<div class="col-xs-12 col-sm-3">
@@ -69,15 +67,4 @@
 			</div>
 		</div>
   <% end -%>
-
-<br><br>
-
-		    <small class="text-muted">O conecta con tus datos</small>
-		    <br><br>
-	    	  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-	        <div class="ember-view ember-text-field ">
-            <%= f.email_field :email, autofocus: true, placeholder:"email" %>
-          </div>
-	        <div class="ember-view ember-text-field ">
-            <%= f.password_field :password, autocomplete: "off", placeholder: "contraseña" %>
-          </div>
+  <% end -%>
