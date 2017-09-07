@@ -14,6 +14,11 @@ Rails.application.config.assets.precompile += %w( font.awesome.min.css )
 Rails.application.config.assets.precompile += %w( jquery.fancybox.css )
 Rails.application.config.assets.precompile += %w( estilos_register.css )
 
+Rails.application.config.assets.precompile += %w( font-awesome.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap-theme.min.css )
+Rails.application.config.assets.precompile += %w( font.awesome.min.css )
+
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Precompile additional assets.

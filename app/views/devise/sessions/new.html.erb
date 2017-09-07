@@ -34,12 +34,9 @@
 	        </div>
 		</div>
 
-		<div class="row omb_row-sm-offset-3 omb_loginOr">
-			<div class="col-xs-12 col-sm-6">
-				<hr class="omb_hrOr">
-				<span class="omb_spanOr">or</span>
-			</div>
-		</div>
+	<div class="container text-center">
+	    <form class="form-signin" data-ember-action="2">
+	    	<h2 class="form-signin-heading">Ingresa</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -73,8 +70,14 @@
 		</div>
   <% end -%>
 
-</div>
-</div>
-<% end %>
+<br><br>
 
-<%= render "devise/shared/links" %>
+		    <small class="text-muted">O conecta con tus datos</small>
+		    <br><br>
+	    	  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+	        <div class="ember-view ember-text-field ">
+            <%= f.email_field :email, autofocus: true, placeholder:"email" %>
+          </div>
+	        <div class="ember-view ember-text-field ">
+            <%= f.password_field :password, autocomplete: "off", placeholder: "contraseña" %>
+          </div>
