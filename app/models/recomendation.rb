@@ -1,2 +1,0 @@
-class Recomendation < ApplicationRecord
-end

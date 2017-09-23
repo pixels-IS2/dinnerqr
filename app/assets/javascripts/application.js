@@ -10,14 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require bootstrap.min
-//= require bootstrap-hover-dropdown
-//= require front
-//= require gmaps.init
-//= require gmaps
-//= require bootstrap-sprockets
-//= require jquery_ujs
 //= require rails-ujs
 //= require turbolinks
 //= require jquery

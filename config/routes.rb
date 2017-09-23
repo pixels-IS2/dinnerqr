@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
 
-  resources :recomendations
-  resources :tables
-  resources :dishes
-  resources :orders
-    devise_for :users, controllers: { sessions: "users/sessions" , registrations:"users/registrations"}
-  root to: 'welcome#index'
-  get 'about_us' => 'aboutus#about'
+  get 'welcome/index'
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
