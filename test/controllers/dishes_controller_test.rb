@@ -17,7 +17,7 @@ class DishesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create dish" do
     assert_difference('Dish.count') do
-      post dishes_url, params: { dish: { name: @dish.name } }
+      post dishes_url, params: { dish: { description: @dish.description, name: @dish.name, price: @dish.price, speciality: @dish.speciality, state: @dish.state } }
     end
 
     assert_redirected_to dish_url(Dish.last)
@@ -34,7 +34,7 @@ class DishesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update dish" do
-    patch dish_url(@dish), params: { dish: { name: @dish.name } }
+    patch dish_url(@dish), params: { dish: { description: @dish.description, name: @dish.name, price: @dish.price, speciality: @dish.speciality, state: @dish.state } }
     assert_redirected_to dish_url(@dish)
   end
 

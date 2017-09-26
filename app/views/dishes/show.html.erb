@@ -5,5 +5,31 @@
   <%= @dish.name %>
 </p>
 
+<p>
+  <strong>State:</strong>
+  <%= @dish.state %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <br>
+  <%= image_tag @dish.photo.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dish.description %>
+</p>
+
+<p>
+  <strong>Speciality:</strong>
+  <%= @dish.speciality %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dish.price %>
+</p>
+
 <%= link_to 'Edit', edit_dish_path(@dish) %> |
 <%= link_to 'Back', dishes_path %>

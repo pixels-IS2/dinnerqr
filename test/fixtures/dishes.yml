@@ -2,6 +2,14 @@
 
 one:
   name: MyString
+  state: MyString
+  description: MyText
+  speciality: MyString
+  price: 1
 
 two:
   name: MyString
+  state: MyString
+  description: MyText
+  speciality: MyString
+  price: 1
