@@ -12,6 +12,21 @@
 
   <body>
   <%= render 'partials/top' %>
+  <% if notice %>
+  <p class="alert alert-success alert-info">
+    <a class="close" data-dismiss="alert">&times;</a>
+    <%= notice %>
+  </p>
+  <% end %>
+  <% if alert %>
+  <p class="alert alert-error alert-warning">
+  <a class="close" data-dismiss="alert">&times;</a>
+  <%= alert %>
+  </p>
+  <% end %>
+  
+  
+
   <%= yield %>
   <%= render 'partials/footer' %>
   <%= render 'partials/copyright' %>
