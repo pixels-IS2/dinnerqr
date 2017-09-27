@@ -15,15 +15,11 @@ _________________________________________________________ -->
 
           <div class="login">
             <% if client_signed_in? %>
-              <i class="fa fa-sign-out"></i>
-              <%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase") %>
-              <i class="fa fa-user"></i>
-              <%= link_to('Edit registration', edit_client_registration_path, class:"hidden-xs text-uppercase")%>
+              <%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase", class:"fa fa-sign-out") %>
+              <%= link_to('Edit registration', edit_client_registration_path, class:"hidden-xs text-uppercase", class:"fa fa-user")%>
             <% else %>
-              <i class="fa fa-sign-in"></i>
-              <%= link_to('Sign in', new_client_session_path, class:"hidden-xs text-uppercase")%>
-              <i class="fa fa-user"></i>
-              <%= link_to('Register', new_client_registration_path, class:"hidden-xs text-uppercase")%>
+              <%= link_to('Sign in', new_client_session_path, class:"hidden-xs text-uppercase fa fa-sign-in", class:"fa fa-sign-in")%>
+              <%= link_to('Register', new_client_registration_path, class:"hidden-xs text-uppercase", class:"fa fa-user")%>
             <% end %>
           </div>
 
@@ -84,7 +80,7 @@ _________________________________________________________ -->
                   <div class="yamm-content">
                     <div class="row">
                       <div class="col-sm-6">
-                        <img src="img/template-easy-customize.png" class="img-responsive hidden-xs" alt="">
+                        <%= image_tag "template-easy-customize.png", :class => "img-responsive hidden-xs", :alt => ""%>
                       </div>
                       <div class="col-sm-3">
                         <h5>Shortcodes</h5>
@@ -130,7 +126,7 @@ _________________________________________________________ -->
                   <div class="yamm-content">
                     <div class="row">
                       <div class="col-sm-6">
-                        <img src="img/template-homepage.png" class="img-responsive hidden-xs" alt="">
+                        <%= image_tag "template-homepage.png", :class => "img-responsive hidden-xs", :alt => ""%>
                       </div>
                       <div class="col-sm-3">
                         <h5>Portfolio</h5>
@@ -317,7 +313,8 @@ _________________________________________________________ -->
             <li class="dropdown">
               <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown">Contacto <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="aboutus/about">Acerca de</a>
+                <li>
+                  <%= link_to "ACERCA DE",about_path %>
                 </li>
                 </li>
 
