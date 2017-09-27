@@ -14,10 +14,17 @@ _________________________________________________________ -->
           </div>
 
           <div class="login">
-            <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i>
-              <span class="hidden-xs text-uppercase">Sign in</span></a>
-            <a href="customer-register.html"><i class="fa fa-user"></i>
-              <span class="hidden-xs text-uppercase">Sign up</span></a>
+            <% if client_signed_in? %>
+              <i class="fa fa-sign-out"></i>
+              <%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase") %>
+              <i class="fa fa-user"></i>
+              <%= link_to('Edit registration', edit_client_registration_path, class:"hidden-xs text-uppercase")%>
+            <% else %>
+              <i class="fa fa-sign-in"></i>
+              <%= link_to('Sign in', new_client_session_path, class:"hidden-xs text-uppercase")%>
+              <i class="fa fa-user"></i>
+              <%= link_to('Register', new_client_registration_path, class:"hidden-xs text-uppercase")%>
+            <% end %>
           </div>
 
         </div>
