@@ -60,51 +60,11 @@ _________________________________________________________ -->
             <li class="dropdown active">
               <%=link_to 'Home', root_path,class:"dropdown-toggle"%>
             </li>
-            <li class="dropdown use-yamm yamm-fw">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dishes<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li>
-                  <div class="yamm-content">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <%= image_tag "template-easy-customize.png", :class => "img-responsive hidden-xs", :alt => ""%>
-                      </div>
-                      <div class="col-sm-3">
-                        <h5>Shortcodes</h5>
-                        <ul>
-                          <li><a href="template-accordions.html">Accordions</a>
-                          </li>
-                          <li><a href="template-alerts.html">Alerts</a>
-                          </li>
-                          <li><a href="template-buttons.html">Buttons</a>
-                          </li>
-                          <li><a href="template-content-boxes.html">Content boxes</a>
-                          </li>
-                          <li><a href="template-blocks.html">Horizontal blocks</a>
-                          </li>
-                          <li><a href="template-pagination.html">Pagination</a>
-                          </li>
-                          <li><a href="template-tabs.html">Tabs</a>
-                          </li>
-                          <li><a href="template-typography.html">Typography</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-3">
-                        <h5>Header variations</h5>
-                        <ul>
-                          <li><a href="template-header-default.html">Default sticky header</a>
-                          </li>
-                          <li><a href="template-header-nosticky.html">No sticky header</a>
-                          </li>
-                          <li><a href="template-header-light.html">Light header</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                <li><%=link_to 'Dishes Menu', dishes_path ,class:"dropdown-toggle"%></li>
+             </ul>
             </li>
             <li class="dropdown use-yamm yamm-fw">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
