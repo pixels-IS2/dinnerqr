@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20170928071305) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "name"
+    t.string "lastname"
+    t.string "username"
+    t.string "state"
+    t.string "permission_leve"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_chefs_on_email", unique: true
@@ -42,8 +47,13 @@ ActiveRecord::Schema.define(version: 20170928071305) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "lastname"
     t.integer "identificacion"
     t.date "birthday"
+    t.boolean "admin"
+    t.string "provider"
+    t.string "uid"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
@@ -52,6 +62,7 @@ ActiveRecord::Schema.define(version: 20170928071305) do
     t.string "name"
     t.string "state"
     t.text "description"
+    t.string "speciality"
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -59,14 +70,6 @@ ActiveRecord::Schema.define(version: 20170928071305) do
     t.string "photo_content_type"
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
-    t.integer "speciality_id"
-    t.index ["speciality_id"], name: "index_dishes_on_speciality_id"
-  end
-
-  create_table "specialities", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   devise_for :waiters
   resources :specialities
-  get 'menu/menu' => 'menu#menu'
-
-  devise_for :clients
+  get 'menu' => 'menu#menu'
+  devise_for :clients, controllers: { registrations:"clients/registrations",omniauth_callbacks: 'clients/omniauth_callbacks'}
   resources :dishes
   devise_for :chefs, controllers: { sessions: 'chefs/sessions' }
   root 'welcome#index'

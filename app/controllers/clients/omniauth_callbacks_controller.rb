@@ -1,11 +1,15 @@
 class Clients::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # You should configure your model like this:
-  # devise :omniauthable, omniauth_providers: [:twitter]
+   #devise :omniauthable, omniauth_providers: [:facebook]
+
 
   # You should also create an action method in this controller like this:
   # def twitter
   # end
-
+  def facebook
+    @client = Client.from_omniauth(request.env["omniauth.auth"])
+    sign_in_and_redirect @client
+  end
   # More info at:
   # https://github.com/plataformatec/devise#omniauth
 
