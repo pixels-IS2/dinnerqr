@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: dish, local: true) do |form| %>
   <% if dish.errors.any? %>
     <div id="error_explanation">
@@ -13,25 +15,24 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :dish_name %>
+    <%= form.text_field :name, id: :dish_name,type:"text",class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :state %>
-    <%= form.select(:state, ['Disponible','Agotada','Descuentp']) %>
+    <%= form.select(:state, ['Available', 'Out of stock', 'Discount'] ,class:"form-control") %>
 
 
   </div>
 
     <div class="field">
-      portada:<%= form.file_field :photo %>
-
+      Portada:<%= form.file_field :photo %>
 
     </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :dish_description %>
+    <%= form.text_area :description, id: :dish_description ,class:"form-control"%>
   </div>
 
   <div class="field">
@@ -43,10 +44,10 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price, id: :dish_price %>
+    <%= form.number_field :price, id: :dish_price,class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit",type:"submit",class:"btn btn-lg btn-template-primary"%>
   </div>
 <% end %>
