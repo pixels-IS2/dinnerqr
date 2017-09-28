@@ -39359,3 +39359,283 @@ Processing by MenuController#menu as HTML
 Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.6ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-09-28 11:49:26 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1418.8ms)
+  Rendered partials/_top.html.erb (15.2ms)
+  Rendered partials/_footer.html.erb (11.6ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 1820ms (Views: 1805.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 11:49:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:36 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (79.0ms)
+  Rendered partials/_top.html.erb (13.0ms)
+  Rendered partials/_footer.html.erb (19.6ms)
+  Rendered partials/_copyright.html.erb (1.4ms)
+Completed 200 OK in 315ms (Views: 293.3ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/dishes/2" for 127.0.0.1 at 2017-09-28 11:49:43 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SHmju37SU4wp5y9jqcfAW/XLYZHnfswjuMksjF1Q+BlFwsbqMwLrK6S4DfmAb+t0qdsCPqAaCdt5BVYE8COpIA==", "id"=>"2"}
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (51.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 119ms (ActiveRecord: 53.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:43 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.4ms)
+  Rendered partials/_top.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (9.8ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 211.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/dishes/1" for 127.0.0.1 at 2017-09-28 11:49:46 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q+mlnobEo5xLbwubq/jm/OdfAr2Ev48l2XmAuv43s2pOUsDPyxQbO8YwKQGCUM3Tu09hEsPbSt0YtfoyU0TiUw==", "id"=>"1"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 1]]
+  [1m[35m (232.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 245ms (ActiveRecord: 235.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:47 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_top.html.erb (12.1ms)
+  Rendered partials/_footer.html.erb (12.7ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 229ms (Views: 226.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:51:36 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (8.0ms)
+  Rendered partials/_top.html.erb (32.7ms)
+  Rendered partials/_footer.html.erb (7.8ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 797ms (Views: 762.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:52:17 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (7.6ms)
+  Rendered partials/_top.html.erb (20.0ms)
+  Rendered partials/_footer.html.erb (13.3ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 794ms (Views: 759.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2017-09-28 11:53:40 -0500
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (1243.0ms)
+  Rendered dishes/new.html.erb within layouts/application (1245.0ms)
+  Rendered partials/_top.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (8.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 1432ms (Views: 1395.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2017-09-28 11:54:00 -0500
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kogdXTwEs5GL/vE9WETIGRlLBpyEVOxfSM1mOaqVtUcStgEEzXcgvpy0XRoA0Vqx95ZUrO37dyCllw6RpmN6uw==", "dish"=>{"name"=>"cua", "state"=>"Agotada", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f2361d2a128 @tempfile=#<Tempfile:/tmp/RackMultipart20170928-4581-1pzxszf.jpg>, @original_filename="20620792_1738813952826211_288042961826373250_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"20620792_1738813952826211_288042961826373250_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola mundo", "speciality_id"=>"1", "price"=>"456"}, "commit"=>"Create Dish"}
+Command :: file -b --mime '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-1k5m0qn.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]'
+Command :: convert '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' -auto-orient -resize "300x300>" '/tmp/72c35aa19c7fd835aaf7eecc059660fe20170928-4581-1g8ce33'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]'
+Command :: convert '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' -auto-orient -resize "100x" -crop "100x100+0+0" +repage '/tmp/72c35aa19c7fd835aaf7eecc059660fe20170928-4581-1i4ew7t'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.5ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-viyese.jpg'
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "cua"], ["state", "Agotada"], ["description", "hola mundo"], ["price", 456], ["created_at", "2017-09-28 16:54:01.951038"], ["updated_at", "2017-09-28 16:54:01.951038"], ["photo_file_name", "20620792_1738813952826211_288042961826373250_n.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 25391], ["photo_updated_at", "2017-09-28 16:54:00.782842"], ["speciality_id", 1]]
+  [1m[35m (85.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes/3
+Completed 302 Found in 1280ms (ActiveRecord: 86.3ms)
+
+
+Started GET "/dishes/3" for 127.0.0.1 at 2017-09-28 11:54:02 -0500
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dishes/show.html.erb within layouts/application (7.4ms)
+  Rendered partials/_top.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (9.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 152ms (Views: 149.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:54:09 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_top.html.erb (12.0ms)
+  Rendered partials/_footer.html.erb (16.8ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 220ms (Views: 217.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chicken Fajitas"], ["state", "casa"], ["description", "esto es una prueba"], ["price", 28477], ["created_at", "2017-09-28 16:59:26.943391"], ["updated_at", "2017-09-28 16:59:26.943391"], ["speciality_id", 1]]
+  [1m[35m (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pizza"], ["state", "picante"], ["description", "esto es una prueba"], ["price", 26871], ["created_at", "2017-09-28 16:59:27.058063"], ["updated_at", "2017-09-28 16:59:27.058063"], ["speciality_id", 1]]
+  [1m[35m (59.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:59:45 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (44.7ms)
+  Rendered partials/_top.html.erb (42.5ms)
+  Rendered partials/_footer.html.erb (11.4ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 1048ms (Views: 1010.3ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/dishes/5" for 127.0.0.1 at 2017-09-28 12:04:44 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bZmoW9h9TQ0JtQpA3gnev0O1OMemLZB/6aZb6tcB/35gIs0Kla31qoTqKNr3ofWQH6VbaOFJVYcoaiFienKuRw==", "id"=>"5"}
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (20.9ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (109.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 215ms (ActiveRecord: 133.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:45 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (8.9ms)
+  Rendered partials/_top.html.erb (20.4ms)
+  Rendered partials/_footer.html.erb (59.4ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 771ms (Views: 768.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/dishes/3" for 127.0.0.1 at 2017-09-28 12:04:49 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VfFdAp2NyVydwEsiCAY64XjBTNkV0tcaqY4g4JXHiqZYSjhT0F1x+xCfabghrhHOJNEvdlK2EuJoQlpoOLTbnw==", "id"=>"3"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (259.3ms)[0m  [1m[36mcommit transaction[0m
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/original/20620792_1738813952826211_288042961826373250_n.jpg
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/medium/20620792_1738813952826211_288042961826373250_n.jpg
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/thumb/20620792_1738813952826211_288042961826373250_n.jpg
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 287ms (ActiveRecord: 261.9ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:49 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (9.8ms)
+  Rendered partials/_top.html.erb (15.2ms)
+  Rendered partials/_footer.html.erb (30.7ms)
+  Rendered partials/_copyright.html.erb (1.1ms)
+Completed 200 OK in 361ms (Views: 357.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/dishes/4" for 127.0.0.1 at 2017-09-28 12:04:52 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AQ/F6Rt/GYXieG6qjelfupuGF2Ur3NeXVZ5bdE00k0gMtKC4Vq+hIm8nTDCkQXSVx5Z0ymy4Em+UUiH84EfCcQ==", "id"=>"4"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 4]]
+  [1m[35m (293.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 307ms (ActiveRecord: 296.3ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:52 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.5ms)
+  Rendered partials/_top.html.erb (15.5ms)
+  Rendered partials/_footer.html.erb (21.7ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 339ms (Views: 335.4ms | ActiveRecord: 0.5ms)
+
+
