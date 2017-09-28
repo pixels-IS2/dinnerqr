@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'menu/menu'
+
   resources :specialities
   get 'menu/menu' => 'menu#menu'
 
