@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :specialities
-  get 'menu/menu' => 'menu#menu'
+  get 'menu' => 'menu#menu'
 
   devise_for :clients
   resources :dishes
