@@ -4,7 +4,12 @@ class DishesController < ApplicationController
   # GET /dishes
   # GET /dishes.json
   def index
+    if current_user.admin?
     @dishes = Dish.all
+  else
+    @dishes= Dish.where(:favourite=>true)
+  end
+
   end
 
   # GET /dishes/1

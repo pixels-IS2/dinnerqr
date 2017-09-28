@@ -4,6 +4,9 @@ class Client < ApplicationRecord
   devise :omniauthable,:database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          omniauth_providers: [:facebook]
+  validates :email, :presence => true
+  validates :name, :length => { :maximum => 100, :too_long => "%{count} Demasiados caracteres" }
+  validates :name, :length => { :maximum => 100, :too_long => "%{count} Demasiados caracteres" }
   def self.from_omniauth(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |client|
       client.email = auth.info.email

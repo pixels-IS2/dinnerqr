@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Order Dishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @order_dishes.each do |order_dish| %>
+      <tr>
+        <td><%= link_to 'Show', order_dish %></td>
+        <td><%= link_to 'Edit', edit_order_dish_path(order_dish) %></td>
+        <td><%= link_to 'Destroy', order_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order Dish', new_order_dish_path %>

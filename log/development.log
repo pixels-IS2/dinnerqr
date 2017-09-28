@@ -38798,3 +38798,361 @@ Processing by AboutusController#about as HTML
 Completed 200 OK in 116ms (Views: 115.2ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/clients/sign_up" for 186.154.35.38 at 2017-09-28 07:32:50 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Clients::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.6ms)
+  Rendered partials/_top.html.erb (3.7ms)
+  Rendered partials/_footer.html.erb (4.0ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 385ms (Views: 354.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clients/auth/facebook" for 186.154.35.38 at 2017-09-28 07:33:00 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 186.154.35.38 at 2017-09-28 07:33:00 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook/callback?code=AQA7f75M9mQ3PrJzKKdUV1Arxa3QnEdc2mMlMuBG0cFf_ZXcwDqCxw5DV4U94e04FAL_db3Za3iUqLD7YmxWIgwGdQ3GmliI4_CqW9Y6uWkgi9wTqlVcZ91XwBFf8734jXFZQM4I2VEZZUrMV_ie23SEM6DY5fxImRd6pWqnjYj2tqHpn-1AGwLdZtwVo-AOyHCSO-jmM_4Dg6Sf579iVMWimlll4pB-xJUzTXrMxEM9npnQr8IWA8a01056Yca2vwmWyy-iNLjpl37I0TME5X3-BRaYRitbtryMk8sBW9zIgAsV8GC9YqN7TVVZkfsX6vm1aJzR_1aHl9A1e7DVph79&state=c7beaffd662d9a28b78e2d8af44e2377ce81f17095ff44d2" for 186.154.35.38 at 2017-09-28 07:33:11 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Clients::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA7f75M9mQ3PrJzKKdUV1Arxa3QnEdc2mMlMuBG0cFf_ZXcwDqCxw5DV4U94e04FAL_db3Za3iUqLD7YmxWIgwGdQ3GmliI4_CqW9Y6uWkgi9wTqlVcZ91XwBFf8734jXFZQM4I2VEZZUrMV_ie23SEM6DY5fxImRd6pWqnjYj2tqHpn-1AGwLdZtwVo-AOyHCSO-jmM_4Dg6Sf579iVMWimlll4pB-xJUzTXrMxEM9npnQr8IWA8a01056Yca2vwmWyy-iNLjpl37I0TME5X3-BRaYRitbtryMk8sBW9zIgAsV8GC9YqN7TVVZkfsX6vm1aJzR_1aHl9A1e7DVph79", "state"=>"c7beaffd662d9a28b78e2d8af44e2377ce81f17095ff44d2"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."provider" = ? AND "clients"."uid" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "1593333794020293"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "clients" WHERE "clients"."email" = ? LIMIT ?[0m  [["email", "stigia.hades13@hotmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "clients" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "stigia.hades13@hotmail.com"], ["encrypted_password", "$2a$11$81bdRiIf2SpN1Tp2ODCIre9CDJnr4e0qI2HrPzKvB5C0giK7j2EAi"], ["created_at", "2017-09-28 07:33:11.850559"], ["updated_at", "2017-09-28 07:33:11.850559"], ["provider", "facebook"], ["uid", "1593333794020293"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "clients" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-28 07:33:11.863522"], ["last_sign_in_at", "2017-09-28 07:33:11.863522"], ["current_sign_in_ip", "186.154.35.38"], ["last_sign_in_ip", "186.154.35.38"], ["updated_at", "2017-09-28 07:33:11.864246"], ["id", 4]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://dinnerqr-alexander86.c9users.io/dishes
+Completed 302 Found in 181ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/dishes" for 186.154.35.38 at 2017-09-28 07:33:12 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (13.7ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (5.8ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 79.8ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/clients/sign_out" for 186.154.35.38 at 2017-09-28 07:33:54 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rl+CgQwPn2TPVxLXMLu7GfreXkN2ihQdmynR6yBJVsGSGBGECVZ/idnVjHS/j05qWfNlpDKkKRLshwqJjVhtdw=="}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://dinnerqr-alexander86.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 186.154.35.38 at 2017-09-28 07:33:54 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+  Rendered partials/_top.html.erb (3.6ms)
+  Rendered partials/_footer.html.erb (4.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 186.154.35.38 at 2017-09-28 07:33:55 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (9.9ms)[0m  [1m[35mALTER TABLE "dishes" ADD "favourite" boolean[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 186.154.35.38 at 2017-09-28 07:57:12 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (342.7ms)
+  Rendered partials/_top.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (4.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 468ms (Views: 460.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 186.154.35.38 at 2017-09-28 07:57:14 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/sign_in" for 186.154.35.38 at 2017-09-28 07:57:20 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+  Rendered partials/_top.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 72.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/clients/auth/facebook" for 186.154.35.38 at 2017-09-28 07:57:30 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 186.154.35.38 at 2017-09-28 07:57:31 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook/callback?code=AQCdpqBMRMA467z1H_YVMVtwPADVWW6q-lqmio42NuMucNLjjwQHlkGB79TAUjAvMcgQQ52vUt3P7M_8fotzIlaEQjvHlobcidSjD3K4MVmTWWwro2vKJuMf-1YwLvJ-h8oBi3U1_wvN_nubjXuNToGdG1-hrvnGsD5HxiBHuyGKlqrGFi-Db28eFNcFcM79Z6gdWVlORGYYitjyWiLTRFu9IEoO4VrU9cduhe8u8UD9Mo1hhqF2H9Me9BsZMxIdIs43YNQyte27IPLcrCFaT4eiX-FzrCdGzse1XeFW64l_FhgJynIF-DOUVCIfYlfXShyz_0xmVgDCGIgb_HCKyQIS&state=94d95887f059fef67cdedb0709088298df5156480ac90570" for 186.154.35.38 at 2017-09-28 07:57:31 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Clients::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCdpqBMRMA467z1H_YVMVtwPADVWW6q-lqmio42NuMucNLjjwQHlkGB79TAUjAvMcgQQ52vUt3P7M_8fotzIlaEQjvHlobcidSjD3K4MVmTWWwro2vKJuMf-1YwLvJ-h8oBi3U1_wvN_nubjXuNToGdG1-hrvnGsD5HxiBHuyGKlqrGFi-Db28eFNcFcM79Z6gdWVlORGYYitjyWiLTRFu9IEoO4VrU9cduhe8u8UD9Mo1hhqF2H9Me9BsZMxIdIs43YNQyte27IPLcrCFaT4eiX-FzrCdGzse1XeFW64l_FhgJynIF-DOUVCIfYlfXShyz_0xmVgDCGIgb_HCKyQIS", "state"=>"94d95887f059fef67cdedb0709088298df5156480ac90570"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."provider" = ? AND "clients"."uid" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "1593333794020293"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "clients" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["current_sign_in_at", "2017-09-28 07:57:32.154976"], ["sign_in_count", 2], ["updated_at", "2017-09-28 07:57:32.155964"], ["id", 4]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://dinnerqr-alexander86.c9users.io/dishes
+Completed 302 Found in 19ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/dishes" for 186.154.35.38 at 2017-09-28 07:57:32 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (12.8ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (4.2ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/clients/edit" for 186.154.35.38 at 2017-09-28 07:57:35 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Clients::RegistrationsController#edit as HTML
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.8ms)
+  Rendered partials/_top.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (4.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 195ms (Views: 193.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/clients/sign_out" for 186.154.35.38 at 2017-09-28 07:59:06 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s70wGiW96NfLYIaFuEOHWdjSWhWo5R9v5icsdEMtdtauTAu7SPhsZV8teEuHa/HU3Wolx28oernMLmrr2MpmmQ=="}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://dinnerqr-alexander86.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 186.154.35.38 at 2017-09-28 07:59:06 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.4ms)
+  Rendered partials/_top.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (4.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 120ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 186.154.35.38 at 2017-09-28 07:59:07 +0000
+Cannot render console from 186.154.35.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

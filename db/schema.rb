@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20170926173344) do
     t.string "photo_content_type"
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
+    t.boolean "favourite"
   end
 
   create_table "users", force: :cascade do |t|

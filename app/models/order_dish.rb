@@ -1,0 +1,2 @@
+class OrderDish < ApplicationRecord
+end
