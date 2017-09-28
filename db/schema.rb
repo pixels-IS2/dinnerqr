@@ -50,6 +50,9 @@ ActiveRecord::Schema.define(version: 20170925213106) do
     t.datetime "updated_at", null: false
     t.integer "identificacion"
     t.date "birthday"
+    t.boolean "admin"
+    t.string "provider"
+    t.string "uid"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
