@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :waiters
   resources :specialities
   get 'menu/menu' => 'menu#menu'
 
