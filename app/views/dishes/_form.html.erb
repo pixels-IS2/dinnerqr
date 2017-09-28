@@ -19,6 +19,8 @@
   <div class="field">
     <%= form.label :state %>
     <%= form.select(:state, ['Disponible','Agotada','Descuentp']) %>
+
+
   </div>
 
     <div class="field">
@@ -34,7 +36,9 @@
 
   <div class="field">
     <%= form.label :speciality %>
-    <%= form.text_field :speciality, id: :dish_speciality %>
+
+    <%= form.select :speciality_id, options_for_select(@specialities.map{|s|[s.name, s.id]}, params[:speciality_id]) %>
+
   </div>
 
   <div class="field">
