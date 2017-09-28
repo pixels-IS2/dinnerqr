@@ -15,10 +15,12 @@ class DishesController < ApplicationController
   # GET /dishes/new
   def new
     @dish = Dish.new
+    @specialities = Speciality.all
   end
 
   # GET /dishes/1/edit
   def edit
+    @specialities = Speciality.all
   end
 
   # POST /dishes
@@ -69,6 +71,6 @@ class DishesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dish_params
-      params.require(:dish).permit(:name, :state, :description, :speciality, :price,:photo)
+      params.require(:dish).permit(:name, :state, :description, :speciality, :price,:photo,:speciality_id)
     end
 end
