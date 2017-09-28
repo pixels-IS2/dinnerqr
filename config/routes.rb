@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :clients
   resources :dishes
- # devise_for :chefs
+  devise_for :chefs, controllers: { sessions: 'chefs/sessions' }
   root 'welcome#index'
 
   get 'about' => 'aboutus#about'

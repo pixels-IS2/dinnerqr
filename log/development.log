@@ -37836,3 +37836,1166 @@ Completed 200 OK in 198ms (Views: 172.2ms | ActiveRecord: 1.6ms)
 
 
 >>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 00:47:10 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (85.0ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__2981494529287254507_70337372950080'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__2981494529287254507_70337372950080'
+Started GET "/" for 127.0.0.1 at 2017-09-28 00:47:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4826.9ms)
+  Rendered partials/_top.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 4997ms (Views: 4994.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 00:47:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-09-28 00:47:32 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.7ms)
+  Rendered partials/_top.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (2.9ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 127.0.0.1 at 2017-09-28 00:47:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (196.8ms)
+  Rendered partials/_top.html.erb (4.2ms)
+  Rendered partials/_footer.html.erb (3.2ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 320ms (Views: 264.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/clients/sign_in" for 127.0.0.1 at 2017-09-28 00:47:40 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DBIvaFwx8Qz6rkRyIALd981Bq+cdRqCv54oScJDgqmAClvILbHlrbqf7agjmrBdyyp24Wkt4ztDqHWAjkWR7PA==", "client"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 65ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DBIvaFwx8Qz6rkRyIALd981Bq+cdRqCv54oScJDgqmAClvILbHlrbqf7agjmrBdyyp24Wkt4ztDqHWAjkWR7PA==", "client"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered partials/_top.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (3.4ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 387ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_up" for 127.0.0.1 at 2017-09-28 00:47:49 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.6ms)
+  Rendered partials/_top.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (3.2ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-09-28 00:47:58 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I4orETPftk68c08ib4Sa2Jb/vbLBqYubettGeyYMqcbb19xvGcL7Ya5sVkPY90q3t1M8pRTnizF5si3pnd6RHg==", "client"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "clients" WHERE "clients"."email" = ? LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "clients" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "jdporrasp@unal.edu.co"], ["encrypted_password", "$2a$11$m9Lv7e564FXtRojNH2xKrezb9xpged68bQZZaNhYoupSS1Y3Qby5i"], ["created_at", "2017-09-28 05:47:58.901384"], ["updated_at", "2017-09-28 05:47:58.901384"]]
+  [1m[35m (82.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "clients" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-28 05:47:58.992242"], ["last_sign_in_at", "2017-09-28 05:47:58.992242"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-09-28 05:47:58.994626"], ["id", 1]]
+  [1m[35m (146.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 495ms (ActiveRecord: 230.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 00:47:59 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__2981494529287254507_70337337529180'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__2981494529287254507_70337337529180'
+Started GET "/" for 127.0.0.1 at 2017-09-28 00:48:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (32.8ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (3.0ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 00:48:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/edit" for 127.0.0.1 at 2017-09-28 00:48:16 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mClient Load (0.9ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Client:0x0055b688d32630>):
+    32:   </div>
+    33:   <div class="field">
+    34:     <%= f.label :name %> 
+    35:     <%= f.text_field :name, autocomplete: "off" ,class:"form-control"%>
+    36:   </div>
+    37: <div class="field">
+    38:     <%= f.label :lastname %>
+  
+app/views/devise/registrations/edit.html.erb:35:in `block in _app_views_devise_registrations_edit_html_erb___2198563140775784647_47121233887580'
+app/views/devise/registrations/edit.html.erb:3:in `_app_views_devise_registrations_edit_html_erb___2198563140775784647_47121233887580'
+Started GET "/" for 127.0.0.1 at 2017-09-28 00:48:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (4.5ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 00:48:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/sign_out" for 127.0.0.1 at 2017-09-28 00:49:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/clients/sign_out"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/sign_out" for 127.0.0.1 at 2017-09-28 00:49:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/sign_out"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/sign_out" for 127.0.0.1 at 2017-09-28 00:49:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients/sign_out"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/" for 127.0.0.1 at 2017-09-28 00:49:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/clients"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs" for 127.0.0.1 at 2017-09-28 00:49:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chefs"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs/sign_in" for 127.0.0.1 at 2017-09-28 00:50:03 -0500
+Processing by Devise::SessionsController#new as HTML
+Redirected to http://localhost:3000/dishes
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 13ms
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 00:50:03 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__3865127577359072777_69975252025280'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__3865127577359072777_69975252025280'
+Started GET "/chefs" for 127.0.0.1 at 2017-09-28 00:50:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chefs"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs/sign_in" for 127.0.0.1 at 2017-09-28 00:51:00 -0500
+Processing by Devise::SessionsController#new as HTML
+Redirected to http://localhost:3000/dishes
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 00:51:00 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__3865127577359072777_47367447482660'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__3865127577359072777_47367447482660'
+Started GET "/" for 127.0.0.1 at 2017-09-28 00:54:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (204.5ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (17.8ms)
+  Rendered partials/_footer.html.erb (4.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 318ms (Views: 311.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 00:54:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 00:54:41 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+Completed 404 Not Found in 366ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Mailer preview 'chef_mailer/welcome_email' not found):
+  
+railties (5.1.4) lib/rails/mailers_controller.rb:56:in `find_preview'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/clients/sign_out" for 127.0.0.1 at 2017-09-28 00:54:50 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2GtQntUL5nFD8zK7KikIegWs9sCQOgYrCu/qYqTQwD5uWIvhqKzs/2zu1AsPA+dc2ste+lBKQr8lJZKvYBC+mg=="}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 00:54:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+  Rendered partials/_top.html.erb (4.9ms)
+  Rendered partials/_footer.html.erb (4.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 00:54:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 00:54:57 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (127.8ms)
+  Rendered partials/_top.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (3.1ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 242ms (Views: 201.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 01:12:25 -0500
+  
+SyntaxError (/home/jdpp95/dinnerqr/config/routes.rb:7: syntax error, unexpected '{', expecting keyword_end
+  devise_for :chefs { sessions: 'chefs/sessions' }
+                     ^
+/home/jdpp95/dinnerqr/config/routes.rb:7: syntax error, unexpected '}', expecting keyword_end):
+  
+config/routes.rb:7: syntax error, unexpected '{', expecting keyword_end
+config/routes.rb:7: syntax error, unexpected '}', expecting keyword_end
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 01:12:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+  Rendered partials/_top.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (3.4ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 571ms (Views: 552.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 01:13:32 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered partials/_top.html.erb (4.5ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 52.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 01:16:11 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+  Rendered partials/_top.html.erb (9.9ms)
+  Rendered partials/_footer.html.erb (3.7ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 63.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/chefs" for 127.0.0.1 at 2017-09-28 01:16:22 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0UO6TzmfTL2ojbENpHEV8/dZJpylUS+eJG8XsGFawr4+Dn+/vCG9m9qoo4ECC2w6hvXzSoEFRfAKfQ+UtBo16g==", "chef"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChef Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE "chefs"."email" = ? LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "jdporrasp@unal.edu.co"], ["encrypted_password", "$2a$11$0D8Zch7HhXIUVKoDU7oRxOUAcNZiag13hKAzwWmWa2i6X2llYbW1W"], ["created_at", "2017-09-28 06:16:22.793066"], ["updated_at", "2017-09-28 06:16:22.793066"]]
+  [1m[35m (92.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "chefs" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "chefs"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-28 06:16:22.891794"], ["last_sign_in_at", "2017-09-28 06:16:22.891794"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-09-28 06:16:22.893738"], ["id", 1]]
+  [1m[35m (83.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 587ms (ActiveRecord: 177.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 01:16:23 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__1634205757084096383_69856905552800'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__1634205757084096383_69856905552800'
+Started GET "/clients/sign_in" for 127.0.0.1 at 2017-09-28 01:18:14 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.3ms)
+  Rendered partials/_top.html.erb (3.2ms)
+  Rendered partials/_footer.html.erb (3.1ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 181ms (Views: 167.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/clients/sign_in" for 127.0.0.1 at 2017-09-28 01:18:19 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NKaUJdQSX4cb2UjORTnEa5LxWzVHaeaEsv8lEu9yACqG6NAyScl1r9kW0C09aBfyi8mTMW2hQJSyfCJXoRMZgg==", "client"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "clients" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["current_sign_in_at", "2017-09-28 06:18:20.041660"], ["sign_in_count", 2], ["updated_at", "2017-09-28 06:18:20.042359"], ["id", 1]]
+  [1m[35m (80.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 326ms (ActiveRecord: 82.2ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 01:18:20 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    20:         <td><%= dish.name %></td>
+    21:         <td><%= dish.state %></td>
+    22:         <td><%= dish.description %></td>
+    23:         <td><%= dish.speciality.name %></td>
+    24:         <td><%= dish.price %></td>
+    25:         <td><%= link_to 'Show', dish %></td>
+    26:         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+  
+app/views/dishes/index.html.erb:23:in `block in _app_views_dishes_index_html_erb__1634205757084096383_69856741384480'
+app/views/dishes/index.html.erb:18:in `_app_views_dishes_index_html_erb__1634205757084096383_69856741384480'
+Started GET "/clients/sign_in" for 127.0.0.1 at 2017-09-28 01:18:22 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dishes
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:19:38 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+Completed 404 Not Found in 118ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Email 'welcome_email' not found in ChefMailerPreview):
+  
+railties (5.1.4) lib/rails/mailers_controller.rb:38:in `preview'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:22:03 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+ChefMailer#welcome_email: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.2ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/mailers/chef_mailer.rb:2:in `welcome_email'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:23:54 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+ChefMailer#welcome_email: processed outbound mail in 1.1ms
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/mailers/chef_mailer.rb:5:in `welcome_email'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:24:06 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (27.1ms)
+ChefMailer#welcome_email: processed outbound mail in 69.1ms
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Chef:0x007f119c8eac60>):
+    4:     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    5:   </head>
+    6:   <body>
+    7:     <h1>Bienvenido a DinnerQR, <%= @chef.name %></h1>
+    8:     <p>
+    9:       Se ha registrado exitosamente en DinnerQR,
+   10:       su nombre de usuario es: <%= @chef.username %>.<br>
+  
+app/views/chef_mailer/welcome_email.html.erb:7:in `_app_views_chef_mailer_welcome_email_html_erb___3338691825184896137_69856808887480'
+app/mailers/chef_mailer.rb:5:in `welcome_email'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:29:08 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.8ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (12.7ms)
+ChefMailer#welcome_email: processed outbound mail in 22.0ms
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<Chef:0x007f11a07ff5e0>):
+     7:     <h1>Bienvenido a DinnerQR, <%= @chef.email %></h1>
+     8:     <p>
+     9:       Se ha registrado exitosamente en DinnerQR,
+    10:       su nombre de usuario es: <%= @chef.username %>.<br>
+    11:     </p>
+    12:     <p>
+    13:       Para iniciar sesión puede seguir este enlace: <%= @url %>
+  
+app/views/chef_mailer/welcome_email.html.erb:10:in `_app_views_chef_mailer_welcome_email_html_erb___3338691825184896137_69856811032060'
+app/mailers/chef_mailer.rb:5:in `welcome_email'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:29:22 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.8ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (5.5ms)
+ChefMailer#welcome_email: processed outbound mail in 39.1ms
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Chef:0x007f11a05e43f0>):
+    1: 
+    2: Bienvenido a DinnerQR, <%= @chef.name %>
+    3: ===============================================
+    4:  
+    5: Se ha registrado correctamente en DinnerQR.
+  
+app/views/chef_mailer/welcome_email.text.erb:2:in `_app_views_chef_mailer_welcome_email_text_erb___2568549392869846698_69856840780340'
+app/mailers/chef_mailer.rb:5:in `welcome_email'
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:29:34 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (4.9ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (1.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (1.6ms)
+ChefMailer#welcome_email: processed outbound mail in 316.5ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (29.5ms)
+Completed 200 OK in 396ms (Views: 63.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:29:35 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.3ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.2ms)
+ChefMailer#welcome_email: processed outbound mail in 6.8ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 47ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fplain" for 127.0.0.1 at 2017-09-28 01:29:38 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.5ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.9ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (1.0ms)
+ChefMailer#welcome_email: processed outbound mail in 13.8ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.txt?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:29:39 -0500
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.5ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+ChefMailer#welcome_email: processed outbound mail in 12.2ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:30:01 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.9ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (2.4ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (32.7ms)
+ChefMailer#welcome_email: processed outbound mail in 64.3ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (4.1ms)
+Completed 200 OK in 83ms (Views: 6.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:30:01 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (1.0ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+ChefMailer#welcome_email: processed outbound mail in 10.8ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:30:16 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+ChefMailer#welcome_email: processed outbound mail in 12.7ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (3.1ms)
+Completed 200 OK in 23ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:30:16 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.4ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.2ms)
+ChefMailer#welcome_email: processed outbound mail in 7.5ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:30:32 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+ChefMailer#welcome_email: processed outbound mail in 8.1ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (2.6ms)
+Completed 200 OK in 16ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:30:32 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+ChefMailer#welcome_email: processed outbound mail in 9.0ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fplain" for 127.0.0.1 at 2017-09-28 01:30:38 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.6ms)
+ChefMailer#welcome_email: processed outbound mail in 12.2ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.txt?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:30:40 -0500
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.7ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.7ms)
+ChefMailer#welcome_email: processed outbound mail in 14.2ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html" for 127.0.0.1 at 2017-09-28 01:30:52 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (1.0ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (1.7ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (1.2ms)
+ChefMailer#welcome_email: processed outbound mail in 42.0ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (7.6ms)
+Completed 200 OK in 68ms (Views: 12.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.html?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 01:30:52 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.4ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+ChefMailer#welcome_email: processed outbound mail in 10.6ms
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
