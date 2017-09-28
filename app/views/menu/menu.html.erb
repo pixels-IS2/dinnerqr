@@ -1,0 +1,41 @@
+
+<h1>Menu</h1>
+<div id="accordion" role="tablist">
+  <% @specialities.each do |speciality| %>
+
+      <div class="card">
+
+        <div class="card-header" role="tab" id="heading<%= speciality.name %>">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" href="#collapse<%= speciality.name %>" aria-expanded="true" aria-controls="collapse<%= speciality.name %>">
+               <%= speciality.name %>
+            </a>
+          </h5>
+        </div>
+        <div id="collapse<%= speciality.name %>" class="collapse show" role="tabpanel" aria-labelledby="heading<%= speciality.name %>" data-parent="#accordion">
+          <div class="card-body">
+            <table>
+
+
+
+            <tbody>
+            <% dishes = speciality.dishes %>
+            <% dishes.each do |dish| %>
+              <% if not dish.state.eql?('Agotada') %>
+
+                  <tr>
+                    <td><%= dish.name %></td>
+                    <td><%= dish.description %></td>
+                    <td><%= dish.price %></td>
+
+                  </tr>
+              <% end %>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  <%end%>
+</div>
+

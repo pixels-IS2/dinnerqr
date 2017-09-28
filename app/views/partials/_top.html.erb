@@ -65,7 +65,12 @@ _________________________________________________________ -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dishes<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%=link_to 'Dishes Menu', dishes_path ,class:"dropdown-toggle"%></li>
+                <% if client_signed_in? %>
+                    <li><%=link_to 'Dishes', dishes_path ,class:"dropdown-toggle"%></li>
+                    <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
+                <% else %>
+                <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
+                    <% end %>
              </ul>
             </li>
             <!--

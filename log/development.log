@@ -22909,7 +22909,6 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-<<<<<<< Updated upstream
 Started GET "/" for 127.0.0.1 at 2017-09-22 11:17:21 -0500
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
@@ -22996,7 +22995,6 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-<<<<<<< Updated upstream
 Started GET "/img/template-homepage.png" for 127.0.0.1 at 2017-09-22 11:17:21 -0500
 
 Started GET "/img/template-homepage.png" for 127.0.0.1 at 2017-09-23 00:53:35 -0500
@@ -30457,8 +30455,6 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -30498,8 +30494,6 @@ Started GET "/" for 127.0.0.1 at 2017-09-26 17:27:22 -0500
 
 Started GET "/" for 127.0.0.1 at 2017-09-26 22:39:04 -0500
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
-  
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -30638,7 +30632,6 @@ Migrating to DeviseCreateClients (20170925213106)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   [1m[35m (17.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_clients_on_email" ON "clients" ("email")[0m
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
   [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
             FROM sqlite_master
             WHERE name='index_clients_on_email' AND type='index'
@@ -30661,7 +30654,6 @@ Migrating to DeviseCreateClients (20170925213106)
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
             FROM sqlite_master
@@ -30699,7 +30691,6 @@ Migrating to DeviseCreateClients (20170925213106)
   [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
 
   [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
@@ -30749,7 +30740,6 @@ Started GET "/img/template-easy-customize.png" for 127.0.0.1 at 2017-09-26 22:39
 ActionController::RoutingError (No route matches [GET] "/img/template-easy-customize.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -30790,7 +30780,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -30808,7 +30797,6 @@ Started GET "/img/template-homepage.png" for 127.0.0.1 at 2017-09-26 22:39:40 -0
 ActionController::RoutingError (No route matches [GET] "/img/template-homepage.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -30849,7 +30837,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -30891,7 +30878,6 @@ ActionController::RoutingError (No route matches [GET] "/clients/img/template-ea
   
 ActionController::RoutingError (No route matches [GET] "/clients/img/template-homepage.png"):
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -30932,7 +30918,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -30947,7 +30932,6 @@ actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `cal
 
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -30988,7 +30972,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -31025,7 +31008,6 @@ Started GET "/clients/img/template-easy-customize.png" for 127.0.0.1 at 2017-09-
 ActionController::RoutingError (No route matches [GET] "/clients/img/template-easy-customize.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -31066,7 +31048,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -31083,7 +31064,6 @@ Started GET "/clients/img/template-homepage.png" for 127.0.0.1 at 2017-09-26 22:
 ActionController::RoutingError (No route matches [GET] "/clients/img/template-homepage.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -31124,7 +31104,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -31153,7 +31132,6 @@ Started GET "/clients/img/template-easy-customize.png" for 127.0.0.1 at 2017-09-
 ActionController::RoutingError (No route matches [GET] "/clients/img/template-easy-customize.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -31194,7 +31172,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -31212,7 +31189,6 @@ Started GET "/clients/img/template-homepage.png" for 127.0.0.1 at 2017-09-26 22:
 ActionController::RoutingError (No route matches [GET] "/clients/img/template-homepage.png"):
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -31253,7 +31229,6 @@ actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.3) lib/rails/engine.rb:522:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 puma (3.10.0) lib/puma/configuration.rb:225:in `call'
 puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
@@ -31312,7 +31287,6 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
->>>>>>> 952c5b5c556d6358d50f9b339cefd10fea05dff6
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -41040,6 +41014,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-09-28 03:22:16 -0500
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
@@ -41058,5 +41033,2149 @@ Processing by WelcomeController#index as HTML
   Rendered partials/_footer.html.erb (3.2ms)
   Rendered partials/_copyright.html.erb (0.2ms)
 Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+=======
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-09-28 03:59:22 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (711.6ms)
+  Rendered partials/_top.html.erb (13.0ms)
+  Rendered partials/_footer.html.erb (12.3ms)
+  Rendered partials/_copyright.html.erb (0.9ms)
+Completed 200 OK in 1452ms (Views: 1423.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 03:59:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu/menu" for 127.0.0.1 at 2017-09-28 03:59:35 -0500
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (424.8ms)
+  Rendered partials/_top.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (7.9ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 673ms (Views: 574.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/menu/menu" for 127.0.0.1 at 2017-09-28 04:00:18 -0500
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (7.0ms)
+  Rendered partials/_top.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (10.0ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 341ms (Views: 337.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 04:00:22 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (6.6ms)
+  Rendered partials/_top.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (8.5ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 129.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-09-28 04:00:23 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.4ms)
+  Rendered partials/_top.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (1.5ms)
+Completed 200 OK in 258ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 02:09:13 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2017-09-28 02:09:21 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2538.6ms)
+  Rendered welcome/index.html.erb within layouts/application (10147.2ms)
+  Rendered partials/_top.html.erb (28.2ms)
+  Rendered partials/_footer.html.erb (68.7ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 3429ms (Views: 3427.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendered partials/_top.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 11053ms (Views: 11046.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 02:09:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu/menu" for 127.0.0.1 at 2017-09-28 02:10:23 -0700
+Started GET "/menu/menu" for 127.0.0.1 at 2017-09-28 02:10:23 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MenuController#menu as HTML
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (1.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (1.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (166.3ms)
+  Rendered menu/menu.html.erb within layouts/application (162.8ms)
+  Rendered partials/_top.html.erb (8.6ms)
+  Rendered partials/_footer.html.erb (4.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 7582ms (Views: 7403.2ms | ActiveRecord: 3.8ms)
+
+
+  Rendered partials/_top.html.erb (11.8ms)
+  Rendered partials/_footer.html.erb (22.0ms)
+  Rendered partials/_copyright.html.erb (0.1ms)
+Completed 200 OK in 7573ms (Views: 7458.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 02:11:06 -0700
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_top.html.erb (3.2ms)
+  Rendered partials/_footer.html.erb (6.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 81.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 02:13:06 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (54.7ms)
+  Rendered partials/_top.html.erb (5.8ms)
+  Rendered partials/_footer.html.erb (56.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 4144ms (Views: 4092.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 02:13:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (69.8ms)
+  Rendered partials/_top.html.erb (3.2ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 184ms (Views: 181.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 02:13:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu" for 127.0.0.1 at 2017-09-28 02:13:17 -0700
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (36.3ms)
+  Rendered partials/_top.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (3.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 121.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 02:13:19 -0700
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.3ms)
+  Rendered partials/_top.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (7.5ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/sign_in" for 127.0.0.1 at 2017-09-28 02:13:29 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (134.3ms)
+  Rendered partials/_top.html.erb (3.1ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 232ms (Views: 194.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/clients/sign_in" for 127.0.0.1 at 2017-09-28 02:13:34 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iXNHGR1outyl39g0HSDBmKiuAu+g6xY0xuNGDbRfFS4NIM+XZYjfHt3yX84ZNwZcjT+doR5aphm3TIx2g3RJ6g==", "client"=>{"email"=>"pecabepi@yahoo.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "pecabepi@yahoo.es"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 40ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iXNHGR1outyl39g0HSDBmKiuAu+g6xY0xuNGDbRfFS4NIM+XZYjfHt3yX84ZNwZcjT+doR5aphm3TIx2g3RJ6g==", "client"=>{"email"=>"pecabepi@yahoo.es", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered partials/_top.html.erb (4.3ms)
+  Rendered partials/_footer.html.erb (4.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 306ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_up" for 127.0.0.1 at 2017-09-28 02:13:38 -0700
+Processing by Clients::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_top.html.erb (10.3ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-09-28 02:13:45 -0700
+Processing by Clients::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfB6RUSDKU8OYjIf1KY2hI19DSuXTzkrPyfAibgIjPpr0oERk6W3F+ZwuS/TroqBadT9zDY/Pp3onSDZtPqt/w==", "client"=>{"email"=>"pecabepi@yahoo.es", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClient Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "clients" WHERE "clients"."email" = ? LIMIT ?[0m  [["email", "pecabepi@yahoo.es"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "clients" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "pecabepi@yahoo.es"], ["encrypted_password", "$2a$11$Wu69JoGX1al3f77VkFo8b.aDSximWymwajPZNchprw7D2pQZSmtUC"], ["created_at", "2017-09-28 09:13:45.174591"], ["updated_at", "2017-09-28 09:13:45.174591"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-28 09:13:45.191686"], ["last_sign_in_at", "2017-09-28 09:13:45.191686"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-09-28 09:13:45.192405"], ["id", 3]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/dishes
+Completed 302 Found in 191ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 02:13:45 -0700
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (1.8ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (8.3ms)
+  Rendered partials/_footer.html.erb (4.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/menu" for 127.0.0.1 at 2017-09-28 02:13:51 -0700
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (6.8ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (5.2ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (1.2ms)
+Completed 200 OK in 114ms (Views: 112.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/menu" for 127.0.0.1 at 2017-09-28 02:15:31 -0700
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (5.6ms)
+  Rendered partials/_top.html.erb (1.0ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/diego/RubymineProjects/dinnerqr/app/views/partials/_top.html.erb:306: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^
+/home/diego/RubymineProjects/dinnerqr/app/views/partials/_top.html.erb:308: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/partials/_top.html.erb:306: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/partials/_top.html.erb:308: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__3340225532040249635_69926381583360'
+Started POST "/__web_console/repl_sessions/3a3b14076ae3a107583b68d082e54c3c/trace" for 127.0.0.1 at 2017-09-28 02:15:36 -0700
+Started GET "/menu" for 127.0.0.1 at 2017-09-28 02:17:02 -0700
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (3.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (8.4ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (8.5ms)
+  Rendered partials/_footer.html.erb (15.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 123ms (Views: 117.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 02:17:09 -0700
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.0ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (7.0ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/clients/sign_out" for 127.0.0.1 at 2017-09-28 02:17:11 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zPDbJjGj4kCyRjkDRKS1D63QZAmVoeyGvgeNGbb89qGxfVGd0TsxpUbjMjfhm9Wsi81TKUC6WpUB2btMB5yrBQ=="}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-28 02:17:11 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+  Rendered partials/_top.html.erb (3.0ms)
+  Rendered partials/_footer.html.erb (3.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 02:17:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu" for 127.0.0.1 at 2017-09-28 02:17:14 -0700
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (7.0ms)
+  Rendered partials/_top.html.erb (5.0ms)
+  Rendered partials/_footer.html.erb (8.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-09-28 17:20:56 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1414.2ms)
+  Rendered partials/_top.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (8.3ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 1667ms (Views: 1656.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-09-28 17:20:59 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-09-28 11:49:26 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1418.8ms)
+  Rendered partials/_top.html.erb (15.2ms)
+  Rendered partials/_footer.html.erb (11.6ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 1820ms (Views: 1805.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 11:49:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-09-28 17:21:00 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (11.5ms)
+  Rendered partials/_top.html.erb (4.7ms)
+  Rendered partials/_footer.html.erb (5.6ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 135ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-09-28 17:21:01 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu" for 168.176.55.16 at 2017-09-28 17:21:04 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (89.7ms)
+  Rendered partials/_top.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 206ms (Views: 176.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-09-28 17:21:10 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (65.0ms)
+  Rendered partials/_top.html.erb (5.7ms)
+  Rendered partials/_footer.html.erb (5.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 245ms (Views: 192.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/clients/sign_in" for 168.176.55.16 at 2017-09-28 17:21:12 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MzUmLbU0BvG7S+Ssbl6MxhsCKixJrH6J3t5V4QGIkKxRF1khpMWbSyYLrFUFhXmjBqcVYMUYfSzY+CEMsf1zKg==", "client"=>{"email"=>"pcberriop@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "pcberriop@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["current_sign_in_at", "2017-09-28 17:21:12.705610"], ["last_sign_in_at", "2017-09-27 20:54:55.782013"], ["current_sign_in_ip", "168.176.55.16"], ["last_sign_in_ip", "168.176.239.31"], ["sign_in_count", 7], ["updated_at", "2017-09-28 17:21:12.707402"], ["id", 2]]
+  [1m[35m (30.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://pixels-pcberriop.c9users.io/dishes
+Completed 302 Found in 389ms (ActiveRecord: 31.9ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-09-28 17:21:12 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.3ms)
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (10.7ms)
+  Rendered partials/_footer.html.erb (8.8ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 159ms (Views: 156.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 168.176.55.16 at 2017-09-28 17:21:17 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (0.8ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (5.4ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 103.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-09-28 17:21:19 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (2.7ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (8.6ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/menu" for 168.176.55.16 at 2017-09-28 17:21:22 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (5.0ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (8.8ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 104.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-09-28 17:21:24 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (2.9ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (7.2ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes/2/edit" for 168.176.55.16 at 2017-09-28 17:21:25 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering dishes/edit.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (10.3ms)
+  Rendered dishes/edit.html.erb within layouts/application (12.2ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (7.9ms)
+  Rendered partials/_footer.html.erb (5.8ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 131.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/clients/sign_out" for 168.176.55.16 at 2017-09-28 17:21:31 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VMuiuVKUO1CX83kqfDlx/OlkJV5/2JEgz5HGD+zdYbxhTpadrdA6Oyd6ctgzjIhv9j7FWwKBLBha7CUYqhkgCQ=="}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://pixels-pcberriop.c9users.io/
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-09-28 17:21:31 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (17.0ms)
+  Rendered partials/_top.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (8.4ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 168ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-09-28 17:21:32 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-09-28 17:26:44 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1747.2ms)
+  Rendered partials/_top.html.erb (14.9ms)
+  Rendered partials/_footer.html.erb (15.1ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 2133ms (Views: 2121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-09-28 17:26:47 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 168.176.55.16 at 2017-09-28 17:26:50 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (0.7ms)
+  Rendered partials/_top.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (6.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 234ms (Views: 231.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:36 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (79.0ms)
+  Rendered partials/_top.html.erb (13.0ms)
+  Rendered partials/_footer.html.erb (19.6ms)
+  Rendered partials/_copyright.html.erb (1.4ms)
+Completed 200 OK in 315ms (Views: 293.3ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/dishes/2" for 127.0.0.1 at 2017-09-28 11:49:43 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SHmju37SU4wp5y9jqcfAW/XLYZHnfswjuMksjF1Q+BlFwsbqMwLrK6S4DfmAb+t0qdsCPqAaCdt5BVYE8COpIA==", "id"=>"2"}
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (51.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 119ms (ActiveRecord: 53.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:43 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.4ms)
+  Rendered partials/_top.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (9.8ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 211.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/dishes/1" for 127.0.0.1 at 2017-09-28 11:49:46 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q+mlnobEo5xLbwubq/jm/OdfAr2Ev48l2XmAuv43s2pOUsDPyxQbO8YwKQGCUM3Tu09hEsPbSt0YtfoyU0TiUw==", "id"=>"1"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 1]]
+  [1m[35m (232.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 245ms (ActiveRecord: 235.8ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:49:47 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_top.html.erb (12.1ms)
+  Rendered partials/_footer.html.erb (12.7ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 229ms (Views: 226.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:51:36 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (8.0ms)
+  Rendered partials/_top.html.erb (32.7ms)
+  Rendered partials/_footer.html.erb (7.8ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 797ms (Views: 762.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:52:17 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (7.6ms)
+  Rendered partials/_top.html.erb (20.0ms)
+  Rendered partials/_footer.html.erb (13.3ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 794ms (Views: 759.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2017-09-28 11:53:40 -0500
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (1243.0ms)
+  Rendered dishes/new.html.erb within layouts/application (1245.0ms)
+  Rendered partials/_top.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (8.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 1432ms (Views: 1395.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2017-09-28 11:54:00 -0500
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kogdXTwEs5GL/vE9WETIGRlLBpyEVOxfSM1mOaqVtUcStgEEzXcgvpy0XRoA0Vqx95ZUrO37dyCllw6RpmN6uw==", "dish"=>{"name"=>"cua", "state"=>"Agotada", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f2361d2a128 @tempfile=#<Tempfile:/tmp/RackMultipart20170928-4581-1pzxszf.jpg>, @original_filename="20620792_1738813952826211_288042961826373250_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"20620792_1738813952826211_288042961826373250_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola mundo", "speciality_id"=>"1", "price"=>"456"}, "commit"=>"Create Dish"}
+Command :: file -b --mime '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-1k5m0qn.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]'
+Command :: convert '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' -auto-orient -resize "300x300>" '/tmp/72c35aa19c7fd835aaf7eecc059660fe20170928-4581-1g8ce33'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]'
+Command :: convert '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-se7bwv.jpg[0]' -auto-orient -resize "100x" -crop "100x100+0+0" +repage '/tmp/72c35aa19c7fd835aaf7eecc059660fe20170928-4581-1i4ew7t'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.5ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/3d94a777d63359918d1f64e96d04420d20170928-4581-viyese.jpg'
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "cua"], ["state", "Agotada"], ["description", "hola mundo"], ["price", 456], ["created_at", "2017-09-28 16:54:01.951038"], ["updated_at", "2017-09-28 16:54:01.951038"], ["photo_file_name", "20620792_1738813952826211_288042961826373250_n.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 25391], ["photo_updated_at", "2017-09-28 16:54:00.782842"], ["speciality_id", 1]]
+  [1m[35m (85.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes/3
+Completed 302 Found in 1280ms (ActiveRecord: 86.3ms)
+
+
+Started GET "/dishes/3" for 127.0.0.1 at 2017-09-28 11:54:02 -0500
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dishes/show.html.erb within layouts/application (7.4ms)
+  Rendered partials/_top.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (9.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 152ms (Views: 149.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:54:09 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_top.html.erb (12.0ms)
+  Rendered partials/_footer.html.erb (16.8ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 220ms (Views: 217.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chicken Fajitas"], ["state", "casa"], ["description", "esto es una prueba"], ["price", 28477], ["created_at", "2017-09-28 16:59:26.943391"], ["updated_at", "2017-09-28 16:59:26.943391"], ["speciality_id", 1]]
+  [1m[35m (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pizza"], ["state", "picante"], ["description", "esto es una prueba"], ["price", 26871], ["created_at", "2017-09-28 16:59:27.058063"], ["updated_at", "2017-09-28 16:59:27.058063"], ["speciality_id", 1]]
+  [1m[35m (59.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 11:59:45 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (44.7ms)
+  Rendered partials/_top.html.erb (42.5ms)
+  Rendered partials/_footer.html.erb (11.4ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 1048ms (Views: 1010.3ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/dishes/5" for 127.0.0.1 at 2017-09-28 12:04:44 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bZmoW9h9TQ0JtQpA3gnev0O1OMemLZB/6aZb6tcB/35gIs0Kla31qoTqKNr3ofWQH6VbaOFJVYcoaiFienKuRw==", "id"=>"5"}
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (20.9ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (109.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 215ms (ActiveRecord: 133.0ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:45 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (8.9ms)
+  Rendered partials/_top.html.erb (20.4ms)
+  Rendered partials/_footer.html.erb (59.4ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 771ms (Views: 768.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/dishes/3" for 127.0.0.1 at 2017-09-28 12:04:49 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VfFdAp2NyVydwEsiCAY64XjBTNkV0tcaqY4g4JXHiqZYSjhT0F1x+xCfabghrhHOJNEvdlK2EuJoQlpoOLTbnw==", "id"=>"3"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (259.3ms)[0m  [1m[36mcommit transaction[0m
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/original/20620792_1738813952826211_288042961826373250_n.jpg
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/medium/20620792_1738813952826211_288042961826373250_n.jpg
+[paperclip] deleting /home/diego/proyecto/dinnerqr/public/system/dishes/photos/000/000/003/thumb/20620792_1738813952826211_288042961826373250_n.jpg
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 287ms (ActiveRecord: 261.9ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:49 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (9.8ms)
+  Rendered partials/_top.html.erb (15.2ms)
+  Rendered partials/_footer.html.erb (30.7ms)
+  Rendered partials/_copyright.html.erb (1.1ms)
+Completed 200 OK in 361ms (Views: 357.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/dishes/4" for 127.0.0.1 at 2017-09-28 12:04:52 -0500
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AQ/F6Rt/GYXieG6qjelfupuGF2Ur3NeXVZ5bdE00k0gMtKC4Vq+hIm8nTDCkQXSVx5Z0ymy4Em+UUiH84EfCcQ==", "id"=>"4"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 4]]
+  [1m[35m (293.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 307ms (ActiveRecord: 296.3ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 12:04:52 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.5ms)
+  Rendered partials/_top.html.erb (15.5ms)
+  Rendered partials/_footer.html.erb (21.7ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 339ms (Views: 335.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTables (20170928172418)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "sector" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928172418"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20170928172723)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price" integer, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928172723"]]
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrderdishes (20170928173122)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "orderdishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "quantity" integer, "specification" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928173122"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdministrators (20170928173518)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_email" ON "administrators" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_reset_password_token" ON "administrators" ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928173518"]]
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTables (20170928172418)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "sector" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928172418"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20170928172723)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price" integer, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928172723"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrderdishes (20170928173122)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "orderdishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "quantity" integer, "specification" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928173122"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdministrators (20170928173518)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_email" ON "administrators" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_reset_password_token" ON "administrators" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928173518"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/about" for 168.176.55.16 at 2017-09-28 18:42:34 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.3ms)
+  Rendered partials/_top.html.erb (12.7ms)
+  Rendered partials/_footer.html.erb (11.8ms)
+  Rendered partials/_copyright.html.erb (1.0ms)
+Completed 200 OK in 943ms (Views: 933.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menu" for 168.176.55.16 at 2017-09-28 18:43:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (124.5ms)
+  Rendered partials/_top.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (7.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 268ms (Views: 247.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-09-28 18:43:09 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (607.5ms)
+  Rendered partials/_top.html.erb (8.3ms)
+  Rendered partials/_footer.html.erb (7.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 757ms (Views: 714.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/clients/sign_in" for 168.176.55.16 at 2017-09-28 18:43:12 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y7VrGhQ2VrmIKcU00revNOIFpfPsRxsfsR+C49fCgxDmv/9f5xivi7vgG+sJ8iMm7ZaOf74/LUaOtsOL41OA0g==", "client"=>{"email"=>"pcberriop@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "pcberriop@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "clients" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["current_sign_in_at", "2017-09-28 18:43:12.568358"], ["last_sign_in_at", "2017-09-28 17:21:12.705610"], ["last_sign_in_ip", "168.176.55.16"], ["sign_in_count", 8], ["updated_at", "2017-09-28 18:43:12.569991"], ["id", 2]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://pixels-pcberriop.c9users.io/dishes
+Completed 302 Found in 187ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-09-28 18:43:12 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (5.5ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (6.1ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menu" for 168.176.55.16 at 2017-09-28 18:43:18 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (6.4ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (8.6ms)
+  Rendered partials/_footer.html.erb (6.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 245ms (Views: 242.1ms | ActiveRecord: 1.3ms)
+Started GET "/" for 127.0.0.1 at 2017-09-28 15:34:06 -0500
+  [1m[35m (16.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSpecialities (20170928065740)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSpecialities (20170928065740)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSpecialities (20170928065740)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (32.9ms)[0m  [1m[35mDROP TABLE "specialities"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170928065740"]]
+  [1m[35m (86.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSpecialityIdToDishes (20170928071048)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "dishes" ADD "speciality_id" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "administrators"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1050.7ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (130.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_email" ON "administrators" ("email")[0m
+  [1m[35m (0.9ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (130.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_reset_password_token" ON "administrators" ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "chefs"[0m
+  [1m[35m (151.5ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "username" varchar, "state" varchar, "permission_leve" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (145.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_chefs_on_email" ON "chefs" ("email")[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (138.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_chefs_on_reset_password_token" ON "chefs" ("reset_password_token")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "clients"[0m
+  [1m[35m (130.9ms)[0m  [1m[35mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar, "lastname" varchar, "identificacion" integer, "birthday" date)[0m
+  [1m[35m (123.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_clients_on_email" ON "clients" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (129.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_clients_on_reset_password_token" ON "clients" ("reset_password_token")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "dishes"[0m
+  [1m[35m (110.6ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "state" varchar, "description" text, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "photo_file_name" varchar, "photo_content_type" varchar, "photo_file_size" integer, "photo_updated_at" datetime, "speciality_id" integer)[0m
+  [1m[35m (109.4ms)[0m  [1m[35mCREATE  INDEX "index_dishes_on_speciality_id" ON "dishes" ("speciality_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "orderdishes"[0m
+  [1m[35m (142.7ms)[0m  [1m[35mCREATE TABLE "orderdishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "quantity" integer, "specification" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (142.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price" integer, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "specialities"[0m
+  [1m[35m (151.8ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "tables"[0m
+  [1m[35m (199.4ms)[0m  [1m[35mCREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "sector" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (141.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "user_id" integer, "identification" integer, "name" varchar, "lastname" varchar, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "birthdate" date, "identification_type" integer, "gender" integer)[0m
+  [1m[35m (143.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (152.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "waiters"[0m
+  [1m[35m (141.5ms)[0m  [1m[35mCREATE TABLE "waiters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (121.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_waiters_on_email" ON "waiters" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_waiters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_waiters_on_email' AND type='index'
+[0m
+  [1m[35m (131.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_waiters_on_reset_password_token" ON "waiters" ("reset_password_token")[0m
+  [1m[35m (101.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (100.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170928173518)[0m
+  [1m[35m (69.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170928071305),
+(20170928173122),
+(20170928172418),
+(20170926220856),
+(20170925213106),
+(20170928172723),
+(20170926172644),
+(20170928071048),
+(20170928065740),
+(20170926173344);
+
+[0m
+  [1m[35m (113.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-09-28 20:40:07.675314"], ["updated_at", "2017-09-28 20:40:07.675314"]]
+  [1m[35m (74.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "administrators"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (93.7ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (98.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_email" ON "administrators" ("email")[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (115.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_administrators_on_reset_password_token" ON "administrators" ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "chefs"[0m
+  [1m[35m (107.7ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "name" varchar, "lastname" varchar, "username" varchar, "state" varchar, "permission_leve" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (119.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_chefs_on_email" ON "chefs" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (110.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_chefs_on_reset_password_token" ON "chefs" ("reset_password_token")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "clients"[0m
+  [1m[35m (119.0ms)[0m  [1m[35mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar, "lastname" varchar, "identificacion" integer, "birthday" date)[0m
+  [1m[35m (99.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_clients_on_email" ON "clients" ("email")[0m
+  [1m[35m (0.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (104.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_clients_on_reset_password_token" ON "clients" ("reset_password_token")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "dishes"[0m
+  [1m[35m (107.4ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "state" varchar, "description" text, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "photo_file_name" varchar, "photo_content_type" varchar, "photo_file_size" integer, "photo_updated_at" datetime, "speciality_id" integer)[0m
+  [1m[35m (101.6ms)[0m  [1m[35mCREATE  INDEX "index_dishes_on_speciality_id" ON "dishes" ("speciality_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "orderdishes"[0m
+  [1m[35m (116.9ms)[0m  [1m[35mCREATE TABLE "orderdishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "quantity" integer, "specification" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (98.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price" integer, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "specialities"[0m
+  [1m[35m (87.1ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "tables"[0m
+  [1m[35m (131.3ms)[0m  [1m[35mCREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "sector" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (128.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "user_id" integer, "identification" integer, "name" varchar, "lastname" varchar, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "birthdate" date, "identification_type" integer, "gender" integer)[0m
+  [1m[35m (124.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (119.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "waiters"[0m
+  [1m[35m (130.4ms)[0m  [1m[35mCREATE TABLE "waiters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (150.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_waiters_on_email" ON "waiters" ("email")[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_waiters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_waiters_on_email' AND type='index'
+[0m
+  [1m[35m (133.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_waiters_on_reset_password_token" ON "waiters" ("reset_password_token")[0m
+  [1m[35m (142.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (112.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170928173518)[0m
+  [1m[35m (74.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170928071305),
+(20170928173122),
+(20170928172418),
+(20170926220856),
+(20170925213106),
+(20170928172723),
+(20170926172644),
+(20170928071048),
+(20170928065740),
+(20170926173344);
+
+[0m
+  [1m[35m (106.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-09-28 20:40:10.715936"], ["updated_at", "2017-09-28 20:40:10.715936"]]
+  [1m[35m (80.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.1ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_chefs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_chefs_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_clients_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_clients_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dishes_on_speciality_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_waiters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_waiters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_waiters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_waiters_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-09-28 15:40:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5926.8ms)
+  Rendered partials/_top.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (8.0ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 6240ms (Views: 6166.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-09-28 15:41:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-09-28 15:41:11 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (0.5ms)
+  Rendered partials/_top.html.erb (4.6ms)
+  Rendered partials/_footer.html.erb (3.8ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chefs" for 127.0.0.1 at 2017-09-28 15:41:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chefs"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs/sing_up" for 127.0.0.1 at 2017-09-28 15:41:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chefs/sing_up"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 15:41:46 -0500
+Started GET "/chefs/sign_up" for 127.0.0.1 at 2017-09-28 15:41:46 -0500
+Processing by Devise::RegistrationsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mChef Load (0.8ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mChef Load (1.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (744.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (749.3ms)
+  Rendered partials/_top.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (4.1ms)
+  Rendered partials/_top.html.erb (15.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 986ms (Views: 931.4ms | ActiveRecord: 4.1ms)
+
+
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.0ms)
+Completed 200 OK in 971ms (Views: 905.8ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/chefs" for 127.0.0.1 at 2017-09-28 15:41:57 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akq+pVzFi+aqjtzdwyV2PvY3c0hefmDFapoFrcwHpMHjYx6SVRYGY4+j0pVre48dEvjukBhnnTqK+I62bFCeiQ==", "chef"=>{"email"=>"jdporrasp@unal.edu.co", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChef Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "chefs" WHERE "chefs"."email" = ? LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "chefs" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "jdporrasp@unal.edu.co"], ["encrypted_password", "$2a$11$baDfSUsLFG8QudjsUB9HUu2ByE4kOvJJxhcj6H2feYWxDwg4aMjt."], ["created_at", "2017-09-28 20:41:58.292225"], ["updated_at", "2017-09-28 20:41:58.292225"]]
+  [1m[35m (85.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "chefs" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "chefs"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-28 20:41:58.384999"], ["last_sign_in_at", "2017-09-28 20:41:58.384999"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-09-28 20:41:58.386643"], ["id", 1]]
+  [1m[35m (78.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/dishes
+Completed 302 Found in 680ms (ActiveRecord: 166.1ms)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2017-09-28 15:41:58 -0500
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_top.html.erb (4.1ms)
+  Rendered partials/_footer.html.erb (3.6ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 64.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email" for 127.0.0.1 at 2017-09-28 15:42:24 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.7ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (1.5ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (1.1ms)
+ChefMailer#welcome_email: processed outbound mail in 403.6ms
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/mailers/email.html.erb (20.0ms)
+Completed 200 OK in 968ms (Views: 36.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 15:42:25 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.4ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+ChefMailer#welcome_email: processed outbound mail in 6.2ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 23ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email?part=text%2Fplain" for 127.0.0.1 at 2017-09-28 15:42:38 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.7ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+ChefMailer#welcome_email: processed outbound mail in 12.0ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/mailers/chef_mailer/welcome_email.txt?part=text%2Fhtml" for 127.0.0.1 at 2017-09-28 15:42:40 -0500
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/html", "path"=>"chef_mailer/welcome_email"}
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT  "chefs".* FROM "chefs" ORDER BY "chefs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering chef_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering chef_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered chef_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+ChefMailer#welcome_email: processed outbound mail in 13.9ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.3ms)
 
 

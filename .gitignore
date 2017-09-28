@@ -22,3 +22,6 @@ node_modules
 .sass-cache
 
 db/development\.sqlite3
+
+tmp/*
+log/*
