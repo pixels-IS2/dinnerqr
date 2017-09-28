@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :clients, controllers: { registrations:"clients/registrations"}
+  devise_for :clients, controllers: { registrations:"clients/registrations",omniauth_callbacks: 'clients/omniauth_callbacks'}
   resources :dishes
  # devise_for :chefs
   root 'welcome#index'
