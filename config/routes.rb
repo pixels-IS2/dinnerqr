@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :administrators
+  resources :orders
+  resources :tables
   resources :specialities
   get 'menu' => 'menu#menu'
   devise_for :clients, controllers: { registrations:"clients/registrations",omniauth_callbacks: 'clients/omniauth_callbacks'}
