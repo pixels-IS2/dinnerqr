@@ -39,6 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 group :production do
   gem 'pg'
 end
