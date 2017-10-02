@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-    belongs_to :tables
-    belongs_to :clients
-    has_many   :dishorder
+    belongs_to :table
+    belongs_to :client
+    has_many   :dishorders
 end
