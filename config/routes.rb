@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :waiters
   devise_for :administrators
   resources :orders
   resources :tables
