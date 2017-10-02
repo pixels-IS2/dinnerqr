@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171002193355) do
+ActiveRecord::Schema.define(version: 20171002200439) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -48,8 +48,10 @@ ActiveRecord::Schema.define(version: 20171002193355) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "speciality_id"
     t.index ["email"], name: "index_chefs_on_email", unique: true
     t.index ["reset_password_token"], name: "index_chefs_on_reset_password_token", unique: true
+    t.index ["speciality_id"], name: "index_chefs_on_speciality_id"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -94,6 +96,10 @@ ActiveRecord::Schema.define(version: 20171002193355) do
     t.string "specification"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "order_id"
+    t.integer "dish_id"
+    t.index ["dish_id"], name: "index_orderdishes_on_dish_id"
+    t.index ["order_id"], name: "index_orderdishes_on_order_id"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -101,6 +107,10 @@ ActiveRecord::Schema.define(version: 20171002193355) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "table_id"
+    t.integer "client_id"
+    t.index ["client_id"], name: "index_orders_on_client_id"
+    t.index ["table_id"], name: "index_orders_on_table_id"
   end
 
   create_table "specialities", force: :cascade do |t|
@@ -114,6 +124,8 @@ ActiveRecord::Schema.define(version: 20171002193355) do
     t.string "sector"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "waiter_id"
+    t.index ["waiter_id"], name: "index_tables_on_waiter_id"
   end
 
   create_table "users", force: :cascade do |t|
