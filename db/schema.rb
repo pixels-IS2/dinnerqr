@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171002030942) do
+ActiveRecord::Schema.define(version: 20171002193355) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -44,10 +44,8 @@ ActiveRecord::Schema.define(version: 20171002030942) do
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
     t.string "name"
-    t.string "lastname"
-    t.string "username"
+    t.string "last_name"
     t.string "state"
-    t.string "permission_leve"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_chefs_on_email", unique: true
