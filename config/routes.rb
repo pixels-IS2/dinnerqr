@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :tables
   resources :specialities
   get 'menu' => 'menu#menu'
+  post 'order' => 'menu#order'
   devise_for :clients, controllers: { registrations:"clients/registrations",omniauth_callbacks: 'clients/omniauth_callbacks'}
   resources :dishes do
     resources :comments, only: [:create, :destroy, :update]
