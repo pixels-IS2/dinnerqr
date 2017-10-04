@@ -1,20 +1,22 @@
 
 <div class="aboutUs">
+
+  <h1 align=center>
+  
+    <%= @dish.name %>
+  </h1>
 <p>
-  <strong>Name:</strong>
-  <%= @dish.name %>
+  
+  <br>
+  <%= image_tag @dish.photo.url(:thumb) %>
 </p>
+
 
 <p>
   <strong>State:</strong>
   <%= @dish.state %>
 </p>
 
-<p>
-  <strong>Photo:</strong>
-  <br>
-  <%= image_tag @dish.photo.url(:thumb) %>
-</p>
 
 <p>
   <strong>Description:</strong>
@@ -23,14 +25,25 @@
 
 <p>
   <strong>Speciality:</strong>
-  <%= @dish.speciality %>
+  <%= @dish.speciality.name %>
 </p>
 
 <p>
   <strong>Price:</strong>
   <%= @dish.price %>
 </p>
+<h3>Comments</h3>
+<ul>
+  <% @dish.comments.each do |comment| %>
+    <li>
+      <%= comment.body %> - <%= comment.client.email %>
+    </li>
+  <% end %>
+  
+</ul>
+<%= render "comments/form" %>
 
-<%= link_to 'Edit', edit_dish_path(@dish) %> |
+
+
 <%= link_to 'Back', dishes_path %>
 </div>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :chefs
   devise_for :waiters
   devise_for :administrators
@@ -7,7 +8,9 @@ Rails.application.routes.draw do
   resources :specialities
   get 'menu' => 'menu#menu'
   devise_for :clients, controllers: { registrations:"clients/registrations",omniauth_callbacks: 'clients/omniauth_callbacks'}
-  resources :dishes
+  resources :dishes do
+    resources :comments, only: [:create, :destroy, :update]
+  end
  # devise_for :chefs
   root 'welcome#index'
 

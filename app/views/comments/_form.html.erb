@@ -1,0 +1,13 @@
+<%= form_for([@dish,@comment]) do |form| %>
+
+  
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :comment_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
