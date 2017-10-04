@@ -46849,3 +46849,1095 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:35:36 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1260.3ms)
+  Rendered partials/_top.html.erb (16.3ms)
+  Rendered partials/_footer.html.erb (14.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 1497ms (Views: 1489.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 19:35:39 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:35:43 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+  Rendered partials/_top.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (4.8ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 19:35:44 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu" for 168.176.55.16 at 2017-10-04 19:37:00 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (52.4ms)
+  Rendered partials/_top.html.erb (4.6ms)
+  Rendered partials/_footer.html.erb (5.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 241ms (Views: 231.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/dishes/2" for 168.176.55.16 at 2017-10-04 19:37:04 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."dish_id" = ?[0m  [["dish_id", 2]]
+  Rendered comments/_form.html.erb (599.1ms)
+  Rendered dishes/show.html.erb within layouts/application (607.6ms)
+  Rendered partials/_top.html.erb (4.5ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 716ms (Views: 694.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/system/dishes/photos/000/000/002/thumb/20604195_1617349541630547_443188418175099590_n.jpg?1506458982" for 168.176.55.16 at 2017-10-04 19:37:05 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/system/dishes/photos/000/000/002/thumb/20604195_1617349541630547_443188418175099590_n.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/system/dishes/photos/000/000/002/thumb/20604195_1617349541630547_443188418175099590_n.jpg?1506458982" for 168.176.55.16 at 2017-10-04 19:37:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/system/dishes/photos/000/000/002/thumb/20604195_1617349541630547_443188418175099590_n.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:37:13 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.7ms)
+  Rendered partials/_top.html.erb (3.9ms)
+  Rendered partials/_footer.html.erb (5.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menu" for 168.176.55.16 at 2017-10-04 19:37:19 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (5.2ms)
+  Rendered partials/_top.html.erb (4.3ms)
+  Rendered partials/_footer.html.erb (5.2ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-04 19:37:27 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+  Rendered partials/_top.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (5.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 225ms (Views: 196.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/clients/sign_up" for 168.176.55.16 at 2017-10-04 19:37:37 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Clients::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+  Rendered partials/_top.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (7.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menu" for 168.176.55.16 at 2017-10-04 19:39:02 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (6.7ms)
+  Rendered partials/_top.html.erb (15.8ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 291ms (Views: 286.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dishes/1" for 168.176.55.16 at 2017-10-04 19:39:08 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mSpeciality Load (4.3ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."dish_id" = ?[0m  [["dish_id", 1]]
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered comments/_form.html.erb (170.7ms)
+  Rendered dishes/show.html.erb within layouts/application (192.7ms)
+  Rendered partials/_top.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (6.9ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 347ms (Views: 339.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_2882209000951299637_n.jpg?1506458466" for 168.176.55.16 at 2017-10-04 19:39:08 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_2882209000951299637_n.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 168.176.55.16 at 2017-10-04 19:39:13 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (2.9ms)
+  Rendered partials/_top.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (7.0ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 176ms (Views: 169.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_2882209000951299637_n.jpg?1506458466" for 168.176.55.16 at 2017-10-04 19:39:14 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_2882209000951299637_n.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/about" for 168.176.55.16 at 2017-10-04 19:39:46 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KhmskuvQa+47WHMnejme33v7o4yubAhQDu8+H3C5m7E2iphc0nXv1CzafWT7xN8595yrxqjNgfcffVSs66+Y7g==", "aboutus"=>{"name"=>"pedf", "last_name"=>"jkn", "email"=>"pcberriop@unal.edu.co", "content"=>"ofdgpodfg"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+  Rendering aboutus_mailer/new_aboutus.text.erb within layouts/mailer
+  Rendered aboutus_mailer/new_aboutus.text.erb within layouts/mailer (0.7ms)
+AboutusMailer#new_aboutus: processed outbound mail in 200.5ms
+Sent mail to your.email@yourdomain.com (12.8ms)
+Date: Wed, 04 Oct 2017 19:39:47 +0000
+From: Your Mailer <dinnerqr@gmail.com>
+To: Your Name <your.email@yourdomain.com>
+Message-ID: <59d53903458d0_33fb21fd24829c2@diegogomez-sprimnt3diego-5475842.mail>
+Subject: Message from pedf
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pedf <pcberriop@unal.edu.co> wrote:
+
+ofdgpodfg
+
+Redirected to https://sprimnt3diego-diegogomez.c9users.io/about
+Completed 302 Found in 589ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 168.176.55.16 at 2017-10-04 19:39:47 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (4.8ms)
+  Rendered partials/_top.html.erb (3.9ms)
+  Rendered partials/_footer.html.erb (4.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:45:11 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.7ms)
+  Rendered partials/_top.html.erb (3.6ms)
+  Rendered partials/_footer.html.erb (4.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 19:45:11 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salmon nigiri"], ["state", "picante"], ["description", "esto es una prueba"], ["price", 1974], ["created_at", "2017-10-04 19:49:51.369853"], ["updated_at", "2017-10-04 19:49:51.369853"], ["speciality_id", 1]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Caprese Salad"], ["state", "hola"], ["description", "esto es una prueba"], ["price", 3381], ["created_at", "2017-10-04 19:49:51.389289"], ["updated_at", "2017-10-04 19:49:51.389289"], ["speciality_id", 1]]
+  [1m[35m (48.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 19:50:11 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_top.html.erb (4.7ms)
+  Rendered partials/_footer.html.erb (7.2ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dishes/5/edit" for 168.176.55.16 at 2017-10-04 19:50:15 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering dishes/edit.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (14.5ms)
+  Rendered dishes/edit.html.erb within layouts/application (16.9ms)
+  Rendered partials/_top.html.erb (5.1ms)
+  Rendered partials/_footer.html.erb (5.0ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 134ms (Views: 131.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/dishes/5" for 168.176.55.16 at 2017-10-04 19:50:28 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"peU8DRLZwq7J6W33NAp8BMDt6VUAH/7Swif+QnkFT9lA5+TinkzVTPG69T8PcHDnQovPm4JAKvKH+2RHtWoPzQ==", "dish"=>{"name"=>"Salmon nigiri", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fceddab7738 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-13307-11tyuzk.dwg>, @original_filename="Caja ISO A_2010.dwg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"Caja ISO A_2010.dwg\"\r\nContent-Type: application/octet-stream\r\n">, "description"=>"esto es una prueba", "speciality_id"=>"1", "price"=>"1974"}, "commit"=>"Submit", "id"=>"5"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/RackMultipart20171004-13307-11tyuzk.dwg'
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-13307-k5kdn7.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-13307-amja7d.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering dishes/edit.html.erb within layouts/application
+  Rendered dishes/_form.html.erb (4.1ms)
+  Rendered dishes/edit.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:   <div class="field">
+    39:     <%= form.label :speciality %>
+    40: 
+    41:     <%= form.select :speciality_id, options_for_select(@specialities.map{|s|[s.name, s.id]}, params[:speciality_id]) %>
+    42: 
+    43:   </div>
+    44: 
+  
+app/views/dishes/_form.html.erb:41:in `block in _app_views_dishes__form_html_erb___334257973656488972_70263229087300'
+app/views/dishes/_form.html.erb:3:in `_app_views_dishes__form_html_erb___334257973656488972_70263229087300'
+app/views/dishes/edit.html.erb:4:in `_app_views_dishes_edit_html_erb__2382688944689492276_70263229153380'
+app/controllers/dishes_controller.rb:51:in `block (2 levels) in update'
+app/controllers/dishes_controller.rb:46:in `update'
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 19:50:40 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_top.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (6.1ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 179ms (Views: 176.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes/new" for 168.176.55.16 at 2017-10-04 19:50:42 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (4.4ms)
+  Rendered dishes/new.html.erb within layouts/application (5.6ms)
+  Rendered partials/_top.html.erb (4.3ms)
+  Rendered partials/_footer.html.erb (4.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 19:51:13 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8IOrnbgERLCIsfqehu/B1APXXZ/qP9B0tUTnroPdjkpdJj9+CGx4qJUDJrnW6oJWbE3ly74da+vhCXv358E14Q==", "dish"=>{"name"=>"pincante", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fcedd589680 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-13307-m3p30t.jpg>, @original_filename="22046055_731280213730907_4514925064746286105_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"22046055_731280213730907_4514925064746286105_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola mundo", "speciality_id"=>"1", "price"=>"500000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/7a1bfec847740cb97c253a8225d1d85520171004-13307-w379lq.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7a1bfec847740cb97c253a8225d1d85520171004-13307-bp0ic4.jpg[0]' 2>/dev/null
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/dishes_controller.rb:30:in `create'
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 19:51:20 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DirRzVw5oeO+7R9GQCoz7vdm8jq1XaPyHICF2AcAXcdzCrV55J4IUbAh9IOsVPqtw7TJYThLY6/r/85ptdi+lA==", "dish"=>{"name"=>"pincante", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fcee59ef730 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-13307-162c5cj.jpg>, @original_filename="22046055_731280213730907_4514925064746286105_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"22046055_731280213730907_4514925064746286105_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola mundo", "speciality_id"=>"1", "price"=>"500000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/7a1bfec847740cb97c253a8225d1d85520171004-13307-gd6sxz.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7a1bfec847740cb97c253a8225d1d85520171004-13307-qyhrwy.jpg[0]' 2>/dev/null
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/dishes_controller.rb:30:in `create'
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:53:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.9ms)
+  Rendered partials/_top.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (7.3ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 19:53:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 19:53:20 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_top.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (10.3ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 19:53:20 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 20:01:28 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (357.9ms)
+  Rendered partials/_top.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (5.1ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 596ms (Views: 588.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 20:01:29 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 20:01:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.5ms)
+  Rendered partials/_top.html.erb (4.1ms)
+  Rendered partials/_footer.html.erb (5.3ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 20:01:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 20:01:50 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+  Rendered partials/_top.html.erb (3.7ms)
+  Rendered partials/_footer.html.erb (4.6ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 20:01:52 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 168.176.55.16 at 2017-10-04 20:01:55 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.8ms)
+  Rendered partials/_top.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (7.2ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 183ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-04 20:01:55 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/menu" for 168.176.55.16 at 2017-10-04 20:01:57 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MenuController#menu as HTML
+  Rendering menu/menu.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."speciality_id" = ?[0m  [["speciality_id", 2]]
+  Rendered menu/menu.html.erb within layouts/application (195.8ms)
+  Rendered partials/_top.html.erb (4.6ms)
+  Rendered partials/_footer.html.erb (5.4ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 309ms (Views: 297.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 20:02:04 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_top.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (7.1ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 242ms (Views: 239.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes/new" for 168.176.55.16 at 2017-10-04 20:02:08 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (577.8ms)
+  Rendered dishes/new.html.erb within layouts/application (579.7ms)
+  Rendered partials/_top.html.erb (5.7ms)
+  Rendered partials/_footer.html.erb (5.8ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 711ms (Views: 707.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:02:27 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YG3QOVvY53uOzoOyTPthxHEvtIrefXU1DLSbhvtzgDfNyETa67DbY5N8X5Uc/iJGHrUM3opfzqpY+Qffn287nA==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f3059dea450 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2041-zdab.dwg>, @original_filename="Caja ISO A_2010.dwg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"Caja ISO A_2010.dwg\"\r\nContent-Type: application/octet-stream\r\n">, "description"=>"hola ", "speciality_id"=>"1", "price"=>"50000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/RackMultipart20171004-2041-zdab.dwg'
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-wfnaaq.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-1f6lzif.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering dishes/new.html.erb within layouts/application
+  Rendered dishes/_form.html.erb (7.0ms)
+  Rendered dishes/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:   <div class="field">
+    39:     <%= form.label :speciality %>
+    40: 
+    41:     <%= form.select :speciality_id, options_for_select(@specialities.map{|s|[s.name, s.id]}, params[:speciality_id]) %>
+    42: 
+    43:   </div>
+    44: 
+  
+app/views/dishes/_form.html.erb:41:in `block in _app_views_dishes__form_html_erb__4183105412187376229_69922825527740'
+app/views/dishes/_form.html.erb:3:in `_app_views_dishes__form_html_erb__4183105412187376229_69922825527740'
+app/views/dishes/new.html.erb:3:in `_app_views_dishes_new_html_erb__289853470525768582_69922821373880'
+app/controllers/dishes_controller.rb:37:in `block (2 levels) in create'
+app/controllers/dishes_controller.rb:32:in `create'
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:02:56 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QXFTKshabKR1YyEIYuVSb/gqoeGk63SRb3NpJCQJdAc8UTeecP3FFnuvys2Om5sszPiauin9tMyYDCKVltGXVA==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f3059ec3138 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2041-1sgcmv4.dwg>, @original_filename="Caja ISO A_2010.dwg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"Caja ISO A_2010.dwg\"\r\nContent-Type: application/octet-stream\r\n">, "description"=>"hola ", "speciality_id"=>"1", "price"=>"50000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/RackMultipart20171004-2041-1sgcmv4.dwg'
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-1i2zztg.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-18whwcf.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering dishes/new.html.erb within layouts/application
+  Rendered dishes/_form.html.erb (4.4ms)
+  Rendered dishes/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:   <div class="field">
+    39:     <%= form.label :speciality %>
+    40: 
+    41:     <%= form.select :speciality_id, options_for_select(@specialities.map{|s|[s.name, s.id]}, params[:speciality_id]) %>
+    42: 
+    43:   </div>
+    44: 
+  
+app/views/dishes/_form.html.erb:41:in `block in _app_views_dishes__form_html_erb__4183105412187376229_69922823806160'
+app/views/dishes/_form.html.erb:3:in `_app_views_dishes__form_html_erb__4183105412187376229_69922823806160'
+app/views/dishes/new.html.erb:3:in `_app_views_dishes_new_html_erb__289853470525768582_69922823824080'
+app/controllers/dishes_controller.rb:37:in `block (2 levels) in create'
+app/controllers/dishes_controller.rb:32:in `create'
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:04:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QXFTKshabKR1YyEIYuVSb/gqoeGk63SRb3NpJCQJdAc8UTeecP3FFnuvys2Om5sszPiauin9tMyYDCKVltGXVA==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f3058d5bf80 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2041-h73ejj.dwg>, @original_filename="Caja ISO A_2010.dwg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"Caja ISO A_2010.dwg\"\r\nContent-Type: application/octet-stream\r\n">, "description"=>"hola ", "speciality_id"=>"1", "price"=>"50000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/RackMultipart20171004-2041-h73ejj.dwg'
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-kxdsmo.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/5680a089ae373aa4905b4ac25644bf5020171004-2041-o3qwcr.dwg'
+[paperclip] Content Type Spoof: Filename Caja_ISO_A_2010.dwg (application/octet-stream from Headers, ["image/vnd.dwg"] from Extension), content type discovered from file command: application/octet-stream. See documentation to allow this combination.
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering dishes/new.html.erb within layouts/application
+  Rendered dishes/_form.html.erb (5.1ms)
+  Rendered dishes/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:   <div class="field">
+    39:     <%= form.label :speciality %>
+    40: 
+    41:     <%= form.select :speciality_id, options_for_select(@specialities.map{|s|[s.name, s.id]}, params[:speciality_id]) %>
+    42: 
+    43:   </div>
+    44: 
+  
+app/views/dishes/_form.html.erb:41:in `block in _app_views_dishes__form_html_erb__4183105412187376229_69922811571140'
+app/views/dishes/_form.html.erb:3:in `_app_views_dishes__form_html_erb__4183105412187376229_69922811571140'
+app/views/dishes/new.html.erb:3:in `_app_views_dishes_new_html_erb__289853470525768582_69922811697400'
+app/controllers/dishes_controller.rb:37:in `block (2 levels) in create'
+app/controllers/dishes_controller.rb:32:in `create'
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:04:29 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QXFTKshabKR1YyEIYuVSb/gqoeGk63SRb3NpJCQJdAc8UTeecP3FFnuvys2Om5sszPiauin9tMyYDCKVltGXVA==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f305014ecb8 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2041-1jcjt3l.jpg>, @original_filename="22045621_10214837323788877_2944153937774103910_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"22045621_10214837323788877_2944153937774103910_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola ", "speciality_id"=>"1", "price"=>"50000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2041-131u5rs.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2041-1vhfand.jpg[0]' 2>/dev/null
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/dishes_controller.rb:30:in `create'
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:04:58 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QXFTKshabKR1YyEIYuVSb/gqoeGk63SRb3NpJCQJdAc8UTeecP3FFnuvys2Om5sszPiauin9tMyYDCKVltGXVA==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f304420bd88 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2041-1d4zkg8.jpg>, @original_filename="22045621_10214837323788877_2944153937774103910_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"22045621_10214837323788877_2944153937774103910_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"hola ", "speciality_id"=>"1", "price"=>"50000"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2041-1iqhkzd.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2041-notw20.jpg[0]' 2>/dev/null
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/dishes_controller.rb:30:in `create'
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 20:09:24 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (26.9ms)
+  Rendered partials/_top.html.erb (12.7ms)
+  Rendered partials/_footer.html.erb (8.7ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 552ms (Views: 527.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dishes/new" for 168.176.55.16 at 2017-10-04 20:09:27 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (663.1ms)
+  Rendered dishes/new.html.erb within layouts/application (664.4ms)
+  Rendered partials/_top.html.erb (4.1ms)
+  Rendered partials/_footer.html.erb (4.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 749ms (Views: 740.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:09:45 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PzgGisDcnnlYK+Jn/DomT9Fl2YdDn3kOjC1bYCwEwneSnZJpcLSiYUWZPkCsP2XNvv9h0xe9wpHYYMc5SBh53A==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f81a4127c58 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-2225-1g4pyce.jpg>, @original_filename="22045621_10214837323788877_2944153937774103910_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"22045621_10214837323788877_2944153937774103910_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"prueba de amor", "speciality_id"=>"1", "price"=>"7557894"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2225-1wcwfwe.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fa7f479030d20f9e55fc01147965359e20171004-2225-eyksm9.jpg[0]' 2>/dev/null
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/dishes_controller.rb:30:in `create'
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 20:12:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (23.8ms)
+  Rendered partials/_top.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (5.1ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 455ms (Views: 439.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dishes/new" for 168.176.55.16 at 2017-10-04 20:12:05 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (581.5ms)
+  Rendered dishes/new.html.erb within layouts/application (583.3ms)
+  Rendered partials/_top.html.erb (5.4ms)
+  Rendered partials/_footer.html.erb (6.2ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 696ms (Views: 687.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/dishes" for 168.176.55.16 at 2017-10-04 20:12:20 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KrJLOXfmu60i8DXp4ss5pXfX/rZ3sfRDhh88zDebrRFD13PVbem9qk5HPD3jm9k+kXnro38fE5aVeCqVMLVHw==", "dish"=>{"name"=>"hola mundo", "state"=>"Available", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007efd69e1eb60 @tempfile=#<Tempfile:/tmp/RackMultipart20171004-3725-dnf6yc.jpg>, @original_filename="21762086_1090574067744733_1499758617891329815_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"dish[photo]\"; filename=\"21762086_1090574067744733_1499758617891329815_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"casa", "speciality_id"=>"1", "price"=>"45555"}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-huu0rp.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]'
+Command :: convert '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]' -auto-orient -resize "300x300>" '/tmp/321422d9f9a8ad79d30eaefce5b1caf620171004-3725-169pf5k'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]'
+Command :: convert '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-15thlwl.jpg[0]' -auto-orient -resize "x100" -crop "100x100+122+0" +repage '/tmp/321422d9f9a8ad79d30eaefce5b1caf620171004-3725-fj93i6'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/22386f4b03224a2e7871b1fc98c8626e20171004-3725-1kkthlo.jpg'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "state", "description", "price", "created_at", "updated_at", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "speciality_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "hola mundo"], ["state", "Available"], ["description", "casa"], ["price", 45555], ["created_at", "2017-10-04 20:12:20.987768"], ["updated_at", "2017-10-04 20:12:20.987768"], ["photo_file_name", "21762086_1090574067744733_1499758617891329815_n.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 10915], ["photo_updated_at", "2017-10-04 20:12:20.686360"], ["speciality_id", 1]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://sprimnt3diego-diegogomez.c9users.io/dishes/7
+Completed 302 Found in 335ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/dishes/7" for 168.176.55.16 at 2017-10-04 20:12:21 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."dish_id" = ?[0m  [["dish_id", 7]]
+  Rendered comments/_form.html.erb (7.1ms)
+  Rendered dishes/show.html.erb within layouts/application (24.7ms)
+  Rendered partials/_top.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (7.0ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 120.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-10-04 20:12:37 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (4.9ms)
+  Rendered partials/_top.html.erb (4.4ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 118ms (Views: 116.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dishes/new" for 168.176.55.16 at 2017-10-04 20:12:39 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#new as HTML
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mSpeciality Load (0.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  Rendered dishes/_form.html.erb (5.7ms)
+  Rendered dishes/new.html.erb within layouts/application (7.2ms)
+  Rendered partials/_top.html.erb (4.1ms)
+  Rendered partials/_footer.html.erb (4.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 95.3ms | ActiveRecord: 0.3ms)
+
+
