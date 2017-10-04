@@ -44743,3 +44743,779 @@ Processing by MenuController#menu as HTML
 Completed 200 OK in 129ms (Views: 124.6ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/about" for 127.0.0.1 at 2017-10-03 14:21:54 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (6.3ms)
+  Rendered partials/_top.html.erb (11.3ms)
+  Rendered partials/_footer.html.erb (11.9ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 1180ms (Views: 1173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-03 15:06:29 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (378.7ms)
+  Rendered partials/_top.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (5.1ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 596ms (Views: 567.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-10-03 15:06:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:06:32 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (265.5ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `contact_path' for #<#<Class:0x007f61e85490b0>:0x007f61d80429a0>
+Did you mean?  controller_path):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form>
+    32: 
+    33: 	<%= form_for @message, url: contact_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__14107616757635339_70029243208100'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:09:02 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (215.7ms)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `aboutus_path' for #<#<Class:0x007fb65045b600>:0x0055f31e236718>
+Did you mean?  about_path):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form>
+    32: 
+    33: 	<%= form_for @message, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251335537360'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:09:58 -0500
+  
+SyntaxError (/home/jdpp95/dinnerqr/config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'about' => 'aboutus#about' as: 'aboutus'
+                                   ^):
+  
+config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:11:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:11:26 -0500
+  
+SyntaxError (/home/jdpp95/dinnerqr/config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'about' => 'aboutus#about' as: 'about'
+                                   ^):
+  
+config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:11:32 -0500
+  
+SyntaxError (/home/jdpp95/dinnerqr/config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'about' => 'aboutus#about' as: 'aboutus'
+                                   ^):
+  
+config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:11:42 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form>
+    32: 
+    33: 	<%= form_for @message, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251333544340'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:05 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 18ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251337310160'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:07 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251330993680'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:07 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_70210505480700'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:07 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 20ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251334045560'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:08 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251316027440'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:08 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251336550040'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:09 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251329110420'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:09 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_70210502002600'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:09 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251331879340'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:10 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251296994140'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:10 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251334599540'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:10 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251316765360'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:10 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251336574040'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:16:11 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251328868740'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:25:17 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus,
+    34: 	 url: aboutus_path do |message_form| %>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251336741640'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:28:07 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Aboutus):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for Aboutus.new do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_47251331161200'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:28:46 -0500
+Processing by AboutusController#about as HTML
+  Rendering aboutus/about.html.erb within layouts/application
+  Rendered aboutus/about.html.erb within layouts/application (382.3ms)
+Completed 500 Internal Server Error in 393ms
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for #<AboutusMailer:0x0055f31e2e23b0>):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for AboutusMailer.new do |message_form| %>
+    34: 		<fieldset>
+    35: 			<div class="field">
+    36: 				<%= message_form.text_field :name, placeholder: "Name" %>
+  
+app/views/aboutus/about.html.erb:33:in `_app_views_aboutus_about_html_erb__2143081756447720566_70210505416280'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:33:12 -0500
+Processing by AboutusController#new as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NameError (uninitialized constant AboutusController::Aboutus):
+  
+app/controllers/aboutus_controller.rb:4:in `new'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:34:20 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for #<AboutusMailer:0x0055f31dcf2450>):
+    30: 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
+    31: 	</form-->
+    32: 
+    33: 	<%= form_for @aboutus,
+    34: 	 url: aboutus_path do |message_form| %>
+    35: 		<fieldset>
+    36: 			<div class="field">
+  
+app/views/aboutus/new.html.erb:33:in `_app_views_aboutus_new_html_erb___1572403002876799806_47251332722060'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:34:25 -0500
+Processing by AboutusController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant AboutusController::Aboutus):
+  
+app/controllers/aboutus_controller.rb:4:in `new'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:37:12 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (20.2ms)
+  Rendered partials/_top.html.erb (5.1ms)
+  Rendered partials/_footer.html.erb (3.4ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 292ms (Views: 274.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:37:42 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 24ms
+
+
+  
+SyntaxError (/home/jdpp95/dinnerqr/app/views/aboutus/new.html.erb:37: syntax error, unexpected keyword_class, expecting ')'
+...name, placeholder: "Name" class: "form-control" );@output_bu...
+...                               ^):
+  
+app/views/aboutus/new.html.erb:37: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:39:58 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_top.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (3.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 78.7ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:40:06 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (8.2ms)
+  Rendered partials/_top.html.erb (3.1ms)
+  Rendered partials/_footer.html.erb (5.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 144ms (Views: 139.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:47:15 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (4.5ms)
+  Rendered partials/_top.html.erb (4.3ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 113ms (Views: 109.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:47:49 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (undefined method `last_name' for #<Aboutus:0x007fb653269cb8>):
+    37: 			</div>
+    38: 
+    39: 			<div class="field">
+    40: 				<%= message_form.text_field :last_name, placeholder: "Last Name" %>
+    41: 			</div>
+    42: 
+    43: 			<div class="field">
+  
+app/views/aboutus/new.html.erb:40:in `block in _app_views_aboutus_new_html_erb___1572403002876799806_70210527905120'
+app/views/aboutus/new.html.erb:33:in `_app_views_aboutus_new_html_erb___1572403002876799806_70210527905120'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:48:18 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (undefined method `last_name' for #<Aboutus:0x007fb64c6b0738>
+Did you mean?  lastname
+               lastname=):
+    37: 			</div>
+    38: 
+    39: 			<div class="field">
+    40: 				<%= message_form.text_field :last_name, placeholder: "Last Name" %>
+    41: 			</div>
+    42: 
+    43: 			<div class="field">
+  
+app/views/aboutus/new.html.erb:40:in `block in _app_views_aboutus_new_html_erb___1572403002876799806_70210471433920'
+app/views/aboutus/new.html.erb:33:in `_app_views_aboutus_new_html_erb___1572403002876799806_70210471433920'
+Started GET "/about" for 127.0.0.1 at 2017-10-03 15:48:43 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (1.6ms)
+  Rendered partials/_top.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (3.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.1ms)
+
+
+Started POST "/about" for 127.0.0.1 at 2017-10-03 16:12:54 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 55ms
+
+
+  
+NoMethodError (undefined method `new_aboutus' for AboutusMailer:Class):
+  
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:22:10 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+AboutusMailer#new_message: processed outbound mail in 4.5ms
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::MissingTemplate (Missing template aboutus_mailer/new_message with "mailer". Searched in:
+  * "aboutus_mailer"
+):
+  
+app/mailers/aboutus_mailer.rb:8:in `new_message'
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:26:44 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+AboutusMailer#new_message: processed outbound mail in 3.8ms
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::MissingTemplate (Missing template aboutus_mailer/new_message with "mailer". Searched in:
+  * "aboutus_mailer"
+):
+  
+app/mailers/aboutus_mailer.rb:8:in `new_message'
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:28:08 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `new_message' for AboutusMailer:Class):
+  
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:28:24 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+AboutusMailer#new_aboutus: processed outbound mail in 4.6ms
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::MissingTemplate (Missing template aboutus_mailer/new_aboutus with "mailer". Searched in:
+  * "aboutus_mailer"
+):
+  
+app/mailers/aboutus_mailer.rb:8:in `new_aboutus'
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:32:06 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+  Rendering aboutus_mailer/new_aboutus.text.erb within layouts/mailer
+  Rendered aboutus_mailer/new_aboutus.text.erb within layouts/mailer (2.1ms)
+AboutusMailer#new_aboutus: processed outbound mail in 334.9ms
+Sent mail to your.email@yourdomain.com (12.6ms)
+Date: Wed, 04 Oct 2017 00:32:06 -0500
+From: Your Mailer <dinnerqr@gmail.com>
+To: Your Name <your.email@yourdomain.com>
+Message-ID: <59d47256a6182_306a2af98f2422102936@jdpp95-Aspire-E5-575G.mail>
+Subject: Message from pepito
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pepito <jdporrasp@unal.edu.co> wrote:
+
+Arreglen la pag vagos
+
+Completed 500 Internal Server Error in 561ms
+
+
+  
+NameError (undefined local variable or method `contact_path' for #<AboutusController:0x0055f31d4b60e8>
+Did you mean?  controller_path):
+  
+app/controllers/aboutus_controller.rb:12:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:32:36 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8X2OoB68lzV9XjUlIkY1qCOsvVHpGMyvDo/6fhF9D//MwF0WzoTQ6R9t2VCd3MSiLd++gzwIUqx7Jfclq9fjnw==", "aboutus"=>{"name"=>"pepito", "last_name"=>"perez", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen la pag vagos"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+  Rendering aboutus_mailer/new_aboutus.text.erb within layouts/mailer
+  Rendered aboutus_mailer/new_aboutus.text.erb within layouts/mailer (0.3ms)
+AboutusMailer#new_aboutus: processed outbound mail in 4.8ms
+Sent mail to your.email@yourdomain.com (2.9ms)
+Date: Wed, 04 Oct 2017 00:32:36 -0500
+From: Your Mailer <dinnerqr@gmail.com>
+To: Your Name <your.email@yourdomain.com>
+Message-ID: <59d47274408c0_306a2af98f2421843058@jdpp95-Aspire-E5-575G.mail>
+Subject: Message from pepito
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pepito <jdporrasp@unal.edu.co> wrote:
+
+Arreglen la pag vagos
+
+Redirected to http://localhost:3000/about
+Completed 302 Found in 14ms
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-04 00:32:36 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_top.html.erb (4.3ms)
+  Rendered partials/_footer.html.erb (5.9ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 82.0ms)
+
+
+Started POST "/about" for 127.0.0.1 at 2017-10-04 00:32:56 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0XTxsldE7vPNzbUzlaJD6TOvRybtyiirQBkdHYQnw7vsySIEh3ypL6/+WUYqOLLjPdxE9Djatqg1sxBGPo0v2w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Arreglen el about us"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+  Rendering aboutus_mailer/new_aboutus.text.erb within layouts/mailer
+  Rendered aboutus_mailer/new_aboutus.text.erb within layouts/mailer (1.8ms)
+AboutusMailer#new_aboutus: processed outbound mail in 23.9ms
+Sent mail to your.email@yourdomain.com (10.4ms)
+Date: Wed, 04 Oct 2017 00:32:56 -0500
+From: Your Mailer <dinnerqr@gmail.com>
+To: Your Name <your.email@yourdomain.com>
+Message-ID: <59d4728870cb2_306a2af98f2420f8315a@jdpp95-Aspire-E5-575G.mail>
+Subject: Message from Juan David
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Juan David <jdporrasp@unal.edu.co> wrote:
+
+Arreglen el about us
+
+Redirected to http://localhost:3000/about
+Completed 302 Found in 41ms
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-04 00:32:56 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (3.2ms)
+  Rendered partials/_top.html.erb (4.0ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 86.9ms)
+
+

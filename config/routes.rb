@@ -11,7 +11,8 @@ Rails.application.routes.draw do
  # devise_for :chefs
   root 'welcome#index'
 
-  get 'about' => 'aboutus#about'
+  get 'about' => 'aboutus#new', as: 'aboutus'
+  post 'about' => 'aboutus#create'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

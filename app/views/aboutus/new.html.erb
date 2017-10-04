@@ -10,7 +10,7 @@
 	<h3 class="subtitles"> Contact Us </h3>
 	<p> Here you can write any question, suggestion or complain. We'll contact you as soon as possible. </p>
 	
-	<form>
+	<!--form>
 	  <div class="form-group">
 	    <label for="name">Name:</label>
 	    <input type="text" class="form-control" id="name">
@@ -28,5 +28,32 @@
 	    <textarea class="form-control" rows="5" id="message"></textarea>
 	  </div>
 	  <button type="submit" class="btn btn-lg btn-template-primary">Submit</button>
-	</form>
+	</form-->
+
+	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
+		<fieldset>
+			<div class="field">
+				<%= message_form.text_field :name, placeholder: "Name" %>
+			</div>
+
+			<div class="field">
+				<%= message_form.text_field :last_name, placeholder: "Last Name" %>
+			</div>
+
+			<div class="field">
+				<%= message_form.email_field :email, placeholder: "Email"%>
+			</div>
+
+			<div class="field">
+				<%= message_form.text_area :content, placeholder: "Message"%>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<div class="field">
+				<%= message_form.submit "Send" %>
+			</div>
+		</fieldset>
+	<% end %>
+
 </div>
