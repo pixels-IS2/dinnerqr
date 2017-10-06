@@ -22,6 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 # User Authentication with Facebook
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 # Development ENV Variables
 gem 'figaro'
 ## Gemfile for Rails 3+, Sinatra, and Merb

@@ -10,6 +10,18 @@ class Clients::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     @client = Client.from_omniauth(request.env["omniauth.auth"])
     sign_in_and_redirect @client
   end
+
+  def google_oauth2
+    @client = Client.from_omniauth(request.env["omniauth.auth"])
+
+    if @client.persisted?
+      sign_in_and_redirect @client, event: :authentication
+    else
+      session["devise.google_data"] = oauth_response.except(:extra)
+      params[:error] = :account_not_found
+      do_failure_things
+    end
+  end
   # More info at:
   # https://github.com/plataformatec/devise#omniauth
 

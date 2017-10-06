@@ -71,6 +71,10 @@ ActiveRecord::Schema.define(version: 20171004171842) do
     t.string "lastname"
     t.integer "identificacion"
     t.date "birthday"
+    t.string "provider"
+    t.string "uid"
+    t.string "oauth_token"
+    t.datetime "oauth_expires_at"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
