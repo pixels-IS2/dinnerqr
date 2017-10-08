@@ -3,7 +3,7 @@ class Client < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :omniauthable,:database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
-         omniauth_providers: [:facebook,:google_oauth2]
+         omniauth_providers: [:facebook,:google_oauth2,:twitter]
   def self.from_omniauth(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |client|
       client.email = auth.info.email

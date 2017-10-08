@@ -23,6 +23,8 @@ gem 'uglifier', '>= 1.3.0'
 # User Authentication with Facebook
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'twitter'
 # Development ENV Variables
 gem 'figaro'
 ## Gemfile for Rails 3+, Sinatra, and Merb
