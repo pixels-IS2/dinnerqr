@@ -68,6 +68,8 @@ class DishesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_dish
       @dish = Dish.find(params[:id])
+      
+      @comments = @dish.comments.paginate(:page => params[:page],:per_page => 5)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
