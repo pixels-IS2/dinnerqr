@@ -13,7 +13,6 @@
             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
             <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
           </div>
-<%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase", class:"fa fa-sign-out") %>
           <div class="login">
             <% if client_signed_in? %>
               <%= link_to destroy_client_session_path , method: :delete do %>
@@ -39,6 +38,15 @@
                 <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
               <% end %>
               <%= link_to edit_waiter_registration_path do %>
+                <%= content_tag :i," ", class:"fa fa-user" %>
+                <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+              <% end %>
+            <% elsif administrator_signed_in? %>
+              <%= link_to destroy_administrator_session_path , method: :delete do %>
+                <%= content_tag :i," ", class:"fa fa-sign-out" %>
+                <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
+              <% end %>
+              <%= link_to edit_administrator_registration_path do %>
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
               <% end %>
@@ -74,20 +82,22 @@ _________________________________________________________ -->
                     <div align="center" class="modal-body" >
                       <p class="text-center">
                         <%= link_to new_client_session_path do %>
-                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
                           <%= content_tag :button,"Client ", class:"fa fa-user", class:"btn btn-template-primary" %>
                         <% end %>
                       </p>
                       <p class="text-center">
                         <%= link_to new_chef_session_path do %>
-                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
                           <%= content_tag :button,"Chef ", class:"fa fa-user", class:"btn btn-template-primary" %>
                         <% end %>
                       </p>
                       <p class="text-center">
                         <%= link_to new_waiter_session_path do %>
-                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
                           <%= content_tag :button,"Waiter ", class:"fa fa-user" , class:"btn btn-template-primary" %>
+                        <% end %>
+                      </p>
+                      <p class="text-center">
+                        <%= link_to new_administrator_session_path do %>
+                          <%= content_tag :button,"Administrator ", class:"fa fa-user" , class:"btn btn-template-primary" %>
                         <% end %>
                       </p>
                     </div>
@@ -138,9 +148,18 @@ _________________________________________________________ -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dishes<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <% if client_signed_in? %>
+                    <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
+                    <li><%=link_to 'Orders', new_order_path ,class:"dropdown-toggle"%></li>
+                <% elsif chef_signed_in? %>
+                    <li><%=link_to 'Dishes', dishes_path ,class:"dropdown-toggle"%></li>
+                    <li><%=link_to 'Orders', orders_path ,class:"dropdown-toggle"%></li>
+                <% elsif waiter_signed_in? %>
+                    <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
+                <% elsif administrator_signed_in? %>
                     <li><%=link_to 'Dishes', dishes_path ,class:"dropdown-toggle"%></li>
                     <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
                     <li><%=link_to 'Specialities', specialities_path ,class:"dropdown-toggle"%></li>
+                    <li><%=link_to 'Orders', orders_path ,class:"dropdown-toggle"%></li>
                 <% else %>
                     <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
                 <% end %>

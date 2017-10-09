@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   resources :dishes do
     resources :comments, only: [:create, :destroy, :update]
   end
- # devise_for :chefs
   root 'welcome#index'
   get 'login' => 'welcome#login'
   get 'about' => 'aboutus#new', as: 'aboutus'
