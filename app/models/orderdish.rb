@@ -1,4 +1,4 @@
 class Orderdish < ApplicationRecord
     belongs_to  :order
-    has_one     :dish
+    belongs_to     :dish
 end
