@@ -15,6 +15,9 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     @order = Order.new
+    @specialities = Speciality.all
+
+  #  raise params.to_yaml
   end
 
   # GET /orders/1/edit
@@ -24,8 +27,37 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
-
+    @order = current_client.orders.new
+    #raise @order.to_yaml
+    orderdishes = params[:orderdishes]
+    total_price = 0
+    orderdishes.each do |key, value|
+      if not orderdishes[key]["id"].eql?(nil) and orderdishes[key]["quantity"].to_i>0
+        plate_id = orderdishes[key]["id"]
+        quantity = orderdishes[key]["quantity"].to_i
+        price = Dish.find(plate_id).price
+        total_price += quantity*price
+      end
+    end
+    @order.price = total_price
+    @order.state = "On hold"
+    @order.table_id = 1
+    @order.save
+    orderdishes.each do |key, value|
+      if not orderdishes[key]["id"].eql?(nil) and orderdishes[key]["quantity"].to_i>0
+        plate_id = orderdishes[key]["id"]
+        quantity = orderdishes[key]["quantity"].to_i
+        specification = orderdishes[key]["specification"]
+        #Orderdish.create("On hold", quantity, specification, Order.last.id, plate_id)
+        orderdish = Orderdish.new
+        orderdish.state = "On hold"
+        orderdish.quantity = quantity
+        orderdish.specification = specification
+        orderdish.order_id = Order.last.id
+        orderdish.dish_id = plate_id
+        orderdish.save
+      end
+    end
     respond_to do |format|
       if @order.save
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
@@ -69,6 +101,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:price, :state)
+      params.require(:order).permit(:orderdishes)
     end
 end
