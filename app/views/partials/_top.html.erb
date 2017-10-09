@@ -13,10 +13,10 @@
             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
             <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
           </div>
-
+<%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase", class:"fa fa-sign-out") %>
           <div class="login">
             <% if client_signed_in? %>
-              <%= link_to destroy_client_session_path do %>
+              <%= link_to destroy_client_session_path , method: :delete do %>
                 <%= content_tag :i," ", class:"fa fa-sign-out" %>
                 <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
               <% end %>
@@ -25,7 +25,7 @@
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
               <% end %> 
             <% elsif chef_signed_in? %>
-              <%= link_to destroy_chef_session_path do %>
+              <%= link_to destroy_chef_session_path , method: :delete do %>
                 <%= content_tag :i," ", class:"fa fa-sign-out" %>
                 <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
               <% end %>
@@ -34,7 +34,7 @@
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
               <% end %>
             <% elsif waiter_signed_in? %>
-              <%= link_to destroy_waiter_session_path do %>
+              <%= link_to destroy_waiter_session_path , method: :delete do %>
                 <%= content_tag :i," ", class:"fa fa-sign-out" %>
                 <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
               <% end %>
