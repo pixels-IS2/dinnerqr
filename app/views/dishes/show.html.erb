@@ -34,11 +34,13 @@
 </p>
 <h3>Comments</h3>
 <ul>
-  <% @dish.comments.each do |comment| %>
+  <% @comments.each do |comment| %>
     <li>
       <%= comment.body %> - <%= comment.client.email %>
     </li>
   <% end %>
+  
+  <%= will_paginate @comments %>
   
 </ul>
 <%= render "comments/form" %>
