@@ -16,11 +16,41 @@
 
           <div class="login">
             <% if client_signed_in? %>
-              <%= link_to('Sign out', destroy_client_session_path, method: :delete , class:"hidden-xs text-uppercase", class:"fa fa-sign-out") %>
-              <%= link_to('Edit registration', edit_client_registration_path, class:"hidden-xs text-uppercase", class:"fa fa-user")%>
+              <%= link_to destroy_client_session_path do %>
+                <%= content_tag :i," ", class:"fa fa-sign-out" %>
+                <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
+              <% end %>
+              <%= link_to edit_client_registration_path do %>
+                <%= content_tag :i," ", class:"fa fa-user" %>
+                <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+              <% end %> 
+            <% elsif chef_signed_in? %>
+              <%= link_to destroy_chef_session_path do %>
+                <%= content_tag :i," ", class:"fa fa-sign-out" %>
+                <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
+              <% end %>
+              <%= link_to edit_chef_registration_path do %>
+                <%= content_tag :i," ", class:"fa fa-user" %>
+                <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+              <% end %>
+            <% elsif waiter_signed_in? %>
+              <%= link_to destroy_waiter_session_path do %>
+                <%= content_tag :i," ", class:"fa fa-sign-out" %>
+                <%= content_tag :span, "Sign out", class:"hidden-xs text-uppercase" %>
+              <% end %>
+              <%= link_to edit_waiter_registration_path do %>
+                <%= content_tag :i," ", class:"fa fa-user" %>
+                <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+              <% end %>
             <% else %>
-              <%= link_to('Sign in', new_client_session_path, class:"hidden-xs text-uppercase fa fa-sign-in", class:"fa fa-sign-in")%>
-              <%= link_to('Register', new_client_registration_path, class:"hidden-xs text-uppercase", class:"fa fa-user")%>
+            
+              <a href="#" data-toggle="modal" data-backdrop="false" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+              
+              <%= link_to new_client_registration_path do %>
+                <%= content_tag :i," ", class:"fa fa-user" %>
+                <%= content_tag :span, "Register", class:"hidden-xs text-uppercase" %>
+              <% end %>
+              
             <% end %>
           </div>
 
@@ -30,6 +60,40 @@
   </div>
 
   <!-- *** TOP END *** -->
+<!-- *** LOGIN MODAL ***
+_________________________________________________________ -->
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Sign InS</h4>
+                    </div>
+                    <div align="center" class="modal-body">
+                      
+                      <%= link_to new_client_session_path do %>
+                        <%= content_tag :button,"Client ", class:"fa fa-user" %>
+                      <% end %>
+                      <%= link_to new_chef_session_path do %>
+                        <%= content_tag :button,"Chef ", class:"fa fa-user" %>
+                      <% end %>
+                      
+                        
+                    </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>      
+                </div>
+            </div>
+        </div>
+
+        <!-- *** LOGIN MODAL END *** -->
+
+        <section>
+            <!-- *** HOMEPAGE CAROUSEL ***
+ _________________________________________________________ -->
 
   <!-- *** NAVBAR ***
 _________________________________________________________ -->

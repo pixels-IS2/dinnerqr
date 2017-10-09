@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
  # devise_for :chefs
   root 'welcome#index'
-
+  get 'login' => 'welcome#login'
   get 'about' => 'aboutus#new', as: 'aboutus'
   post 'about' => 'aboutus#create'
 

@@ -55,6 +55,7 @@ button {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
 a i.fa,
 button i.fa {
   margin: 0 5px;
@@ -3160,6 +3161,7 @@ a {
   color: #38a7bb;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: #267280;
