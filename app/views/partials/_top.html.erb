@@ -69,18 +69,27 @@ _________________________________________________________ -->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Sign InS</h4>
+                        <h4 class="modal-title" id="Login">Sign In</h4>
                     </div>
-                    <div align="center" class="modal-body">
-                      
-                      <%= link_to new_client_session_path do %>
-                        <%= content_tag :button,"Client ", class:"fa fa-user" %>
-                      <% end %>
-                      <%= link_to new_chef_session_path do %>
-                        <%= content_tag :button,"Chef ", class:"fa fa-user" %>
-                      <% end %>
-                      
-                        
+                    <div align="center" class="modal-body" >
+                      <p class="text-center">
+                        <%= link_to new_client_session_path do %>
+                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
+                          <%= content_tag :button,"Client ", class:"fa fa-user", class:"btn btn-template-primary" %>
+                        <% end %>
+                      </p>
+                      <p class="text-center">
+                        <%= link_to new_chef_session_path do %>
+                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
+                          <%= content_tag :button,"Chef ", class:"fa fa-user", class:"btn btn-template-primary" %>
+                        <% end %>
+                      </p>
+                      <p class="text-center">
+                        <%= link_to new_waiter_session_path do %>
+                          <%= content_tag :i," ", class:"fa fa-sign-in" %>
+                          <%= content_tag :button,"Waiter ", class:"fa fa-user" , class:"btn btn-template-primary" %>
+                        <% end %>
+                      </p>
                     </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
