@@ -21,6 +21,12 @@
     <%= form.text_field :sector, id: :table_sector %>
   </div>
 
+  <div class="field">
+    <%= form.label :waiter %>
+    <%= form.select :waiter_id, options_for_select(@waiters.map{|w|[w.email, w.id]}, params[:wailter_id]) %>
+
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
