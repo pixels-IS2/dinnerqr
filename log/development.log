@@ -59691,6 +59691,7 @@ Completed 200 OK in 801ms (Views: 797.8ms | ActiveRecord: 0.3ms)
             FROM sqlite_temp_master
             WHERE name='index_waiters_on_email' AND type='index'
 [0m
+<<<<<<< HEAD
 Started GET "/" for 168.176.239.31 at 2017-10-10 14:56:37 +0000
 Cannot render console from 168.176.239.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -59716,6 +59717,22 @@ Completed 200 OK in 217ms (Views: 215.2ms | ActiveRecord: 0.0ms)
 
 Started GET "/img/photogrid.jpg" for 168.176.239.31 at 2017-10-10 14:56:41 +0000
 Cannot render console from 168.176.239.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:21:43 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (459.2ms)
+  Rendered partials/_top.html.erb (16.7ms)
+  Rendered partials/_footer.html.erb (11.1ms)
+  Rendered partials/_copyright.html.erb (1.1ms)
+Completed 200 OK in 728ms (Views: 724.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-10 19:21:45 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
   
@@ -59746,6 +59763,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/img/photogrid.jpg" for 168.176.239.32 at 2017-10-10 14:56:42 +0000
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
@@ -59833,6 +59851,314 @@ Completed 200 OK in 145ms (Views: 144.0ms | ActiveRecord: 0.0ms)
 
 Started GET "/img/photogrid.jpg" for 168.176.239.36 at 2017-10-10 15:31:18 +0000
 Cannot render console from 168.176.239.36! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:22:02 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (655.1ms)
+  Rendered partials/_top.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (5.2ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 836ms (Views: 793.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:27:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered partials/_top.html.erb (8.9ms)
+  Rendered partials/_footer.html.erb (6.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chefs/sign_in" for 168.176.55.16 at 2017-10-10 19:27:45 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_top.html.erb (9.3ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 158ms (Views: 118.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:28:48 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (16.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.8ms)
+  Rendered partials/_top.html.erb (7.8ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:47:18 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `omniauth_providers' for nil:NilClass):
+    24:   <% end -%>
+    25: <% end -%>
+    26: 
+    27: <%= @resource_class.omniauth_providers.inspect %>
+  
+app/views/devise/shared/_links.html.erb:27:in `_app_views_devise_shared__links_html_erb___2302961229265805302_70144677111580'
+app/views/devise/sessions/new.html.erb:26:in `block in _app_views_devise_sessions_new_html_erb__2683891649488621135_70144677500420'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2683891649488621135_70144677500420'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:47:32 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+  Rendered partials/_top.html.erb (8.1ms)
+  Rendered partials/_footer.html.erb (6.7ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:47:59 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered partials/_top.html.erb (12.9ms)
+  Rendered partials/_footer.html.erb (6.3ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 164ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:50:31 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.6ms)
+  Rendered partials/_top.html.erb (3.6ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144738993420'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:50:50 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered partials/_top.html.erb (2.6ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144739210460'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:51:06 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_top.html.erb (6.0ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/partials/_top.html.erb:401: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/partials/_top.html.erb:403: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144738890560'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:51:32 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+  Rendered partials/_top.html.erb (17.6ms)
+  Rendered partials/_footer.html.erb (10.5ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 267ms (Views: 265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chefs/sign_in" for 168.176.55.16 at 2017-10-10 19:51:38 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (29.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.2ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `omniauth_providers' for #<Class:0x00000003686160>):
+    23:     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+    24:   <% end -%>
+    25: <% end -%>
+    26: <%= resource_class.omniauth_providers.inspect %>
+  
+app/views/devise/shared/_links.html.erb:26:in `_app_views_devise_shared__links_html_erb___2302961229265805302_70144679682460'
+app/views/devise/sessions/new.html.erb:26:in `block in _app_views_devise_sessions_new_html_erb__2683891649488621135_70144679853760'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2683891649488621135_70144679853760'
+Started GET "/chefs/sign_in" for 168.176.55.16 at 2017-10-10 19:52:14 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (22.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (44.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `omniauth_providers' for #<Class:0x00000003686160>):
+    24:   <% end -%>
+    25: <% end -%>
+    26: <!--
+    27: <%= resource_class.omniauth_providers.inspect %>
+    28: -->
+  
+app/views/devise/shared/_links.html.erb:27:in `_app_views_devise_shared__links_html_erb___2302961229265805302_70144684105620'
+app/views/devise/sessions/new.html.erb:26:in `block in _app_views_devise_sessions_new_html_erb__2683891649488621135_25660920'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2683891649488621135_25660920'
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:52:35 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+  Rendered partials/_top.html.erb (330.7ms)
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000004dce368>:0x007f97b186b488>
+Did you mean?  resolve_asset):
+     9:             <a href="#" class="external facebook" data-animate-hover="pulse">
+    10: 
+    11:               <i class="fa fa-facebook"></i></a>
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook) %>
+    13:               
+    14:             <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+    15:             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+  
+app/views/partials/_top.html.erb:12:in `_app_views_partials__top_html_erb__1895460084526829302_70144683459960'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144747555440'
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:53:23 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+  Rendered partials/_top.html.erb (426.7ms)
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000004dce368>:0x007f97a8c499a0>
+Did you mean?  resolve_asset):
+     9:             <a href="#" class="external facebook" data-animate-hover="pulse">
+    10: 
+    11:               <i class="fa fa-facebook"></i></a>
+    12:               <%= link_to omniauth_authorize_path(resource_name, facebook) %>
+    13:               
+    14:             <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+    15:             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+  
+app/views/partials/_top.html.erb:12:in `_app_views_partials__top_html_erb__1895460084526829302_70144746245000'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144674056860'
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:53:50 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (11.2ms)
+  Rendered partials/_top.html.erb (336.4ms)
+Completed 500 Internal Server Error in 467ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000004dce368>:0x007f97b15212f0>
+Did you mean?  resolve_asset):
+     9:             <a href="#" class="external facebook" data-animate-hover="pulse">
+    10: 
+    11:               <i class="fa fa-facebook"></i></a>
+    12:               <%= link_to omniauth_authorize_path(resource_name, "facebook") %>
+    13:               
+    14:             <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+    15:             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+  
+app/views/partials/_top.html.erb:12:in `_app_views_partials__top_html_erb__1895460084526829302_70144681882840'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144746267220'
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:56:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+  Rendered partials/_top.html.erb (1000.4ms)
+Completed 500 Internal Server Error in 1109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000004dce368>:0x007f97b1cc0bc8>
+Did you mean?  resolve_asset):
+     9:             <a href="#" class="external facebook" data-animate-hover="pulse">
+    10: 
+    11:               <i class="fa fa-facebook"></i></a>
+    12:               <%= link_to omniauth_authorize_path(resource_name, "facebook") %>
+    13:               
+    14:             <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+    15:             <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+  
+app/views/partials/_top.html.erb:12:in `_app_views_partials__top_html_erb__1895460084526829302_26863140'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144749502540'
+Started GET "/" for 168.176.55.16 at 2017-10-10 19:57:37 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (16.6ms)
+  Rendered partials/_top.html.erb (39.1ms)
+  Rendered partials/_footer.html.erb (6.5ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 204ms (Views: 202.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-10 19:57:38 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
   
@@ -59863,6 +60189,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/orders" for 168.176.239.32 at 2017-10-10 15:31:24 +0000
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by OrdersController#index as HTML
@@ -60028,6 +60355,479 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+=======
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:57:41 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered partials/_top.html.erb (9.8ms)
+  Rendered partials/_footer.html.erb (6.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 195ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:58:38 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+  Rendered partials/_top.html.erb (1533.9ms)
+Completed 500 Internal Server Error in 1693ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_facebook_omniauth_authorize_path' for #<#<Class:0x00000004d5f530>:0x007f97b1bd3cd8>):
+    54:             <% else %>
+    55:             
+    56:               <a href="#" data-toggle="modal" data-backdrop="false" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+    57:               <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+    58:               <%= link_to new_client_registration_path do %>
+    59:                 <%= content_tag :i," ", class:"fa fa-user" %>
+    60:                 <%= content_tag :span, "Register", class:"hidden-xs text-uppercase" %>
+  
+app/views/partials/_top.html.erb:57:in `_app_views_partials__top_html_erb__1895460084526829302_26854500'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144749308980'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:58:58 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered partials/_top.html.erb (1373.4ms)
+Completed 500 Internal Server Error in 1622ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_facebook_omniauth_authorize_path' for #<#<Class:0x00000004d5f530>:0x007f97a9af7b78>):
+    54:             <% else %>
+    55:             
+    56:               <a href="#" data-toggle="modal" data-backdrop="false" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+    57:               <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+    58:               <%= link_to new_client_registration_path do %>
+    59:                 <%= content_tag :i," ", class:"fa fa-user" %>
+    60:                 <%= content_tag :span, "Register", class:"hidden-xs text-uppercase" %>
+  
+app/views/partials/_top.html.erb:57:in `_app_views_partials__top_html_erb__1895460084526829302_70144746194720'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144681764540'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 19:59:23 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendered partials/_top.html.erb (16.4ms)
+  Rendered partials/_footer.html.erb (7.9ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 401ms (Views: 398.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:00:06 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+  Rendered partials/_top.html.erb (8.5ms)
+  Rendered partials/_footer.html.erb (6.9ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:00:39 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9046.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9069.1ms)
+Completed 500 Internal Server Error in 9077ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `facebook' for #<#<Class:0x00000004d5f530>:0x007f97b1a61878>):
+    21: <%- if devise_mapping.omniauthable? %>
+    22:   <%- resource_class.omniauth_providers.each do |provider| %>
+    23:   <%= provider %>
+    24:     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, facebook) %><br />
+    25:   <% end -%>
+    26: <% end -%>
+    27: <!--
+  
+app/views/devise/shared/_links.html.erb:24:in `block in _app_views_devise_shared__links_html_erb___2302961229265805302_70144748356740'
+app/views/devise/shared/_links.html.erb:22:in `each'
+app/views/devise/shared/_links.html.erb:22:in `_app_views_devise_shared__links_html_erb___2302961229265805302_70144748356740'
+app/views/devise/sessions/new.html.erb:26:in `block in _app_views_devise_sessions_new_html_erb__2683891649488621135_70144748618080'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2683891649488621135_70144748618080'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:00:49 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2852.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2861.5ms)
+Completed 500 Internal Server Error in 2884ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `facebook' for #<#<Class:0x00000004d5f530>:0x007f97a97d1f98>):
+    21: <%- if devise_mapping.omniauthable? %>
+    22:   <%- resource_class.omniauth_providers.each do |provider| %>
+    23:   <%= provider %>
+    24:     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, facebook) %><br />
+    25:   <% end -%>
+    26: <% end -%>
+    27: <!--
+  
+app/views/devise/shared/_links.html.erb:24:in `block in _app_views_devise_shared__links_html_erb___2302961229265805302_70144680070580'
+app/views/devise/shared/_links.html.erb:22:in `each'
+app/views/devise/shared/_links.html.erb:22:in `_app_views_devise_shared__links_html_erb___2302961229265805302_70144680070580'
+app/views/devise/sessions/new.html.erb:26:in `block in _app_views_devise_sessions_new_html_erb__2683891649488621135_70144680165800'
+app/views/devise/sessions/new.html.erb:4:in `_app_views_devise_sessions_new_html_erb__2683891649488621135_70144680165800'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:01:01 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.1ms)
+  Rendered partials/_top.html.erb (65.7ms)
+  Rendered partials/_footer.html.erb (31.3ms)
+  Rendered partials/_copyright.html.erb (2.6ms)
+Completed 200 OK in 1028ms (Views: 1025.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:02:38 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.6ms)
+  Rendered partials/_top.html.erb (18.9ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (1.7ms)
+Completed 200 OK in 201ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:04:55 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+  Rendered partials/_top.html.erb (14.0ms)
+  Rendered partials/_footer.html.erb (6.2ms)
+  Rendered partials/_copyright.html.erb (1.5ms)
+Completed 200 OK in 240ms (Views: 237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:04:59 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_top.html.erb (9.6ms)
+  Rendered partials/_footer.html.erb (10.4ms)
+  Rendered partials/_copyright.html.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:05:01 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+  Rendered partials/_top.html.erb (15.5ms)
+  Rendered partials/_footer.html.erb (8.3ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:07:19 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+  Rendered partials/_top.html.erb (5.2ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:12: syntax error, unexpected keyword_do_block, expecting =>
+,data-animate-hover="pulse" do @output_buffer.safe_append='
+                              ^
+/home/ubuntu/workspace/dinnerqr/app/views/partials/_top.html.erb:410: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/partials/_top.html.erb:12: syntax error, unexpected keyword_do_block, expecting =>
+app/views/partials/_top.html.erb:410: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_37817440'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:07:47 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_top.html.erb (9.4ms)
+  Rendered partials/_footer.html.erb (6.5ms)
+  Rendered partials/_copyright.html.erb (3.4ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:07:51 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:07:51 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:08:28 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:08:29 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:08:36 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+  Rendered partials/_top.html.erb (10.4ms)
+  Rendered partials/_footer.html.erb (6.9ms)
+  Rendered partials/_copyright.html.erb (2.3ms)
+Completed 200 OK in 128ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:08:49 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_top.html.erb (38.1ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 163.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:08:51 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered partials/_top.html.erb (25.0ms)
+  Rendered partials/_footer.html.erb (6.2ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:10:39 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+  Rendered partials/_top.html.erb (27.0ms)
+  Rendered partials/_footer.html.erb (6.3ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:10:44 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered partials/_top.html.erb (9.6ms)
+  Rendered partials/_footer.html.erb (6.8ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 20:11:26 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered partials/_top.html.erb (8.6ms)
+  Rendered partials/_footer.html.erb (5.9ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/auth/google_oauth2" for 168.176.55.16 at 2017-10-10 20:11:34 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/google_oauth2" for 168.176.55.16 at 2017-10-10 20:11:35 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:17:33 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:17:34 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/google_oauth2" for 168.176.55.16 at 2017-10-10 20:17:47 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/google_oauth2" for 168.176.55.16 at 2017-10-10 20:17:48 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:18:15 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/clients/auth/facebook" for 168.176.55.16 at 2017-10-10 20:18:16 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 168.176.55.16 at 2017-10-10 20:54:31 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (26.4ms)
+  Rendered partials/_top.html.erb (448.3ms)
+Completed 500 Internal Server Error in 717ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000004dce368>:0x007f97a9d92720>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1895460084526829302_70144676100480'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144683117680'
+Started GET "/" for 168.176.55.16 at 2017-10-10 20:54:47 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.2ms)
+  Rendered partials/_top.html.erb (385.3ms)
+Completed 500 Internal Server Error in 493ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000004dce368>:0x007f97a91fea08>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1895460084526829302_70144679541160'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144677197360'
+Started GET "/" for 168.176.55.16 at 2017-10-10 20:55:15 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+  Rendered partials/_top.html.erb (424.6ms)
+Completed 500 Internal Server Error in 529ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000004dce368>:0x007f97b10e5f60>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1895460084526829302_70144681565900'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144743517620'
+Started GET "/" for 168.176.55.16 at 2017-10-10 20:56:29 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.1ms)
+  Rendered partials/_top.html.erb (380.6ms)
+Completed 500 Internal Server Error in 510ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000004dce368>:0x007f97b14fc518>
+Did you mean?  resolve_asset):
+     8:           <div class="social">
+     9:             
+    10:               
+    11:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:               <% end %>
+    14:               <%= link_to omniauth_authorize_path(resource_name, :google_oauth2), class:"external gplus" do %>
+  
+app/views/partials/_top.html.erb:11:in `_app_views_partials__top_html_erb__1895460084526829302_70144682046320'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144745689840'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:02:12 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.8ms)
+  Rendered partials/_top.html.erb (478.9ms)
+Completed 500 Internal Server Error in 637ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000004dce368>:0x007f97b1158f10>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1895460084526829302_70144681173000'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3673122248100118705_70144743779020'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:02:35 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (403.0ms)
+  Rendered partials/_top.html.erb (639.2ms)
+Completed 500 Internal Server Error in 1186ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f1960183730>:0x00000004a3ab48>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__804891123270722063_27646380'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__1889857720284406398_38832740'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:02:38 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (23.8ms)
+  Rendered partials/_top.html.erb (376.5ms)
+Completed 500 Internal Server Error in 499ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f1960183730>:0x00000002f0ab48>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__804891123270722063_69873490927560'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__1889857720284406398_24583120'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
             FROM sqlite_master
             WHERE name='index_administrators_on_reset_password_token' AND type='index'
@@ -60036,7 +60836,11 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_administrators_on_reset_password_token' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
             FROM sqlite_master
             WHERE name='index_administrators_on_email' AND type='index'
             UNION ALL
@@ -60092,7 +60896,11 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_comments_on_dish_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
             FROM sqlite_master
             WHERE name='index_comments_on_client_id' AND type='index'
             UNION ALL
@@ -60108,7 +60916,11 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_dishes_on_speciality_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
             FROM sqlite_master
             WHERE name='index_orderdishes_on_dish_id' AND type='index'
             UNION ALL
@@ -60116,7 +60928,11 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_orderdishes_on_dish_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
             FROM sqlite_master
             WHERE name='index_orderdishes_on_order_id' AND type='index'
             UNION ALL
@@ -60140,31 +60956,43 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_orders_on_table_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_tables_on_waiter_id' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_tables_on_waiter_id' AND type='index'
-[0m
-  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-[0m
-  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_email' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_email' AND type='index'
-[0m
+=======
   [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
+            FROM sqlite_master
+            WHERE name='index_tables_on_waiter_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tables_on_waiter_id' AND type='index'
+[0m
+<<<<<<< HEAD
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+<<<<<<< HEAD
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+=======
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
             FROM sqlite_master
             WHERE name='index_waiters_on_reset_password_token' AND type='index'
             UNION ALL
@@ -60180,6 +61008,7 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
             FROM sqlite_temp_master
             WHERE name='index_waiters_on_email' AND type='index'
 [0m
+<<<<<<< HEAD
 Started GET "/" for 168.176.239.32 at 2017-10-10 16:15:04 +0000
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -60273,6 +61102,34 @@ Started GET "/order_views/currentOrderClien" for 168.176.239.32 at 2017-10-10 16
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (No route matches [GET] "/order_views/currentOrderClien"):
+=======
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:03:23 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (364.9ms)
+  Rendered partials/_top.html.erb (648.6ms)
+Completed 500 Internal Server Error in 1267ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x000000060641f8>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_37956340'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_50436100'
+Started GET "/users/sign_in" for 168.176.55.16 at 2017-10-10 21:03:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -60301,6 +61158,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/order_views/currentOrderClient" for 168.176.239.35 at 2017-10-10 16:16:23 +0000
 Cannot render console from 168.176.239.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by OrderViewsController#currentOrderClient as HTML
@@ -60686,6 +61544,184 @@ Completed 200 OK in 420ms (Views: 407.8ms | ActiveRecord: 0.0ms)
 
 Started GET "/img/photogrid.jpg" for 168.176.239.32 at 2017-10-10 22:21:19 +0000
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:03:37 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (921.7ms)
+  Rendered partials/_top.html.erb (10.4ms)
+  Rendered partials/_footer.html.erb (6.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 1088ms (Views: 1042.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:04:02 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.1ms)
+  Rendered partials/_top.html.erb (395.3ms)
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff5844bf0>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059386240240'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059419805560'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:04:10 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.1ms)
+  Rendered partials/_top.html.erb (373.6ms)
+Completed 500 Internal Server Error in 537ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff0f412a0>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <% if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059423924340'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059380377340'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:06:10 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+  Rendered partials/_top.html.erb (432.6ms)
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff6268a00>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:               <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059384578960'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059423900200'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:06:15 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+  Rendered partials/_top.html.erb (372.6ms)
+Completed 500 Internal Server Error in 479ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff13387c8>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:               <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059420119440'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059382351440'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:06:33 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_top.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (28.0ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 144ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:07:14 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered partials/_top.html.erb (8.4ms)
+  Rendered partials/_footer.html.erb (5.5ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:07:17 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.3ms)
+  Rendered partials/_top.html.erb (328.8ms)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff11d5638>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059418750840'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059381629680'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:07:56 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.5ms)
+  Rendered partials/_top.html.erb (470.4ms)
+Completed 500 Internal Server Error in 577ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000006068de8>:0x007f6ff13ac830>
+Did you mean?  resolve_asset):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    11:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    12:             <% end %>
+    13:             <%= link_to omniauth_authorize_path(resource_name, :google_oauth2), class:"external gplus" do %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_70059386084800'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059382653120'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:08:21 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.6ms)
+  Rendered partials/_top.html.erb (8.1ms)
+  Rendered partials/_footer.html.erb (6.1ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-10 21:08:23 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
   
@@ -60716,6 +61752,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/clients/sign_in" for 168.176.239.33 at 2017-10-10 22:25:11 +0000
 Cannot render console from 168.176.239.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Devise::SessionsController#new as HTML
@@ -60829,6 +61866,109 @@ Completed 200 OK in 917ms (Views: 803.1ms)
 
 Started GET "/img/photogrid.jpg" for 168.176.239.31 at 2017-10-11 16:02:05 +0000
 Cannot render console from 168.176.239.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:11:00 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.3ms)
+  Rendered partials/_top.html.erb (514.4ms)
+Completed 500 Internal Server Error in 643ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00000006068de8>:0x007f6ff0959d88>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__709436669134818358_38582480'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1034895951500135077_70059377192040'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:12:33 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered partials/_top.html.erb (12.9ms)
+  Rendered partials/_footer.html.erb (8.0ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:15:04 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (532.9ms)
+  Rendered partials/_top.html.erb (13.2ms)
+  Rendered partials/_footer.html.erb (12.1ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 1237ms (Views: 1193.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:15:09 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.9ms)
+  Rendered partials/_top.html.erb (534.5ms)
+Completed 500 Internal Server Error in 696ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f3d09f75010>:0x007f3d09f56f98>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1834912160245529332_69950066137340'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__442724430756975486_69950068594000'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:16:32 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (14.4ms)
+  Rendered partials/_top.html.erb (362.7ms)
+Completed 500 Internal Server Error in 571ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f3d09f75010>:0x007f3d09943890>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1834912160245529332_69949784421080'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__442724430756975486_69950065164720'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:17:01 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (38.7ms)
+  Rendered partials/_top.html.erb (7.8ms)
+  Rendered partials/_footer.html.erb (5.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 272ms (Views: 270.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-10 21:17:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
   
@@ -60859,6 +61999,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/clients/sign_in" for 168.176.239.35 at 2017-10-11 16:02:27 +0000
 Cannot render console from 168.176.239.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Devise::SessionsController#new as HTML
@@ -61338,6 +62479,414 @@ Completed 200 OK in 258ms (Views: 249.9ms | ActiveRecord: 2.8ms)
 
 Started GET "/img/photogrid.jpg" for 168.176.239.32 at 2017-10-11 17:19:03 +0000
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:17:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_top.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chefs/sign_in" for 168.176.55.16 at 2017-10-10 21:17:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+  Rendered partials/_top.html.erb (10.0ms)
+  Rendered partials/_footer.html.erb (7.0ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 159ms (Views: 124.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/waiters/sign_in" for 168.176.55.16 at 2017-10-10 21:17:34 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered partials/_top.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (5.6ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 139ms (Views: 102.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/waiters/sign_in" for 168.176.55.16 at 2017-10-10 21:20:58 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_top.html.erb (9.0ms)
+  Rendered partials/_footer.html.erb (6.1ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:21:03 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.7ms)
+  Rendered partials/_top.html.erb (468.4ms)
+Completed 500 Internal Server Error in 577ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f3d09f75010>:0x007f3d093d7960>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__1834912160245529332_69950066868520'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__442724430756975486_69950062312820'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:21:31 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (455.4ms)
+  Rendered partials/_top.html.erb (386.5ms)
+Completed 500 Internal Server Error in 957ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x000000041d6718>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133817136840'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_34412580'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:29:06 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 630ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f9299e2c4c0>):
+    20:         <div class="col-xs-12">
+    21:           <div class="social">
+    22:             
+    23:           <%- if devise_mapping.omniauthable? %>
+    24:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    25:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    26:             <% end %>
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___4277069709621977260_70133811888060'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:30:41 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `omniauthable?' for nil:NilClass):
+    20:         <div class="col-xs-12">
+    21:           <div class="social">
+    22:             
+    23:           <%- if @devise_mapping.omniauthable? %>
+    24:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    25:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    26:             <% end %>
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___4277069709621977260_70133814015980'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:30:51 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929ca39ae0>):
+    20:         <div class="col-xs-12">
+    21:           <div class="social">
+    22:             
+    23:           <%- if devise_mapping.omniauthable? %>
+    24:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    25:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    26:             <% end %>
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___4277069709621977260_70133835434820'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:31:16 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 396ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f9299f9aaf0>):
+    20:         <div class="col-xs-12">
+    21:           <div class="social">
+    22:             
+    23:           <%- if devise_mapping.omniauthable? %>
+    24:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    25:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    26:             <% end %>
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___4277069709621977260_70133812606060'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:32:19 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 558ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929971a0b0>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133808121120'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:06 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 519ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929c3fb480>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133831653300'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:08 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929d625110>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133841167540'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:10 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 452ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929c3d8818>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133831589700'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:11 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 495ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929ada64f0>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133820067820'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:13 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 522ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929a262eb8>):
+    19:         <div class="col-xs-12">
+    20:           <div class="social">
+    21:             
+    22:           <%- if devise_mapping.omniauthable? %>
+    23:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    24:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    25:             <% end %>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___4277069709621977260_70133814064460'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:33:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.2ms)
+  Rendered partials/_top.html.erb (347.7ms)
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f9299fa99d8>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133838103380'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133812652460'
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:34:27 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.3ms)
+  Rendered partials/_top.html.erb (610.0ms)
+Completed 500 Internal Server Error in 724ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x000000041e41b0>:0x007f929d7c65c8>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%- resource_class.omniauth_providers.each do |provider| %>
+    12:               <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+    13:             <% end -%>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133812649920'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133841948500'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:35:21 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (531.4ms)
+  Rendered partials/_top.html.erb (10.2ms)
+  Rendered partials/_footer.html.erb (7.3ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 693ms (Views: 658.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:35:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yg5nIkeyJwA2Za34UCloLHJ+/2rrOPhj9WOxYXhXF4rFOT2dh1A86mukAwd2qtzqMt2Afmg0z38EMAsvQtZhxQ==", "client"=>{"email"=>"pcberriop@unal.edu.co", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.9ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."email" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["email", "pcberriop@unal.edu.co"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[33mUPDATE "clients" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["current_sign_in_at", "2017-10-10 21:35:30.654403"], ["last_sign_in_at", "2017-10-09 15:19:31.480452"], ["sign_in_count", 19], ["updated_at", "2017-10-10 21:35:30.657992"], ["id", 2]]
+  [1m[35m (26.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://pixels-pcberriop.c9users.io/dishes
+Completed 302 Found in 289ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/dishes" for 168.176.55.16 at 2017-10-10 21:35:30 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.4ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (25.3ms)
+  Rendered partials/_top.html.erb (436.1ms)
+Completed 500 Internal Server Error in 576ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f929a74f9a8>:0x007f929a743bd0>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133801394300'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133816615240'
+Started GET "/dishes" for 168.176.55.16 at 2017-10-10 21:37:02 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DishesController#index as HTML
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  Rendered dishes/index.html.erb within layouts/application (8.8ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (10.8ms)
+  Rendered partials/_footer.html.erb (6.4ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 160ms (Views: 156.4ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/clients/sign_out" for 168.176.55.16 at 2017-10-10 21:37:25 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vo3Gbmr7lt66G032cKAef2eqcIRIgt3aPA0hn2SohIC56lWnFNfEpTqKD+iKJW9ARUowjfj8/6/FwD2FwApoxA=="}
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://pixels-pcberriop.c9users.io/
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:37:25 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (14.7ms)
+  Rendered partials/_top.html.erb (11.3ms)
+  Rendered partials/_footer.html.erb (10.6ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 197ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.55.16 at 2017-10-10 21:37:27 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
   
@@ -61368,6 +62917,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/orders/16" for 168.176.239.36 at 2017-10-11 17:37:57 +0000
 Cannot render console from 168.176.239.36! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by OrdersController#show as HTML
@@ -61537,6 +63087,180 @@ Started GET "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_28
 Cannot render console from 168.176.239.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (No route matches [GET] "/system/dishes/photos/000/000/001/thumb/20622013_850751525088772_2882209000951299637_n.jpg"):
+=======
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:37:32 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+  Rendered partials/_top.html.erb (8.9ms)
+  Rendered partials/_footer.html.erb (8.9ms)
+  Rendered partials/_copyright.html.erb (0.7ms)
+Completed 200 OK in 143ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:38:37 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered partials/_top.html.erb (12.6ms)
+  Rendered partials/_footer.html.erb (8.4ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 223ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 168.176.55.16 at 2017-10-10 21:38:42 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.4ms)
+  Rendered devise/shared/_links.html.erb (480.3ms)
+  Rendered partials/_top.html.erb (484.1ms)
+Completed 500 Internal Server Error in 615ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x000000041e41b0>:0x007f929c3997a8>
+Did you mean?  resolve_asset):
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end -%>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:2:in `_app_views_devise_shared__links_html_erb__320487766571143412_70133812680120'
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133813330260'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133831467980'
+Started GET "/clients/sign_in" for 168.176.55.16 at 2017-10-10 21:39:06 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered partials/_top.html.erb (25.5ms)
+  Rendered partials/_footer.html.erb (15.9ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 340ms (Views: 338.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 168.176.55.16 at 2017-10-10 21:39:28 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (16.3ms)
+  Rendered devise/shared/_links.html.erb (594.2ms)
+  Rendered partials/_top.html.erb (598.9ms)
+Completed 500 Internal Server Error in 847ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007f929a80e1f0>:0x007f929a80c148>
+Did you mean?  resolve_asset):
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end -%>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:2:in `_app_views_devise_shared__links_html_erb__320487766571143412_70133832774860'
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133835485420'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133817124300'
+Started GET "/about" for 168.176.55.16 at 2017-10-10 21:40:21 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (3.5ms)
+  Rendered partials/_top.html.erb (84.3ms)
+  Rendered devise/shared/_links.html.erb (613.6ms)
+Completed 500 Internal Server Error in 808ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007f929a80e1f0>:0x007f929c9ebd68>
+Did you mean?  resolve_asset):
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end -%>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:2:in `_app_views_devise_shared__links_html_erb__320487766571143412_70133816470760'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4277069709621977260_70133834708820'
+Started GET "/about" for 168.176.55.16 at 2017-10-10 21:41:59 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (3.4ms)
+  Rendered partials/_top.html.erb (891.1ms)
+Completed 500 Internal Server Error in 1003ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f929a80e1f0>:0x007f929d4f2db0>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133819634940'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133842350900'
+Started GET "/about" for 168.176.55.16 at 2017-10-10 21:46:33 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+RuntimeError (Wrong OmniAuth configuration. If you are getting this exception, it means that either:
+
+1) You are manually setting OmniAuth.config.path_prefix and it doesn't match the Devise one
+2) You are setting :omniauthable in more than one model
+3) You changed your Devise routes/OmniAuth setting and haven't restarted your server):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/about" for 168.176.55.16 at 2017-10-10 21:49:07 +0000
+Cannot render console from 168.176.55.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (4.6ms)
+  Rendered partials/_top.html.erb (388.3ms)
+Completed 500 Internal Server Error in 572ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007f929948c078>:0x007f929946f040>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:           <%- if devise_mapping.omniauthable? %>
+    11:             <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    12:               <%=content_tag :i," ", class:"fa fa-facebook" %>
+    13:             <% end %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___1180674851704260042_70133832132740'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___4277069709621977260_70133806641720'
+Started GET "/" for 168.176.40.59 at 2017-10-11 15:51:43 +0000
+Cannot render console from 168.176.40.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (440.2ms)
+  Rendered partials/_top.html.erb (18.8ms)
+  Rendered partials/_footer.html.erb (15.2ms)
+  Rendered partials/_copyright.html.erb (0.5ms)
+Completed 200 OK in 736ms (Views: 734.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 168.176.40.59 at 2017-10-11 15:51:47 +0000
+Cannot render console from 168.176.40.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
   
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -61565,6 +63289,7 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/orders/16" for 168.176.239.33 at 2017-10-11 17:43:16 +0000
 Cannot render console from 168.176.239.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by OrdersController#show as HTML
@@ -61766,3 +63491,5 @@ Processing by OrdersController#show as HTML
 Completed 200 OK in 166ms (Views: 158.5ms | ActiveRecord: 1.9ms)
 
 
+=======
+>>>>>>> e8ff602f0a28c1923082a42bed9432a0fa2810cc
