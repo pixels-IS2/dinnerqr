@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171008224734) do
+ActiveRecord::Schema.define(version: 20171010215945) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 20171008224734) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.string "remember_token"
+    t.string "remember_digest"
     t.index ["email"], name: "index_administrators_on_email", unique: true
     t.index ["reset_password_token"], name: "index_administrators_on_reset_password_token", unique: true
   end
@@ -49,6 +53,10 @@ ActiveRecord::Schema.define(version: 20171008224734) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "speciality_id"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.string "remember_token"
+    t.string "remember_digest"
     t.index ["email"], name: "index_chefs_on_email", unique: true
     t.index ["reset_password_token"], name: "index_chefs_on_reset_password_token", unique: true
     t.index ["speciality_id"], name: "index_chefs_on_speciality_id"
@@ -75,6 +83,10 @@ ActiveRecord::Schema.define(version: 20171008224734) do
     t.string "uid"
     t.string "oauth_token"
     t.datetime "oauth_expires_at"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.string "remember_token"
+    t.string "remember_digest"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
@@ -188,6 +200,10 @@ ActiveRecord::Schema.define(version: 20171008224734) do
     t.string "photo_content_type"
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.string "remember_token"
+    t.string "remember_digest"
     t.index ["email"], name: "index_waiters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_waiters_on_reset_password_token", unique: true
   end
