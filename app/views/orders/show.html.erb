@@ -29,7 +29,7 @@
     <tbody>
       <% @orderdishes.each do |orderdish| %>
         <tr>
-          <!--<td>%= image_tag orderdish.photo.url(:thumb) %</td> -->
+          <td><%= image_tag orderdish.becomes(Dish).photo.url(:thumb) %></td>
           <td><%= orderdish.name %></td>
           <td><%= orderdish.specification %></td>
           <td><%= orderdish.orderstate %></td>
