@@ -62861,3 +62861,289 @@ ActionView::Template::Error (Missing host to link to! Please provide the :host p
     8: <p>Your password won't change until you access the link above and create a new one.</p>
   
 app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb___3948592025139430572_47458241860040'
+Started POST "/administrators/password" for 127.0.0.1 at 2017-10-11 10:27:34 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FoJXkwNxiRijdNk96OUimAFQywRpKupwqDiRdlADaynSjxss1rVJOny9NEdySFxMrdkFM3uNYhTKNe/IXp4rXw==", "administrator"=>{"email"=>"jdporrasp@unal.edu.co"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."email" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."reset_password_token" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["reset_password_token", "f0f2ce35e1cc5f4ade5339135ddedfe13b2d094b4cb2addde6d010d12d9fdf5f"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "administrators" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "administrators"."id" = ?[0m  [["reset_password_token", "f0f2ce35e1cc5f4ade5339135ddedfe13b2d094b4cb2addde6d010d12d9fdf5f"], ["reset_password_sent_at", "2017-10-11 15:27:35.082657"], ["updated_at", "2017-10-11 15:27:35.083204"], ["id", 1]]
+  [1m[35m (106.5ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (5.2ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 1457.3ms
+Sent mail to jdporrasp@unal.edu.co (18.5ms)
+Date: Wed, 11 Oct 2017 10:27:36 -0500
+From: dinnerqr@gmail.com
+Reply-To: dinnerqr@gmail.com
+To: jdporrasp@unal.edu.co
+Message-ID: <59de3868deaae_1f752af85ab5f5cc42630@jdpp95-Aspire-E5-575G.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello jdporrasp@unal.edu.co!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/administrators/password/edit?reset_password_token=ezCQsdE-ZnU7m3swXymT">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/administrators/sign_in
+Completed 302 Found in 2067ms (ActiveRecord: 108.2ms)
+
+
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2017-10-11 10:27:36 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (55.1ms)
+Started GET "/" for 127.0.0.1 at 2017-10-11 10:27:39 -0500
+  Rendered partials/_top.html.erb (25.4ms)
+  Rendered partials/_footer.html.erb (16.6ms)
+  Rendered partials/_copyright.html.erb (1.3ms)
+Completed 200 OK in 3263ms (Views: 3251.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (24.6ms)
+  Rendered partials/_top.html.erb (5.2ms)
+  Rendered partials/_footer.html.erb (4.8ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-10-11 10:27:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2017-10-11 10:27:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+  Rendered partials/_top.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (5.8ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 143ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/administrators/password/new" for 127.0.0.1 at 2017-10-11 10:27:47 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (10.2ms)
+  Rendered partials/_top.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (6.2ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 134ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/administrators/password" for 127.0.0.1 at 2017-10-11 10:27:50 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zHQnBL8c76S9XhQKg7PPXRwatanhgpaZKAnv1CVukvIIeWu7atgvhmKX+XAZHrGJsJN7nvMlHv1KBJFqK/PShA==", "administrator"=>{"email"=>"jdporrasp@unal.edu.co"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mAdministrator Load (0.3ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."email" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[36mAdministrator Load (0.3ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."reset_password_token" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["reset_password_token", "0e7dcc6835763c02a0f15cf2093953b0559f8025453cb6841a1f9585d070f325"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "administrators" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "administrators"."id" = ?[0m  [["reset_password_token", "0e7dcc6835763c02a0f15cf2093953b0559f8025453cb6841a1f9585d070f325"], ["reset_password_sent_at", "2017-10-11 15:27:50.914312"], ["updated_at", "2017-10-11 15:27:50.915674"], ["id", 1]]
+  [1m[35m (228.8ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (3.2ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 33.5ms
+Sent mail to jdporrasp@unal.edu.co (9.6ms)
+Date: Wed, 11 Oct 2017 10:27:51 -0500
+From: dinnerqr@gmail.com
+Reply-To: dinnerqr@gmail.com
+To: jdporrasp@unal.edu.co
+Message-ID: <59de38772ea4b_1f752af85ab5f428427b9@jdpp95-Aspire-E5-575G.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello jdporrasp@unal.edu.co!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/administrators/password/edit?reset_password_token=5b9KLX3rELVBEkhGVDt_">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/administrators/sign_in
+Completed 302 Found in 299ms (ActiveRecord: 230.3ms)
+
+
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2017-10-11 10:27:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+  Rendered partials/_top.html.erb (5.8ms)
+  Rendered partials/_footer.html.erb (7.3ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/administrators/password/new" for 127.0.0.1 at 2017-10-11 18:23:59 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (522.0ms)
+  Rendered partials/_top.html.erb (7.3ms)
+  Rendered partials/_footer.html.erb (6.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 2800ms (Views: 2748.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/administrators/password" for 127.0.0.1 at 2017-10-11 18:24:08 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VlqyFij/EMKeX9F7b4ffPMS9mZVtjgqElimnK5pzHnU6R8RPS1rLe7Ehv83auapes54EHvpt0tgTUjYd3FgiaA==", "administrator"=>{"email"=>"jdporrasp@unal.edu.co"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."email" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."reset_password_token" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["reset_password_token", "ef2404f225d6c0261f5a5a2a7805ffe3cf942aa985a43c8252d3393111cd4790"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "administrators" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "administrators"."id" = ?[0m  [["reset_password_token", "ef2404f225d6c0261f5a5a2a7805ffe3cf942aa985a43c8252d3393111cd4790"], ["reset_password_sent_at", "2017-10-11 23:24:08.961717"], ["updated_at", "2017-10-11 23:24:08.962244"], ["id", 1]]
+  [1m[35m (92.4ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (1.4ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 201.8ms
+Sent mail to jdporrasp@unal.edu.co (16.4ms)
+Date: Wed, 11 Oct 2017 18:24:09 -0500
+From: dinnerqr@gmail.com
+Reply-To: dinnerqr@gmail.com
+To: jdporrasp@unal.edu.co
+Message-ID: <59dea81992105_dc62abfead3f80461487@jdpp95-Aspire-E5-575G.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello jdporrasp@unal.edu.co!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/administrators/password/edit?reset_password_token=xV2xzYaJhL5s7riYBm7W">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/administrators/sign_in
+Completed 302 Found in 900ms (ActiveRecord: 94.2ms)
+
+
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2017-10-11 18:24:09 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.2ms)
+  Rendered partials/_top.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (4.7ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 135ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/administrators/password/new" for 127.0.0.1 at 2017-10-11 18:30:05 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.6ms)
+  Rendered partials/_top.html.erb (3.9ms)
+  Rendered partials/_footer.html.erb (3.0ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 63.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/administrators/password/new" for 127.0.0.1 at 2017-10-11 18:30:07 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.5ms)
+  Rendered partials/_top.html.erb (3.9ms)
+  Rendered partials/_footer.html.erb (3.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/administrators/password" for 127.0.0.1 at 2017-10-11 18:30:10 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKIKvqrTvG/Xo7FoT3dnajRz2eUZRI9J8WB1Bnd2hpUcv3znyXZn1vjd3976SRIIQ1BEbo6nVxV0G+QwMV26iA==", "administrator"=>{"email"=>"jdporrasp@unal.edu.co"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mAdministrator Load (1.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."email" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["email", "jdporrasp@unal.edu.co"], ["LIMIT", 1]]
+  [1m[36mAdministrator Load (0.9ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."reset_password_token" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["reset_password_token", "95ea66e366e0ef8a2627cfbf96a781b1047c8bfabe5de9a2a31ae57b535cf13c"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[33mUPDATE "administrators" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "administrators"."id" = ?[0m  [["reset_password_token", "95ea66e366e0ef8a2627cfbf96a781b1047c8bfabe5de9a2a31ae57b535cf13c"], ["reset_password_sent_at", "2017-10-11 23:30:10.724127"], ["updated_at", "2017-10-11 23:30:10.726485"], ["id", 1]]
+  [1m[35m (115.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (2.9ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 28.1ms
+Sent mail to jdporrasp@unal.edu.co (6.7ms)
+Date: Wed, 11 Oct 2017 18:30:10 -0500
+From: dinnerqr@gmail.com
+Reply-To: dinnerqr@gmail.com
+To: jdporrasp@unal.edu.co
+Message-ID: <59dea982da90a_dc62abfead3f8f461530@jdpp95-Aspire-E5-575G.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello jdporrasp@unal.edu.co!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/administrators/password/edit?reset_password_token=snayikmdkhW-M8G4c7ox">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/administrators/sign_in
+Completed 302 Found in 200ms (ActiveRecord: 121.0ms)
+
+
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2017-10-11 18:30:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered partials/_top.html.erb (5.1ms)
+  Rendered partials/_footer.html.erb (3.6ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+

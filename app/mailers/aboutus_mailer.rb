@@ -1,3 +1,4 @@
+
 class AboutusMailer < ApplicationMailer
 	default from: "Your Mailer <dinnerqr@gmail.com>"
 	default to: "Your Name <dinnerqr@gmail.com>"

@@ -7,6 +7,7 @@ class Administrator::PasswordsController < Devise::PasswordsController
   # POST /resource/password
    def create
      super
+     AdministratorMailer.reset_password(@administrator).deliver_now
    end
 
   # GET /resource/password/edit?reset_password_token=abcdef
