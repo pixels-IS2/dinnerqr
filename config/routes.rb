@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'order_views/currentOrderClient'
+
+  get 'order_views/historyClient'
+
+  get 'order_views/ordersChef'
+
+  get 'order_views/orderWaiter'
+
+  get 'order_views/sales'
+
   devise_for :chefs
   devise_for :waiters
   devise_for :administrators
