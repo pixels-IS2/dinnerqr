@@ -7,8 +7,8 @@ class AboutusController < ApplicationController
   	def create
     	@aboutus = Aboutus.new(aboutus_params)
     
-    	if @aboutus.save
-      		AboutusMailer.new_aboutus(@aboutus).deliver_later
+    	if @aboutus.valid?
+      		AboutusMailer.new_aboutus(@aboutus).deliver
       		redirect_to aboutus_path, notice: "Your message has been sent."
     	else
       		flash[:alert] = "An error occurred while delivering this message."

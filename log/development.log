@@ -60605,3 +60605,266 @@ Migrating to AddRememberDigestToAll (20171010215945)
             FROM sqlite_temp_master
             WHERE name='index_waiters_on_email' AND type='index'
 [0m
+Started GET "/" for 127.0.0.1 at 2017-10-10 21:06:45 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2499.6ms)
+  Rendered partials/_top.html.erb (321.5ms)
+Completed 500 Internal Server Error in 3450ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00555ccaa89400>:0x00555cca98e460>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___2460388841602848998_70325580836440'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3672665066284422880_46928544511400'
+Started POST "/__web_console/repl_sessions/687447f0b49af8144c2111303d8b24f6/trace" for 127.0.0.1 at 2017-10-10 21:07:14 -0500
+Started POST "/__web_console/repl_sessions/687447f0b49af8144c2111303d8b24f6/trace" for 127.0.0.1 at 2017-10-10 21:07:15 -0500
+Started GET "/aboutus/about" for 127.0.0.1 at 2017-10-10 21:07:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/aboutus/about"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-10-10 21:07:41 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (71.4ms)
+  Rendered partials/_top.html.erb (223.4ms)
+Completed 500 Internal Server Error in 519ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x007febdc3c18b8>:0x007febd4063200>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb___2460388841602848998_70325580472740'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3672665066284422880_70325494453680'
+Started GET "/" for 127.0.0.1 at 2017-10-10 21:12:22 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (585.6ms)
+  Rendered partials/_top.html.erb (309.8ms)
+Completed 500 Internal Server Error in 1160ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00562e727ad108>:0x00562e7275b010>):
+     7:         <div class="col-xs-12">
+     8:           <div class="social">
+     9:             
+    10:             <%- if devise_mapping.omniauthable? %>
+    11:               
+    12:               <%= link_to omniauth_authorize_path(resource_name, :facebook), class:"external facebook" do %>
+    13:                 <%=content_tag :i," ", class:"fa fa-facebook" %>
+  
+app/views/partials/_top.html.erb:10:in `_app_views_partials__top_html_erb__3931045835552429010_69925844786640'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3782352838566261806_47378742300040'
+Started GET "/" for 127.0.0.1 at 2017-10-10 21:14:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (23.2ms)
+  Rendered partials/_top.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (3.1ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 139ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/photogrid.jpg" for 127.0.0.1 at 2017-10-10 21:14:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/img/photogrid.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2017-10-10 21:14:41 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (26.3ms)
+  Rendered partials/_top.html.erb (4.2ms)
+  Rendered partials/_footer.html.erb (3.1ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 163ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:14:58 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Aboutus:0x007f31b008b6f8>):
+  
+app/controllers/aboutus_controller.rb:10:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:16:15 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `save?' for #<Aboutus:0x007f31c1a55d58>):
+  
+app/controllers/aboutus_controller.rb:10:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:16:21 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 40ms
+
+
+  
+SyntaxError (/home/jdpp95/dinnerqr/app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tLABEL
+		mail (to: 'dinnerqr@gmail.com' subject...
+		         ^
+/home/jdpp95/dinnerqr/app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o: 'dinnerqr@gmail.com' subject: "Message from #{aboutus.nam...
+...                               ^
+/home/jdpp95/dinnerqr/app/mailers/aboutus_mailer.rb:8: syntax error, unexpected ')', expecting keyword_end):
+  
+app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tLABEL
+app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/mailers/aboutus_mailer.rb:8: syntax error, unexpected ')', expecting keyword_end
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:16:46 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (/home/jdpp95/dinnerqr/app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o: 'dinnerqr@gmail.com' subject: "Message from #{aboutus.nam...
+...                               ^):
+  
+app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:17:03 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/home/jdpp95/dinnerqr/app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+		mail to: dinnerqr@gmail.com subject: "Message from #{aboutus.name}"
+		                       ^):
+  
+app/mailers/aboutus_mailer.rb:8: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:17:19 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+Completed 500 Internal Server Error in 357ms
+
+
+  
+ActiveJob::SerializationError (Unsupported argument type: Aboutus):
+  
+app/controllers/aboutus_controller.rb:11:in `create'
+Started POST "/about" for 127.0.0.1 at 2017-10-10 21:17:39 -0500
+Processing by AboutusController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HZYFb7fL07AQloTLaBtfR/hht9XW6ljNn98OAuokZl+/sVavE97etED5A3/GU4AJXFZu/MW9Kv6cgoq6N0V+w==", "aboutus"=>{"name"=>"Juan David", "last_name"=>"Porras Palencia", "email"=>"jdporrasp@unal.edu.co", "content"=>"Hola mundo"}, "commit"=>"Send"}
+Unpermitted parameter: :last_name
+  Rendering aboutus_mailer/new_aboutus.text.erb within layouts/mailer
+  Rendered aboutus_mailer/new_aboutus.text.erb within layouts/mailer (0.4ms)
+AboutusMailer#new_aboutus: processed outbound mail in 328.8ms
+Sent mail to dinnerqr@gmail.com (24.3ms)
+Date: Tue, 10 Oct 2017 21:17:39 -0500
+From: Your Mailer <dinnerqr@gmail.com>
+To: dinnerqr@gmail.com
+Message-ID: <59dd7f439331a_6e4f2b173a4626e4212f7@jdpp95-Aspire-E5-575G.mail>
+Subject: Message from Juan David
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Juan David <jdporrasp@unal.edu.co> wrote:
+
+Hola mundo
+
+Redirected to http://localhost:3000/about
+Completed 302 Found in 360ms
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-10 21:17:39 -0500
+Processing by AboutusController#new as HTML
+  Rendering aboutus/new.html.erb within layouts/application
+  Rendered aboutus/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_top.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (3.6ms)
+  Rendered partials/_copyright.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 63.3ms)
+
+
