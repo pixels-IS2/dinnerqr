@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   get 'order_views/currentOrderClient'
 
-  get 'order_views/historyClient'
+  get 'historyClient' => 'order_views#historyClient'
 
   get 'order_views/ordersChef'
 

@@ -1,2 +1,32 @@
-<h1>OrderViews#historyClient</h1>
-<p>Find me in app/views/order_views/historyClient.html.erb</p>
+ <div class="aboutUs">
+  <h1 align="center">History</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Order </th>
+        <th>Created</th>
+        <th>Name</th>
+        <th>Specification</th>
+        <th>State</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @historyClient.each do |orderdish| %>
+        <tr>
+          <td><%= orderdish.orderId %></td>
+          <td><%= orderdish.created %></td>
+          <td><%= orderdish.name %></td>
+          <td><%= orderdish.specification %></td>
+          <td><%= orderdish.quantity %></td>
+          <td><%= orderdish.dishprice %></td>
+        </tr>
+      <% end %>
+        
+    </tbody>
+  </table>
+  <%= will_paginate @historyClient %>
+</div>
