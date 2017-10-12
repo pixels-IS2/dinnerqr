@@ -169,6 +169,8 @@ ActiveRecord::Schema.define(version: 20171012053413) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "waiter_id"
+    t.string "qrCode_uid"
+    t.string "qrCode_name"
     t.index ["waiter_id"], name: "index_tables_on_waiter_id"
   end
 

@@ -27,3 +27,9 @@ tmp/*
 log/*
 # Ignore application configuration
 /config/application.yml
+
+log/*log/development.log
+db/development.sqlite3
+
+
+log/

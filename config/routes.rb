@@ -3,6 +3,19 @@ Rails.application.routes.draw do
   #devise_for :chefs
   #devise_for :waiters
   #devise_for :administrators
+  get 'order_views/currentOrderClient'
+
+  get 'historyClient' => 'order_views#historyClient'
+
+  get 'order_views/ordersChef'
+
+  get 'order_views/orderWaiter'
+
+  get 'order_views/sales'
+
+  devise_for :chefs
+  devise_for :waiters
+  devise_for :administrators
   resources :orders
   resources :tables
   resources :specialities

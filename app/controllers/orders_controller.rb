@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_client!, :only => [:new, :create]
   # GET /orders
   # GET /orders.json
   def index
@@ -10,6 +10,20 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @param = params[:id]
+    @orderdishes = @order.orderdishes.joins(:dish).select("orderdishes.*, orderdishes.state as orderstate, dishes.*")
+    @table = @order.table
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = ExportPdf.new(@param,@orderdishes,@table,@order)
+        
+        send_data pdf.render,
+          filename: "order_#{params[:id]}",
+          type: 'application/pdf',
+          disposition: 'inline'
+      end
+    end
   end
 
   # GET /orders/new
@@ -23,6 +37,7 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
   end
+
 
   # POST /orders
   # POST /orders.json
@@ -53,7 +68,7 @@ class OrdersController < ApplicationController
         orderdish.state = "On hold"
         orderdish.quantity = quantity
         orderdish.specification = specification
-        orderdish.order_id = Order.last.id
+        orderdish.order_id = current_client.orders.last.id
         orderdish.dish_id = plate_id
         orderdish.save
       end
@@ -92,7 +107,7 @@ class OrdersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_order
