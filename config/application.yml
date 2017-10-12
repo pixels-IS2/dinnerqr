@@ -16,6 +16,8 @@ GOOGLE_OAUTH_CLIENT_ID: "806707013861-cnjrv917tl9o1p66m66bld2kfctn3h06.apps.goog
 GOOGLE_OAUTH_SECRET: "qSm0mKKXTwCRiWHMiBLcZVYH"
 TWITTER_API_KEY:  "DmagfzO2zNNeDsJFaxQsSFsUR"
 TWITTER_SECRET_KEY: "z0fqX7rP4p6fSav3ECT6rQhPWqZgad1l41GIz1gQpYwyi3e6jI"
+GMAIL_USERNAME: 'dinnerqr@gmail.com'  
+GMAIL_PASSWORD: 'Pixels2017-2'
 production:
   stripe_api_key: "1719480964730166"
   stripe_publishable_key: "05353ffe887bc20e4d277290a26857f2"
