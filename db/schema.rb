@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171008224734) do
+ActiveRecord::Schema.define(version: 20171012010201) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -139,6 +139,8 @@ ActiveRecord::Schema.define(version: 20171008224734) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "waiter_id"
+    t.string "qrCode_uid"
+    t.string "qrCode_name"
     t.index ["waiter_id"], name: "index_tables_on_waiter_id"
   end
 

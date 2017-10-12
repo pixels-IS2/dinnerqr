@@ -1,5 +1,7 @@
 class TablesController < ApplicationController
   before_action :set_table, only: [:show, :edit, :update, :destroy]
+ 
+
 
   # GET /tables
   # GET /tables.json
@@ -10,6 +12,12 @@ class TablesController < ApplicationController
   # GET /tables/1
   # GET /tables/1.json
   def show
+    @table = Table.find(params[:id])
+    qr = RQRCode::QRCode.new(@table.id.to_s, :size => 7, :level => :h ).to_img 
+    @table.update_attribute :qrCode, qr.to_string
+   
+
+
   end
 
   # GET /tables/new

@@ -44,5 +44,8 @@
     <strong>Total price:</strong>
     <%= @order.price %>
   </p>
-  <%= link_to 'Back', orders_path %>
+  <p>
+  <%= link_to "Printable Receipt (PDF)", order_path(@order, format: 'pdf'),class:"btn btn-primary" %>
+</p>
+  <%= link_to 'Back', orders_path ,class:"btn btn-primary"%>
 </div>
