@@ -57,6 +57,8 @@ gem 'rdoc'
 
 gem 'dragonfly', '~> 1.1.3'
 
+#gem 'delayed_job_active_record'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

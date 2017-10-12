@@ -8,7 +8,7 @@ class Clients::PasswordsController < Devise::PasswordsController
    def create
 
      super
-     ClientsMailer.password_reset(@administrator).deliver_now
+     #ClientsMailer.password_reset(@administrator).deliver_now
    end
 
   # GET /resource/password/edit?reset_password_token=abcdef
@@ -21,7 +21,7 @@ class Clients::PasswordsController < Devise::PasswordsController
      super
    end
 
-  # protected
+   protected
 
    def after_resetting_password_path_for(resource)
      super(resource)
