@@ -1,7 +1,6 @@
+<h1 align="center" > Order <%= @Order%></h1>
 <div class="aboutUs">
-  <p id="notice"><%= notice %></p>
   
-  <h1 align="center" > Order <%= @Order%></h1>
   <p>
     <strong>State:</strong>
     <%= @order.state %>
@@ -14,7 +13,7 @@
     <strong>waiter:</strong>
     <%= @table.waiter.email %>
   </p>
-  <table>
+  <table class="table table-inverse">
     <thead>
       <tr>
         <th></th>
@@ -45,7 +44,7 @@
     <%= @order.price %>
   </p>
   <p>
-  <%= link_to "Printable Receipt (PDF)", order_path(@order, format: 'pdf'),class:"btn btn-primary" %>
+  <%= link_to "Printable Receipt (PDF)", order_path(@order, format: 'pdf'),class:"btn btn-lg btn-template-primary" %>
 </p>
-  <%= link_to 'Back', orders_path ,class:"btn btn-primary"%>
+  <%= link_to 'Back', orders_path ,class:"btn btn-lg btn-template-primary"%>
 </div>

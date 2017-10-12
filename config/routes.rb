@@ -40,7 +40,6 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy, :update]
   end
   root 'welcome#index'
-  get 'login' => 'welcome#login'
   get 'about' => 'aboutus#new', as: 'aboutus'
   post 'about' => 'aboutus#create'
 
