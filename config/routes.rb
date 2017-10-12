@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
   devise_for :waiters, controllers: {
     passwords: 'waiters/passwords'
+    sessions: 'waiters/sessions'
   }
 
   devise_for :administrators, controllers: {
