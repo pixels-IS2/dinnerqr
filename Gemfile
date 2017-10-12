@@ -44,6 +44,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'active_model_otp'
+
+gem 'chunky_png', :require => false
+
+gem 'rqrcode_png'
+gem 'rdoc'
+
+gem 'dragonfly', '~> 1.1.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
