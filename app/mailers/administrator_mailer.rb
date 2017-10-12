@@ -4,8 +4,8 @@ class AdministratorMailer < ApplicationMailer
 	#   mail to: user.email, subject: "Account activation"
 	#end
 
-  	def password_reset(admin)
-    	@administrator = admin
-    	mail to: admin.email, subject: "Password reset"
+  	def reset_password(administrator)
+    	@administrator = administrator
+    	mail to: administrator.email, subject: "Password reset"
   	end
 end

@@ -7,10 +7,17 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
-private
+  #before_action :configure_permitted_parameters, if: :devise_controller?
+	#protected
+  #def configure_permitted_parameters
+  #  devise_parameter_sanitizer.permit(:sign_up,keys: [:first_name, :last_name, :email, :password, :password_confirmation]);
+  #  devise_parameter_sanitizer.permit(:account_update,keys: [:first_name, :last_name, :email, :password, :current_password]);
+	#end
 
-def current_user
-  @current_client ||= Client.find(session[:client_id]) if session[:client_id]
-end
+	private
+
+	def current_user
+	  @current_client ||= Client.find(session[:client_id]) if session[:client_id]
+	end
 
 end

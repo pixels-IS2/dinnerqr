@@ -6,7 +6,9 @@ class Clients::PasswordsController < Devise::PasswordsController
 
   # POST /resource/password
    def create
+
      super
+     ClientsMailer.password_reset(@administrator).deliver_now
    end
 
   # GET /resource/password/edit?reset_password_token=abcdef
