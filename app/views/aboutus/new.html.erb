@@ -32,26 +32,26 @@
 
 	<%= form_for @aboutus, url: aboutus_path do |message_form| %>
 		<fieldset>
-			<div class="field">
-				<%= message_form.text_field :name, placeholder: "Name" %>
+			<div class="field" >
+				<%= message_form.text_field :name, placeholder: "Name", class:"form-control" %>
 			</div>
 
 			<div class="field">
-				<%= message_form.text_field :last_name, placeholder: "Last Name" %>
+				<%= message_form.text_field :last_name, placeholder: "Last Name", class:"form-control" %>
 			</div>
 
 			<div class="field">
-				<%= message_form.email_field :email, placeholder: "Email"%>
+				<%= message_form.email_field :email, placeholder: "Email", class:"form-control"%>
 			</div>
 
 			<div class="field">
-				<%= message_form.text_area :content, placeholder: "Message"%>
+				<%= message_form.text_area :content, placeholder: "Message", class:"form-control"%>
 			</div>
 		</fieldset>
 
 		<fieldset>
 			<div class="field">
-				<%= message_form.submit "Send" %>
+				<%= message_form.submit "Send", class:"btn btn-lg btn-template-primary" %>
 			</div>
 		</fieldset>
 	<% end %>

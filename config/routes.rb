@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  root 'welcome#index'
   #devise_for :chefs
   #devise_for :waiters
   #devise_for :administrators
@@ -39,8 +39,7 @@ Rails.application.routes.draw do
   resources :dishes do
     resources :comments, only: [:create, :destroy, :update]
   end
-  root 'welcome#index'
-  get 'login' => 'welcome#login'
+  
   get 'about' => 'aboutus#new', as: 'aboutus'
   post 'about' => 'aboutus#create'
 
