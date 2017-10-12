@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+e# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -49,6 +49,8 @@ count=1;
   );
   count=count+1;
 end
+Client.create(email:"clienteprueba@gmail.edu.co",
+              password: "12345678",)
 5.times do
 
   nombre =Faker::Name.name;
@@ -61,11 +63,13 @@ end
 
 end
 a=Table.find(2);
-Order.create(price:10000,state:"hold on",table_id:a.id,client_id:1)
+Order.create(price:10000,state:"hold on",table_id:a.id,client_id:1);
 c=1;
 3.times do
   Orderdish.create(state:"preparando",quantity:1,specification:"sin sal",order_id:1,dish_id:c)
   c=c+1;
 end
 
-
+b=Order.find(1);
+b.price=Dish.find(1).price*Orderdish.find(1).quantity+Dish.find(2).price*Orderdish.find(2).quantity+Dish.find(3).price*Orderdish.find(3).quantity;
+b.save!
