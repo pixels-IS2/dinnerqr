@@ -12,10 +12,6 @@ Rails.application.routes.draw do
   get 'order_views/orderWaiter'
 
   get 'order_views/sales'
-
-  devise_for :chefs
-  devise_for :waiters
-  devise_for :administrators
   resources :orders
   resources :tables
   resources :specialities
