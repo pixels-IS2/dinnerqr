@@ -75,10 +75,6 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
-    t.string "lastname"
-    t.integer "identificacion"
-    t.date "birthday"
     t.string "provider"
     t.string "uid"
     t.string "oauth_token"
@@ -105,6 +101,7 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.string "name"
     t.string "state"
     t.text "description"
+    t.string "speciality"
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -154,31 +151,6 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.string "qrCode_uid"
     t.string "qrCode_name"
     t.index ["waiter_id"], name: "index_tables_on_waiter_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string "current_sign_in_ip"
-    t.string "last_sign_in_ip"
-    t.integer "user_id"
-    t.integer "identification"
-    t.string "name"
-    t.string "lastname"
-    t.string "username"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.date "birthdate"
-    t.integer "identification_type"
-    t.integer "gender"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "waiters", force: :cascade do |t|
