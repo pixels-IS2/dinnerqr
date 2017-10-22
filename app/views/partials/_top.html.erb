@@ -21,7 +21,8 @@
               <%= link_to edit_client_registration_path do %>
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
-              <% end %> 
+                <%= image_tag current_client.photo.url(:thumb) %>
+              <% end %>
             <% elsif chef_signed_in? %>
               <%= link_to destroy_chef_session_path , method: :delete do %>
                 <%= content_tag :i," ", class:"fa fa-sign-out" %>
@@ -30,6 +31,7 @@
               <%= link_to edit_chef_registration_path do %>
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+                <%= image_tag current_chef.photo.url(:thumb) %>
               <% end %>
             <% elsif waiter_signed_in? %>
               <%= link_to destroy_waiter_session_path , method: :delete do %>
@@ -39,6 +41,7 @@
               <%= link_to edit_waiter_registration_path do %>
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
+                <%= image_tag current_waiter.photo.url(:thumb) %>
               <% end %>
             <% elsif administrator_signed_in? %>
               <%= link_to destroy_administrator_session_path , method: :delete do %>
@@ -49,6 +52,7 @@
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Edit registration", class:"hidden-xs text-uppercase" %>
               <% end %>
+              <%= image_tag current_administrator.photo.url(:thumb) %>
             <% else %>
             
               <a href="#" data-toggle="modal" data-backdrop="false" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>

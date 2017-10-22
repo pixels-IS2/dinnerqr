@@ -1,9 +1,14 @@
 class Clients::RegistrationsController < Devise::RegistrationsController
-  # before_action :configure_sign_up_params, only: [:create]
-  # before_action :configure_account_update_params, only: [:update]
-  def account_update_params
-    params.require(:client).permit(:name, :lastname, :email, :password, :identificacion, :birthdate, :password_confirmation, :current_password)
-  end
+    before_action :configure_sign_up_params, only: [:create]
+    before_action :configure_account_update_params, only: [:update]
+  #def account_update_params
+   # params.require(:client).permit(:name, :lastname, :email, :password, :identificacion, :birthdate, :password_confirmation, :current_password, :photo)
+  #end
+
+  #def account_sign_up_params
+   # params.require(:client).permit(:name, :lastname, :email, :password, :identificacion, :birthdate, :password_confirmation, :current_password, :photo)
+  #end
+
 
   # GET /resource/sign_up
    def new
@@ -62,12 +67,12 @@ class Clients::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
    def configure_sign_up_params
-     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])
+     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute, :photo])
    end
 
   # If you have extra params to permit, append them to the sanitizer.
    def configure_account_update_params
-     devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
+     devise_parameter_sanitizer.permit(:account_update, keys: [:attribute, :photo])
    end
 
   # The path used after sign up.

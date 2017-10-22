@@ -18,7 +18,8 @@ Rails.application.routes.draw do
   get 'menu' => 'menu#menu'
 
   devise_for :chefs, controllers: {
-    passwords: 'chefs/passwords'
+    passwords: 'chefs/passwords',
+    registrations:"chefs/registrations"
   }
 
   devise_for :clients, controllers: { 
@@ -28,12 +29,14 @@ Rails.application.routes.draw do
   }
 
   devise_for :waiters, controllers: {
-    passwords: 'waiters/passwords'
+    passwords: 'waiters/passwords',
    # sessions: 'waiters/sessions'
+    registrations:"waiters/registrations"
   }
 
   devise_for :administrators, controllers: {
-    passwords: 'administrators/passwords'
+    passwords: 'administrators/passwords',
+    registrations:"administrators/registrations"
   }
 
   resources :dishes do
