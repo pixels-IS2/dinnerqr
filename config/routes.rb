@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  mount RailsAdmin::Engine => '/kami', as: 'rails_admin'
+
   root 'welcome#index'
   #devise_for :chefs
   #devise_for :waiters
