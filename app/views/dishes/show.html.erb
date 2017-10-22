@@ -8,7 +8,11 @@
 <p>
   
   <br>
+  <% if @dish.nil? %>
+    <h1> Sin plato</h1>
+  <% else %>
   <%= image_tag @dish.photo.url(:thumb) %>
+  <%end%>
 </p>
 
 

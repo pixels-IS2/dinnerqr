@@ -48,6 +48,11 @@
     <%= select_date Date.today, prefix: :start_date %>
     
   </div>
+
+  <div class="field">
+      Update your profile photo :<%= f.file_field :photo %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update" ,type:"submit",class:"btn btn-lg btn-template-primary"%>
   </div>
