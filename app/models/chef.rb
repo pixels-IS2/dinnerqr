@@ -4,5 +4,6 @@ class Chef < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to  :speciality
+   accepts_nested_attributes_for :speciality
 end
 

@@ -20,6 +20,12 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+  
+  <div class="field">
+    <%= f.label :speciality %><br>
+    <%= f.collection_select :speciality_id, Speciality.all, :id, :name %>
+  </div>
+
 
   <div class="actions">
     <%= f.submit "Sign up" %>

@@ -1,14 +1,17 @@
-class Chef::RegistrationsController < Devise::RegistrationsController
+
+class Chefs::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-
+ def account_sign_up_params
+   devise_parameter_sanitizer.sanitize(:speciality_id)
+    params.require(:chef).permit(:email,:password_confirmation, :current_password, :speciality_id)
+  end
   # GET /resource/sign_up
    def new
      super
    end
 
   # POST /resource
-   def create
      def create
      build_resource(sign_up_params)
 
@@ -31,7 +34,7 @@ class Chef::RegistrationsController < Devise::RegistrationsController
         respond_with resource
       end
      end
-   end
+
 
   # GET /resource/edit
    def edit
@@ -61,12 +64,12 @@ class Chef::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
    def configure_sign_up_params
-     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])
+     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute,:speciality_id])
    end
 
   # If you have extra params to permit, append them to the sanitizer.
    def configure_account_update_params
-     devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
+     devise_parameter_sanitizer.permit(:account_update, keys: [:attribute,:speciality_id])
    end
 
   # The path used after sign up.
