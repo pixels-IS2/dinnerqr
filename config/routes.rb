@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  mount RailsAdmin::Engine => '/kami', as: 'rails_admin'
+
   root 'welcome#index'
   #devise_for :chefs
   #devise_for :waiters
@@ -18,7 +21,10 @@ Rails.application.routes.draw do
   get 'menu' => 'menu#menu'
 
   devise_for :chefs, controllers: {
+
+    registrations:"chefs/registrations",
     passwords: 'chefs/passwords'
+
   }
 
   devise_for :clients, controllers: { 
@@ -28,12 +34,14 @@ Rails.application.routes.draw do
   }
 
   devise_for :waiters, controllers: {
-    passwords: 'waiters/passwords'
+    passwords: 'waiters/passwords',
    # sessions: 'waiters/sessions'
+    registrations:"waiters/registrations"
   }
 
   devise_for :administrators, controllers: {
-    passwords: 'administrators/passwords'
+    passwords: 'administrators/passwords',
+    registrations:"administrators/registrations"
   }
 
   resources :dishes do

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171012010201) do
+ActiveRecord::Schema.define(version: 20171019220621) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,6 +32,10 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.datetime "reset_sent_at"
     t.string "remember_token"
     t.string "remember_digest"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
     t.index ["email"], name: "index_administrators_on_email", unique: true
     t.index ["reset_password_token"], name: "index_administrators_on_reset_password_token", unique: true
   end
@@ -57,6 +61,10 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.datetime "reset_sent_at"
     t.string "remember_token"
     t.string "remember_digest"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
     t.index ["email"], name: "index_chefs_on_email", unique: true
     t.index ["reset_password_token"], name: "index_chefs_on_reset_password_token", unique: true
     t.index ["speciality_id"], name: "index_chefs_on_speciality_id"
@@ -83,6 +91,10 @@ ActiveRecord::Schema.define(version: 20171012010201) do
     t.datetime "reset_sent_at"
     t.string "remember_token"
     t.string "remember_digest"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
