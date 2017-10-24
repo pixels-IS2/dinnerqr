@@ -7,7 +7,9 @@ end
 
 
 gem 'rails_admin'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'sass-rails', '~> 5.0'
+gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'devise', '~> 4.3'
 gem 'faker', '~> 1.6', '>= 1.6.6'
