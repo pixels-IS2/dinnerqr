@@ -14,13 +14,12 @@
   <body>
 
   <%= render 'partials/top' %>
-  <%= render 'partials/profile' %>
-  <%= render 'partials/navbar' %>
   
-  
-  
-  
-  <%= yield %>
+  <% unless client_signed_in? or chef_signed_in? or administrator_signed_in? or waiter_signed_in? %>
+    <%= yield %>
+  <% else %>
+    <%= render 'partials/profile' %>
+  <% end %>
   <%= render 'partials/footer' %>
   <%= render 'partials/copyright' %>
   </body>
