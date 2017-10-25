@@ -14,3 +14,4 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
+//= rails_admin/custom/ui.js
