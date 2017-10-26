@@ -35,6 +35,10 @@ gem 'figaro'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
 ## PDF gems
+gem 'chartkick'
+gem 'highcharts-rails', '~> 3.0.0'
+gem 'squid'
+
 gem 'wicked_pdf'
 gem 'prawn'
 gem 'responders'
@@ -61,6 +65,10 @@ gem 'rqrcode_png'
 gem 'rdoc'
 
 gem 'dragonfly', '~> 1.1.3'
+
+#gem 'chartkick'
+
+gem 'hightop'
 
 #gem 'delayed_job_active_record'
 

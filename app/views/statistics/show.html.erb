@@ -1,0 +1,47 @@
+<h1> Statistics </h1>
+<%= bar_chart @op1 , height: '500px', library: {
+    title: {text: 'Sporters by age', x: -20},
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: 'Ages count'
+        }
+    },
+    xAxis: {
+        title: {
+            text: 'Age'
+        }
+    }
+}%>
+<%= bar_chart @op2 , library: {
+    title: {text: 'Sporters by country', x: -20},
+    yAxis: {
+        title: {
+            text: 'Sporters count'
+        }
+    },
+    xAxis: {
+        title: {
+            text: 'Country'
+        }
+    }
+}%>
+
+<%=line_chart @op4, library: {
+    title: {text: 'Competitions by year', x: -20},
+    yAxis: {
+        crosshair: true,
+        title: {
+            text: 'Competitions count'
+        }
+    },
+    xAxis: {
+        crosshair: true,
+        title: {
+            text: 'Year'
+        }
+    }
+}
+%>
+
+<%= pie_chart @op2  %>r
