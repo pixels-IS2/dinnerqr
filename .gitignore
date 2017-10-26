@@ -24,12 +24,26 @@ node_modules
 db/development\.sqlite3
 
 tmp/*
-log/*
+
 # Ignore application configuration
 /config/application.yml
 
 log/*log/development.log
 db/development.sqlite3
+
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
 
 log/

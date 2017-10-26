@@ -15,24 +15,7 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
-    <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control"%>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off" ,type:"password",class:"form-control"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" ,type:"password",class:"form-control"%>
-  </div>
+  
   <div class="field">
     <%= f.label :name %> 
     <%= f.text_field :name, autocomplete: "off" ,class:"form-control"%>
@@ -54,6 +37,25 @@
 
   <div class="field">
       Update your profile photo :<%= f.file_field :photo %>
+  </div>
+
+<div class="field">
+    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
+    <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control"%>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> characters minimum</em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" ,type:"password",class:"form-control"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off" ,type:"password",class:"form-control"%>
   </div>
 
   <div class="actions">
