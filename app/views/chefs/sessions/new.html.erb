@@ -1,35 +1,57 @@
-<section  class="bar background-white no-mb">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-      <h2 align="center">Sign in</h2>
-      
-				<hr class="colorgraph">
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name),role:"form") do |f| %>
-        <fieldset>
-          <div class="form-group">
-            <%= f.email_field :email, autofocus: true ,type:"email",class:"form-control input-lg", placeholder:"Email Address"%>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+<div class="top-content">
+  <div class="inner-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text">
+          <h1><strong>Dinner QR</strong></h1>
+          <div class="description">
+            <!-- <p>Welcome</p> -->
           </div>
-    
-          <div class="field">
-            <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control input-lg", placeholder:"Password"%>
-          </div>
-    
-          <% if devise_mapping.rememberable? -%>
-            <div class="form-check">
-              <%= f.check_box :remember_me %>
-              <%= f.label :remember_me,class:"form-check-label" %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 form-box">
+          <div class="form-top">
+            <div class="form-top-left">
+              <h1><strong>Sign up</strong></h1>
+              <p>Enter your username and password to log</p>
             </div>
-          <% end -%>
-      
-				  <hr class="colorgraph">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <%= f.submit "Log in",type:"submit",class:"btn btn-lg btn-success btn-block" %>
+            <div class="form-top-right">
+        			<i class="fa fa-key"></i>
+        		</div>
           </div>
-          
-          <%= render "chefs/shared/links" %>
-        </fieldset> 
-      <% end %>
+          <div class="form-bottom">
+            <form role="form" action="" method="post" class="login-form">
+              <%= form_for(resource, as: resource_name, url: session_path(resource_name),role:"form") do |f| %>
+                <fieldset>
+                  <div class="form-group">
+                    <%= f.email_field :email, autofocus: true ,type:"email",class:"form-control input-lg", placeholder:"Email Address"%>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+            
+                  <div class="field">
+                    <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control input-lg", placeholder:"Password"%>
+                  </div>
+            
+                  <% if devise_mapping.rememberable? -%>
+                    <div class="form-check">
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me,class:"form-check-label" %>
+                    </div>
+                  <% end -%>
+              
+        				  <hr class="colorgraph">
+                  <div >
+                    <%= f.submit "Log in",type:"submit",class:"btn btn-lg btn-success btn-block" %>
+                  </div>
+                  
+                  <%= render "chefs/shared/links" %>
+                </fieldset> 
+              <% end %>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</section>
+</div>
