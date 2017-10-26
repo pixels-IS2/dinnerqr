@@ -9,4 +9,11 @@ class Order < ApplicationRecord
     	return historyClient
     end
 
+    K=[]
+    def self.dishmax
+
+        return Orderdish.joins(:dish).group('dish_id').count
+
+    end
+
 end
