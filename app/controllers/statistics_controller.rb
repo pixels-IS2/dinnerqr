@@ -1,7 +1,7 @@
 class StatisticsController < ApplicationController
 
   def show
-    puts 'su re puta madre que lo remilpario..'
+    puts 'su prostituda progenitora que lo dio a luz repetidas veces'
     puts "LlllllllllllllllllllllllllllllllllllllllllllllllllllllLLLLLLLL"
     @op=Order.dishmax
     puts @op

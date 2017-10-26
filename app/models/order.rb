@@ -12,7 +12,8 @@ class Order < ApplicationRecord
     K=[]
     def self.dishmax
 
-        return Orderdish.joins(:dish).group('dish_id').count
+        return Orderdish.joins(:dish).group('name').count
+        
 
     end
 
