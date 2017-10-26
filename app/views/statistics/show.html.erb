@@ -1,2 +1,46 @@
 <h1> Statistics </h1>
-<%= bar_chart @op %>
+<%= bar_chart @op , height: '500px', library: {
+    title: {text: 'Sporters by age', x: -20},
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: 'Ages count'
+        }
+    },
+    xAxis: {
+        title: {
+            text: 'Age'
+        }
+    }
+}%>
+
+<%= column_chart @op , library: {
+    title: {text: 'Sporters by country', x: -20},
+    yAxis: {
+        title: {
+            text: 'Sporters count'
+        }
+    },
+    xAxis: {
+        title: {
+            text: 'Country'
+        }
+    }
+}%>
+
+<%=line_chart @op, library: {
+    title: {text: 'Competitions by year', x: -20},
+    yAxis: {
+        crosshair: true,
+        title: {
+            text: 'Competitions count'
+        }
+    },
+    xAxis: {
+        crosshair: true,
+        title: {
+            text: 'Year'
+        }
+    }
+}
+%>
