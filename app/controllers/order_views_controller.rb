@@ -6,7 +6,7 @@ class OrderViewsController < ApplicationController
   end
 
   def historyClient
-    @historyClient = current_client.orders.joins(:orderdishes, :dishes).select("orders.*, orders.id   as orderId, orders.created_at as created, orderdishes.*, dishes.*, dishes.price as dishprice")
+    @historyClient = Order.history_client current_client
     @historyClient = @historyClient.paginate(:page => 1, :per_page => 12)
   end
 

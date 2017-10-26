@@ -57,8 +57,10 @@
               <%= image_tag current_administrator.photo.url(:thumb) %>
             <% else %>
             
-              <a href="#" data-toggle="modal" data-backdrop="false" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
-              
+              <%= link_to new_client_session_path do %>
+                <%= content_tag :i," ", class:"fa fa-sign-in" %>
+                <%= content_tag :span, "Sign in", class:"hidden-xs text-uppercase" %>
+              <% end %>
               <%= link_to new_client_registration_path do %>
                 <%= content_tag :i," ", class:"fa fa-user" %>
                 <%= content_tag :span, "Register", class:"hidden-xs text-uppercase" %>

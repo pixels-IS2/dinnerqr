@@ -1,5 +1,8 @@
+<section  class="bar background-white no-mb">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+
 <h2 align="center">Edit <%= resource_name.to_s.humanize %></h2>
-<div class="aboutUs">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -22,8 +25,8 @@
     <%= f.text_field :lastname, autocomplete: "off" ,class:"form-control"%>
   </div>
    <div class ="field">
-     <%= f.label :identificacion %> 
-    <%= f.number_field :identification,placeholder: ' identificacion' , class:'form-control'%><br />
+     <%= f.label :identification %> 
+    <%= f.number_field :identification ,placeholder: ' identificacion' , class:'form-control'%><br />
   </div>
   <div class="field">
     <%= f.label :birthday %>
@@ -66,4 +69,7 @@
 
 <%= link_to "Back", :back %>
 
-</div>
+
+    </div>
+  </div>
+</section>

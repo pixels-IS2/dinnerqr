@@ -16,6 +16,7 @@
   <%= render 'partials/top' %>
   
   <% unless client_signed_in? or chef_signed_in? or administrator_signed_in? or waiter_signed_in? %>
+  <%= render 'partials/navbar' %>
     <%= yield %>
   <% else %>
     <%= render 'partials/profile' %>
