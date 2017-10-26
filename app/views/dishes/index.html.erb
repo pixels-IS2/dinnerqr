@@ -19,9 +19,21 @@
         <td><%= dish.state %></td>
         <td><%= dish.description %></td>
         <td><%= dish.price %></td>
-        <td><%= link_to 'Show', dish %></td>
-        <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
-        <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to dish do %>
+            <%= content_tag :i," ", class:"fa fa-eye" %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_dish_path(dish) do %>
+            <%= content_tag :i," ", class:"fa fa-pencil" %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to dish, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <%= content_tag :i," ", class:"fa fa-trash" %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>

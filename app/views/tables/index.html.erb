@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Tables</h1>
 
-<table>
+<table class="table table-inverse">
   <thead>
     <tr>
       <th>Number</th>
@@ -18,14 +16,25 @@
         <td><%= table.number %></td>
         <td><%= table.sector %></td>
         <td><%= table.waiter.email%></td>
-        <td><%= link_to 'Show', table %></td>
-        <td><%= link_to 'Edit', edit_table_path(table) %></td>
-        <td><%= link_to 'Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to table do %>
+            <%= content_tag :i," ", class:"fa fa-eye" %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_table_path(table) do %>
+            <%= content_tag :i," ", class:"fa fa-pencil" %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to table, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <%= content_tag :i," ", class:"fa fa-trash" %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Table', new_table_path %>

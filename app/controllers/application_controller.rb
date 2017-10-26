@@ -5,10 +5,15 @@ class ApplicationController < ActionController::Base
 
 
   #before_action :authenticate_chef!
-  def after_sign_in_path_for(resource)
-    dishes_path
-  end
+ 
+ def after_sign_in_path_for(resource)
 
+  if resource.class == Chef || resource.class== Waiter || resource.class== Client
+    menu_path 
+  else
+    dishes_path 
+  end
+end
   helper_method :current_user
 
   #before_action :configure_permitted_parameters, if: :devise_controller?

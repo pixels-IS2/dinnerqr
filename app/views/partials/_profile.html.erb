@@ -1,0 +1,68 @@
+
+<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<% if client_signed_in? %>
+                        <%= image_tag current_client.photo.url(:medium ),class:"img-responsive" %>
+                    <% elsif chef_signed_in? %>
+                        <%= image_tag current_chef.photo.url(:medium ) ,class:"img-responsive"%>
+                    <% elsif waiter_signed_in? %>
+                        <%= image_tag current_waiter.photo.url(:medium ) ,class:"img-responsive"%>
+                    <% elsif administrator_signed_in? %>
+                      <%= image_tag current_administrator.photo.url(:medium ),class:"img-responsive" %>
+                    <% end %>
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						
+					</div>
+					<div class="profile-usertitle-job">
+						
+					</div>
+				</div>
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<% if client_signed_in? %>
+		                    <li><%=link_to 'Menu', menu_path ,class:"active"%></li>
+		                    <li><%=link_to 'Orders', new_order_path ,class:"dactive"%></li>
+		                    <li><%=link_to 'History', historyClient_path ,class:"active"%></li>
+		                <% elsif chef_signed_in? %>
+		                    <li><%=link_to 'Dishes', dishes_path %></li>
+		                    <li><%=link_to 'Orders', orders_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'Orders Chef', ordersChef_path ,class:"dropdown-toggle"%></li>
+		                <% elsif waiter_signed_in? %>
+		                    <li><%=link_to 'Menu', menu_path ,orderWaiter_path ,class:"dropdown-toggle"%></li>
+		                <% elsif administrator_signed_in? %>
+		                    <li><%=link_to 'Dashboard', rails_admin.dashboard_path ,class:"dropdown-toggle"%></li>
+		                	<li><%=link_to 'Tables', tables_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'Dishes', dishes_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'Menu', menu_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'Specialities', specialities_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'Orders', orders_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'New Chef', new_chef_registration_path ,class:"dropdown-toggle"%></li>
+		                    <li><%=link_to 'New waiter', new_waiter_registration_path ,class:"dropdown-toggle"%></li>
+		                <% end %>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   <%= yield %>
+            </div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+
+
+
+            
+    

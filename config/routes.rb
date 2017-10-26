@@ -10,10 +10,25 @@ Rails.application.routes.draw do
 
   get 'historyClient' => 'order_views#historyClient'
 
-  get 'order_views/ordersChef'
+  #put 'order_views/ordersChef' => 'order_views#ordersChef'
+  
+  #resources :order_views do
+  #  collection do
+  #    get :ordersChef
+  #  end
+  #end
+  
+  get 'ordersChef' => 'order_views#ordersChef'
+  
+  resources :order_views do
+    collection do
+      put :preparated
+      put :deliverated
+    end
+  end
 
-  get 'order_views/orderWaiter'
-
+  get 'orderWaiter'  => 'order_views#orderWaiter'
+  
   get 'order_views/sales'
   resources :orders
   resources :tables
@@ -21,8 +36,7 @@ Rails.application.routes.draw do
   get 'menu' => 'menu#menu'
 
   devise_for :chefs, controllers: {
-
-    registrations:"chefs/registrations",
+    registrations:'chefs/registrations',
     passwords: 'chefs/passwords'
 
   }

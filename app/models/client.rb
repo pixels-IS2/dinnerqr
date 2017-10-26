@@ -5,7 +5,9 @@ class Client < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          omniauth_providers: [:facebook,:google_oauth2,:twitter]
 
-  has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "30x30#" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :photo, 
+  :styles => { :medium => "300x300>", :thumb => "30x30#" }, 
+  :default_url => ":rails_root/app/assets/images/deer.png"
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
   
   def self.from_omniauth(auth)
