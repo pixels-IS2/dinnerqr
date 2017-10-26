@@ -7,7 +7,10 @@ end
 
 
 gem 'rails_admin'
-gem 'bootstrap-sass'
+gem 'rails_admin_rollincode', '~> 1.0'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'sass-rails', '~> 5.0'
+gem 'font-awesome-sass', '~> 4.7.0'
 gem 'jquery-rails'
 gem 'devise', '~> 4.3'
 gem 'faker', '~> 1.6', '>= 1.6.6'

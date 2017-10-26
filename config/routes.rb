@@ -36,8 +36,7 @@ Rails.application.routes.draw do
   get 'menu' => 'menu#menu'
 
   devise_for :chefs, controllers: {
-
-    registrations:"chefs/registrations",
+    registrations:'chefs/registrations',
     passwords: 'chefs/passwords'
 
   }
