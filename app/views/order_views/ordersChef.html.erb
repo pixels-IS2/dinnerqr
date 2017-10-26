@@ -1,2 +1,39 @@
-<h1>OrderViews#ordersChef</h1>
-<p>Find me in app/views/order_views/ordersChef.html.erb</p>
+
+  <h1 align="center"><%= current_chef.speciality.name %> orders</h1>
+   <div class="aboutUs">
+    <%= form_tag preparated_order_views_path, method: :put do %>
+      <table class="table table-inverse">
+        <thead>
+          <tr>
+            <th>  </th>
+            <th>Created </th>
+            <th>Table </th>
+            <th>Name</th>
+            <th>Specification</th>
+            <th>Quantity</th>
+            <th>State</th>
+            
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @ordersChef.each do |orderchef| %>
+            <tr>
+              <td><%= check_box_tag "orderdishes_ids[]", orderchef.id %><%= orderchef.id%></td>
+              <td><%= orderchef.order_created.to_time.strftime('%B %e at %l:%M %p') %></td>
+              <td><%= orderchef.number %></td>
+              <td><%= orderchef.name %></td>
+              <td><%= orderchef.specification %></td>
+              <td><%= orderchef.quantity %></td>
+              <td><%= orderchef.state %></td>
+              
+            </tr>
+          <% end %>
+            
+        </tbody>
+      </table>
+      <%= submit_tag "Preparated" %>
+    
+    
+    <% end %>
+  </div>
