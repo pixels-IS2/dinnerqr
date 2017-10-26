@@ -15,8 +15,30 @@ class Order < ApplicationRecord
         #return Orderdish.joins(:dish).group('name')
     end
 
+    def self.dishmax
+        return Orderdish.joins(:dish).group('name').sum('quantity')
+
     #def self.all_time_sales
     #    return Orders.
     #end
+
+    end
+    def self.client
+        return Order.group("client_id").count
+
+
+
+    end
+
+    def self.mesa
+        return Order.group("table_id").count
+
+
+
+    end
+
+    def self.ventasf
+        Order.group("created_at").sum("price");
+    end
 
 end
