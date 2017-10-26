@@ -51,6 +51,8 @@ Rails.application.routes.draw do
   get 'about' => 'aboutus#new', as: 'aboutus'
   post 'about' => 'aboutus#create'
 
+  get 'statistics' => 'statistics#show'
+
   #devise_scope :administrators do
   #  post 'administrators/password/new', to: 'devise/passwords#new'
   #end

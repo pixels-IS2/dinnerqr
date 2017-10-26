@@ -59,6 +59,8 @@ gem 'rdoc'
 
 gem 'dragonfly', '~> 1.1.3'
 
+gem 'chartkick'
+
 #gem 'delayed_job_active_record'
 
 group :development, :test do
