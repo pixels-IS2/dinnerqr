@@ -12,7 +12,31 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
+  
   <div class="field">
+    <%= f.label :name %> 
+    <%= f.text_field :name, autocomplete: "off" ,class:"form-control"%>
+  </div>
+<div class="field">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname, autocomplete: "off" ,class:"form-control"%>
+  </div>
+   <div class ="field">
+     <%= f.label :identificacion %> 
+    <%= f.number_field :identification,placeholder: ' identificacion' , class:'form-control'%><br />
+  </div>
+  <div class="field">
+    <%= f.label :birthday %>
+      
+    <%= select_date Date.today, prefix: :start_date %>
+    
+  </div>
+
+  <div class="field">
+      Update your profile photo :<%= f.file_field :photo %>
+  </div>
+
+<div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
     <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control"%>
     <% if @minimum_password_length %>
@@ -29,28 +53,6 @@
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" ,type:"password",class:"form-control"%>
-  </div>
-  <div class="field">
-    <%= f.label :name %> 
-    <%= f.text_field :name, autocomplete: "off" ,class:"form-control"%>
-  </div>
-<div class="field">
-    <%= f.label :lastname %>
-    <%= f.text_field :last_name, autocomplete: "off" ,class:"form-control"%>
-  </div>
-   <div class ="field">
-     <%= f.label :identificacion %> 
-    <%= f.number_field :identificacion,placeholder: ' identificacion' , class:'form-control'%><br />
-  </div>
-  <div class="field">
-    <%= f.label :birthday %>
-      
-    <%= select_date Date.today, prefix: :start_date %>
-    
-  </div>
-
-  <div class="field">
-      Update your profile photo :<%= f.file_field :photo %>
   </div>
 
   <div class="actions">

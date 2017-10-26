@@ -21,15 +21,13 @@ venv
 node_modules
 .sass-cache
 
-db/development\.sqlite3
+*.log
+*.sql
+*.sqlite
 
-tmp/*
-log/*
-# Ignore application configuration
-/config/application.yml
-
-log/*log/development.log
-db/development.sqlite3
-
-
-log/
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+# track these files, if they exist
+!.gitignore
+!.editorconfig
