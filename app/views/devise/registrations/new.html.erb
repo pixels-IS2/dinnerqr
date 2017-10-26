@@ -21,7 +21,7 @@
         		</div>
           </div>
           <div class="form-bottom">
-            <form role="form" action="" method="post" class="login-form">
+            <form class="login-form">
               <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
                 <%= devise_error_messages! %>
               
@@ -41,13 +41,17 @@
                 </div>
               
                 <div class="field">
-                    Upload a profile photo :<%= f.file_field :photo %>
+                    Upload a profile photo :<%= f.file_field :photo  %>
                 </div>
-              
-                <div class="actions">
-                  <%= f.submit "Sign up" ,type:"submit",class:"btn btn-lg btn-success btn-block" %>
-                </div>
-                    <%= render "devise/shared/links" %>
+                <hr class="colorgraph">
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <%= f.submit "Sign up" ,type:"submit",class:"btn btn-lg btn-success btn-block" %>
+                    </div>
+                    <div class="col-sm-6">
+                      <%= link_to "Log in", new_session_path(resource_name),class:"btn btn-lg btn-success btn-block" %>
+                    </div>
+                  </div>
               <% end %>
             </form>
           </div>
@@ -75,47 +79,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-<section  class="bar background-white no-mb">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-<h2 align="center">Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true ,type:"email",class:"form-control"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %>
-    <%= f.password_field :password, autocomplete: "off",type:"password",class:"form-control" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off" ,type:"password",class:"form-control"%>
-  </div>
-
-  <div class="field">
-      Upload a profile photo :<%= f.file_field :photo %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" ,type:"submit",class:"btn btn-lg btn-success btn-block" %>
-  </div>
-      <%= render "devise/shared/links" %>
-<% end %>
-
-    </div>
-  </div>
-</section>  
