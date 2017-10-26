@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 20171023193007) do
     t.index ["reset_password_token"], name: "index_chefs_on_reset_password_token", unique: true
     t.index ["speciality_id"], name: "index_chefs_on_speciality_id"
   end
-O
+
   create_table "clients", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
