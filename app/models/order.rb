@@ -10,11 +10,13 @@ class Order < ApplicationRecord
     end
 
     K=[]
-    def self.dishmax
-
-        return Orderdish.joins(:dish).group('name').count
-        
-
+    def self.sales_by_dish
+        return Orderdish.joins(:dish).group('name').sum('quantity')
+        #return Orderdish.joins(:dish).group('name')
     end
+
+    #def self.all_time_sales
+    #    return Orders.
+    #end
 
 end

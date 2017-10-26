@@ -1,16 +1,15 @@
 module StatisticsHelper
-  def sporters_by_age
-    bar_chart @op, height: '500px', library: {
-        title: {text: 'Sporters by age', x: -20},
+  def sales_by_dish
+    column_chart sales_by_dish_charts_path, library: {
+        title: {text: 'Best sellers', x: -20},
         yAxis: {
-            allowDecimals: false,
             title: {
-                text: 'Ages count'
+                text: 'Dish'
             }
         },
         xAxis: {
             title: {
-                text: 'Age'
+                text: 'Sporters by country'
             }
         }
     }

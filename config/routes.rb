@@ -47,6 +47,12 @@ Rails.application.routes.draw do
   resources :dishes do
     resources :comments, only: [:create, :destroy, :update]
   end
+
+  resources :charts, only: [] do
+    collection do
+      get 'sales_by_dish'
+    end
+  end
   
   get 'about' => 'aboutus#new', as: 'aboutus'
   post 'about' => 'aboutus#create'
