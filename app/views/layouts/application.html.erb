@@ -14,14 +14,26 @@
   <body>
 
   <%= render 'partials/top' %>
-  
+  <% if notice %>
+  <p class="alert alert-success alert-info">
+    <a class="close" data-dismiss="alert">&times;</a>
+    <%= notice %>
+  </p>
+  <% end %>
+  <% if alert %>
+  <p class="alert alert-error alert-warning">
+  <a class="close" data-dismiss="alert">&times;</a>
+  <%= alert %>
+  </p>
+  <% end %>
   <% unless client_signed_in? or chef_signed_in? or administrator_signed_in? or waiter_signed_in? %>
   <%= render 'partials/navbar' %>
     <%= yield %>
+    
+  <%= render 'partials/footer' %>
   <% else %>
     <%= render 'partials/profile' %>
   <% end %>
-  <%= render 'partials/footer' %>
   <%= render 'partials/copyright' %>
   </body>
 </html>
