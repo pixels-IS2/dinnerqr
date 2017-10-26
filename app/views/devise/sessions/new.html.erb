@@ -13,7 +13,7 @@
         <div class="col-sm-8 col-sm-offset-2 form-box">
           <div class="form-top">
             <div class="form-top-left">
-              <h1><strong>Sign up</strong></h1>
+              <h1><strong>Sign in</strong></h1>
               <p>Enter your username and password to log</p>
             </div>
             <div class="form-top-right">
@@ -21,7 +21,6 @@
         		</div>
           </div>
           <div class="form-bottom">
-            <form  class="login-form">
               <%= form_for(resource, as: resource_name, url: session_path(resource_name),role:"form") do |f| %>
                 <fieldset>
                   <div class="form-group">
@@ -41,14 +40,13 @@
                   <% end -%>
               
         				  <hr class="colorgraph">
-                  <div >
+
                     <%= f.submit "Log in",type:"submit",class:"btn btn-lg btn-success btn-block" %>
-                  </div>
+
                   
                   <%= render "devise/shared/links" %>
                 </fieldset> 
               <% end %>
-            </form>
           </div>
         </div>
       </div>
