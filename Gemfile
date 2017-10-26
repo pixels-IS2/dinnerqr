@@ -55,7 +55,7 @@ gem 'sprockets-rails'
 # gem 'capistrano-rails', group: :development
 gem 'active_model_otp'
 
-gem 'chunky_png', :require => false
+gem 'chunky_png'
 
 gem 'rqrcode_png'
 gem 'rdoc'
