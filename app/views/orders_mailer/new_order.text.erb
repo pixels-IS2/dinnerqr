@@ -1,0 +1,5 @@
+Hi, <%= unless @client.name.nil? 
+		@client.name 
+	else 
+		@client.email 
+	end %> your order has been sucessfully sent, we have attached the bill for your order. Have a nice day.
