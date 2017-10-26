@@ -1,5 +1,5 @@
 <h1> Statistics </h1>
-<%= bar_chart @op , height: '500px', library: {
+<%= bar_chart @op1 , height: '500px', library: {
     title: {text: 'Sporters by age', x: -20},
     yAxis: {
         allowDecimals: false,
@@ -14,7 +14,7 @@
     }
 }%>
 
-<%= column_chart @op , library: {
+<%= column_chart @op2 , library: {
     title: {text: 'Sporters by country', x: -20},
     yAxis: {
         title: {
@@ -28,7 +28,7 @@
     }
 }%>
 
-<%=line_chart @op, library: {
+<%=line_chart @op4, library: {
     title: {text: 'Competitions by year', x: -20},
     yAxis: {
         crosshair: true,
@@ -44,3 +44,5 @@
     }
 }
 %>
+
+<%= pie_chart @op2  %>r

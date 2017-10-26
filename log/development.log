@@ -1,0 +1,1053 @@
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 10:48:34 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY "orderdishes"."dish_id"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (4.1ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (44.7ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 892ms (Views: 860.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 10:48:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 10:48:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 10:56:51 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.7ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (37.4ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 170ms (Views: 149.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 10:56:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 10:57:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:05:45 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `limit' for #<Hash:0x00007f9c4270d3a8>):
+  
+app/models/order.rb:15:in `dishmax'
+app/controllers/statistics_controller.rb:6:in `show'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:06:46 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (2.5ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (41.3ms)
+  Rendered partials/_footer.html.erb (13.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 187ms (Views: 152.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:06:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:07:08 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (4.5ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (72.0ms)
+  Rendered partials/_footer.html.erb (4.5ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 306ms (Views: 265.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:07:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:07:52 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.4ms)[0m  [1m[34mSELECT "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity DESC[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (8.9ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (38.4ms)
+  Rendered partials/_footer.html.erb (5.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 190ms (Views: 162.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:07:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:08:35 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (3.0ms)
+  [1m[36mClient Load (1.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (94.5ms)
+  Rendered partials/_footer.html.erb (13.9ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 287ms (Views: 264.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:08:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:09:28 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.2ms)[0m  [1m[34mSELECT "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity DESC[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (8.6ms)
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (36.4ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 177ms (Views: 157.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:09:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:09:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 11:09:47 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (20.2ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (49.0ms)
+  Rendered partials/_footer.html.erb (5.8ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 268ms (Views: 224.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 11:09:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[36mOrderdish Load (0.7ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderdish Load (0.4ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOrderdish Load (0.4ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[36mOrderdish Load (0.6ms)[0m  [1m[34mSELECT  "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOrderdish Load (0.6ms)[0m  [1m[34mSELECT  "orderdishes"."dish_id" FROM "orderdishes" GROUP BY "orderdishes"."dish_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:29:29 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatisticsController#show as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/diego/proyecto/dinnerqr/app/models/order.rb:16: dynamic constant assignment
+        A=Orderdish.group("dish_id").ord
+          ^):
+  
+app/models/order.rb:16: dynamic constant assignment
+app/controllers/statistics_controller.rb:6:in `show'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:30:48 -0500
+Processing by StatisticsController#show as HTML
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NameError (uninitialized constant Order::B):
+  
+app/models/order.rb:13:in `<class:Order>'
+app/models/order.rb:1:in `<top (required)>'
+app/controllers/statistics_controller.rb:6:in `show'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:30:58 -0500
+Processing by StatisticsController#show as HTML
+  [1m[36mOrderdish Load (0.3ms)[0m  [1m[34mSELECT "orderdishes".* FROM "orderdishes" GROUP BY "orderdishes"."dish_id" ORDER BY quantity[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (18.7ms)
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (55.7ms)
+  Rendered partials/_footer.html.erb (14.4ms)
+  Rendered partials/_copyright.html.erb (0.6ms)
+Completed 200 OK in 6536ms (Views: 6463.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:31:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:31:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:33:33 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "orderdishes"."dish_id" AS orderdishes_dish_id FROM "orderdishes" GROUP BY "orderdishes"."dish_id"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.8ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (47.1ms)
+  Rendered partials/_footer.html.erb (5.6ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 197ms (Views: 182.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:33:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:33:59 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" GROUP BY name[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" GROUP BY name):
+  
+app/models/order.rb:14:in `dishmax'
+app/controllers/statistics_controller.rb:6:in `show'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:36:40 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, "name" AS name FROM "orderdishes" GROUP BY "name"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.8ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (72.0ms)
+  Rendered partials/_footer.html.erb (4.7ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 249ms (Views: 233.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:36:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:37:10 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (3.3ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (43.3ms)
+  Rendered partials/_footer.html.erb (4.3ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 484ms (Views: 294.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:37:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 14:50:46 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (2.4ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (42.4ms)
+  Rendered partials/_footer.html.erb (4.4ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 901ms (Views: 872.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 14:50:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mOrder Load (28.6ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" GROUP BY "orders"."client_id" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:36:11 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (2.5ms)
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (64.2ms)
+  Rendered partials/_footer.html.erb (5.7ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 644ms (Views: 610.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:36:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:36:38 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (2.7ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (10.2ms)
+  Rendered partials/_footer.html.erb (6.0ms)
+  Rendered partials/_copyright.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 126.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:36:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:36:57 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.6ms)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (11.9ms)
+  Rendered partials/_footer.html.erb (8.0ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 140ms (Views: 130.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:36:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:38:03 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.8ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (11.6ms)
+  Rendered partials/_footer.html.erb (7.8ms)
+  Rendered partials/_copyright.html.erb (0.9ms)
+Completed 200 OK in 132ms (Views: 126.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:38:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:38:50 -0500
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (2.0ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (47.4ms)
+  Rendered partials/_footer.html.erb (8.6ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 198ms (Views: 173.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:38:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/statistics" for 127.0.0.1 at 2017-10-26 15:42:11 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StatisticsController#show as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orderdishes"."quantity") AS sum_quantity, name AS name FROM "orderdishes" INNER JOIN "dishes" ON "dishes"."id" = "orderdishes"."dish_id" GROUP BY name[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."client_id" AS orders_client_id FROM "orders" GROUP BY "orders"."client_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "orders"."table_id" AS orders_table_id FROM "orders" GROUP BY "orders"."table_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("orders"."price") AS sum_price, "orders"."created_at" AS orders_created_at FROM "orders" GROUP BY "orders"."created_at"[0m
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (4.2ms)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? ORDER BY "clients"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_top.html.erb (40.4ms)
+  Rendered partials/_footer.html.erb (4.7ms)
+  Rendered partials/_copyright.html.erb (0.4ms)
+Completed 200 OK in 724ms (Views: 689.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2017-10-26 15:42:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+dragonfly (1.1.3) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
