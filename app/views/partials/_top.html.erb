@@ -8,15 +8,10 @@
           <div class="social">
             
             <% unless client_signed_in? or chef_signed_in? or administrator_signed_in? or waiter_signed_in? %>
-              <%= link_to client_facebook_omniauth_authorize_path,class:"external facebook", data-animate-hover:"pulse" do %>
-                <%= content_tag :i," ", class:"fa fa-facebook" %>
-              <% end %>
-              <%= link_to client_twitter_omniauth_authorize_path,class:"external twitter", data-animate-hover:"pulse" do %>
-                <%= content_tag :i," ", class:"fa fa-twitter" %>
-              <% end %>
-              <%= link_to client_google_oauth2_omniauth_authorize_path,class:"external gplus", data-animate-hover:"pulse" do %>
-                <%= content_tag :i," ", class:"fa fa-google-plus" %>
-              <% end %>
+              <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a> 
+              <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a> 
+              <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a> 
+              <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
             <% end %>
           </div>
           <div class="login">
