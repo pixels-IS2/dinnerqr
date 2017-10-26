@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <section  class="bar background-white no-mb">
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
@@ -34,35 +33,3 @@
     </div>
   </div>
 </section>
-=======
-<h2 align="center">Sign in</h2>
-<div class="aboutUs">
-
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="field">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true ,type:"email",class:"form-control"%>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-
-      <div class="field">
-        <%= f.label :password  %>
-        <%= f.password_field :password, autocomplete: "off" ,type:"password",class:"form-control"%>
-      </div>
-
-      <% if devise_mapping.rememberable? -%>
-          <div class="form-check">
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me,class:"form-check-label" %>
-          </div>
-      <% end -%>
-
-      <div class="actions">
-        <%= f.submit "Log in",type:"submit",class:"btn btn-lg btn-template-primary" %>
-      </div>
-  <% end %>
-
-</div>
-
-<%= render "waiters/shared/links" %>
->>>>>>> 8f76dd823df995597e8c22c5f2a9088c8157a0a9
