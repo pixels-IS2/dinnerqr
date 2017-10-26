@@ -17,6 +17,7 @@ class OrdersController < ApplicationController
       format.html
       format.pdf do
         pdf = ExportPdf.new(@param,@orderdishes,@table,@order)
+        puts 'pdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdfpdf '
         
         send_data pdf.render,
           filename: "order_#{params[:id]}",
@@ -75,6 +76,7 @@ class OrdersController < ApplicationController
     end
     respond_to do |format|
       if @order.save
+        OrdersMailer.new_order(@order, current_client).deliver
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
