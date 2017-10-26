@@ -8,10 +8,10 @@ class ApplicationController < ActionController::Base
  
  def after_sign_in_path_for(resource)
 
-  if resource.class == Chef
-    dishes_path 
+  if resource.class == Chef || resource.class== Waiter || resource.class== Client
+    menu_path 
   else
-    root_path 
+    dishes_path 
   end
 end
   helper_method :current_user
