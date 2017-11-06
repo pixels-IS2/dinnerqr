@@ -44,7 +44,8 @@ Rails.application.routes.draw do
   devise_for :clients, controllers: { 
     registrations:"clients/registrations",
     omniauth_callbacks: 'clients/omniauth_callbacks',
-    passwords: 'clients/passwords'
+    passwords: 'clients/passwords',
+    sessions: 'clients/sessions'
   }
 
   devise_for :waiters, controllers: {
