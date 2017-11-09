@@ -28,6 +28,10 @@ class TablesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "table shouldn't be nil" do
+    assert_not @table.nil?
+  end
+
   test "should get edit" do
     get edit_table_url(@table)
     assert_response :success

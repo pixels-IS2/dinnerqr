@@ -59,7 +59,7 @@ Client.create(email:"clienteprueba@gmail.edu.co",
       email: Faker::Internet.email(nombre),
       password: "12345678",
 
-  )
+  );
 
 end
 10.times do

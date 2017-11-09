@@ -76,7 +76,7 @@ class OrdersController < ApplicationController
     end
     respond_to do |format|
       if @order.save
-        OrdersMailer.new_order(@order, current_client).deliver
+        SendBillJob.new(@order, current_client).enqueue(wait: 5.seconds)
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else

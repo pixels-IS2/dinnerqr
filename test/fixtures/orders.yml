@@ -3,7 +3,9 @@
 one:
   price: 1
   state: MyString
+  table: one
 
 two:
-  price: 1
+  price: 2
   state: MyString
+  table: two

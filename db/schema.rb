@@ -96,11 +96,9 @@ ActiveRecord::Schema.define(version: 20171108220341) do
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
     t.string "name"
-    t.string "last_name"
-    t.date "birthday"
-    t.integer "identificacion"
     t.string "lastname"
     t.integer "identification"
+    t.date "birthday"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
