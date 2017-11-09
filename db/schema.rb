@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171023193007) do
+ActiveRecord::Schema.define(version: 20171108054230) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -96,11 +96,9 @@ ActiveRecord::Schema.define(version: 20171023193007) do
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
     t.string "name"
-    t.string "last_name"
-    t.date "birthday"
-    t.integer "identificacion"
     t.string "lastname"
     t.integer "identification"
+    t.date "birthday"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
@@ -148,8 +146,8 @@ ActiveRecord::Schema.define(version: 20171023193007) do
     t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "table_id"
     t.integer "client_id"
+    t.integer "table_id"
     t.index ["client_id"], name: "index_orders_on_client_id"
     t.index ["table_id"], name: "index_orders_on_table_id"
   end
