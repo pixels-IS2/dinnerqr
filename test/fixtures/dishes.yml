@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  state: MyString
-  description: MyText
-  speciality: MyString
-  price: 1
+  name: Frijoles
+  state: Agotado
+  description: Con Chile
+  speciality: comida
+  price: 100
 
 two:
   name: MyString
