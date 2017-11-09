@@ -11,5 +11,5 @@ two:
   name: MyString
   state: MyString
   description: MyText
-  speciality: MyString
+  speciality: comida
   price: 1
