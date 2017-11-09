@@ -3,7 +3,8 @@ class Order < ApplicationRecord
     belongs_to :client
     has_many   :orderdishes
     has_many	:dishes, :through => :orderdishes
-
+    validates :state, presence: true, length: { in: 6..40 }
+    validates :price, presence: true,  length: { in: 6..10 }, numericality: { only_integer: true }
     def self.history_client client
     	historyClient = client.orders.joins(:orderdishes, :dishes).select("orders.*, orders.id   as orderId, orders.created_at as created, orderdishes.*, dishes.*, dishes.price as dishprice")
     	return historyClient
