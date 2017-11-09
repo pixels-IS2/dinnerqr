@@ -114,6 +114,7 @@ GEM
       railties (>= 3.1)
     hightop (0.2.0)
       activerecord
+    hirb (0.7.3)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -311,6 +312,7 @@ GEM
     squid (1.4.1)
       activesupport (>= 4.0)
       prawn (~> 2.2)
+    table_print (1.5.6)
     temple (0.8.0)
     thor (0.20.0)
     thread_safe (0.3.6)
@@ -369,6 +371,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.7.0)
   highcharts-rails (~> 3.0.0)
   hightop
+  hirb
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
@@ -392,6 +395,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3
   squid
+  table_print
   turbolinks (~> 5)
   twitter
   tzinfo-data
