@@ -73,6 +73,12 @@ Rails.application.routes.draw do
 
   get 'statistics' => 'statistics#show'
 
+  resources :dishes do 
+  member do
+    put "like", to: "dishes#upvote"
+    put "dislike", to: "dishes#downvote"
+  end
+end
   #devise_scope :administrators do
   #  post 'administrators/password/new', to: 'devise/passwords#new'
   #end

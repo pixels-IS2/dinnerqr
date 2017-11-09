@@ -8,7 +8,7 @@ class Order < ApplicationRecord
     	historyClient = client.orders.joins(:orderdishes, :dishes).select("orders.*, orders.id   as orderId, orders.created_at as created, orderdishes.*, dishes.*, dishes.price as dishprice")
     	return historyClient
     end
-
+    
     K=[]
     def self.sales_by_dish
         return Orderdish.joins(:dish).group('name').sum('quantity')
