@@ -69,7 +69,7 @@ gem 'dragonfly', '~> 1.1.3'
 #gem 'chartkick'
 
 gem 'hightop'
-
+gem 'acts_as_votable', '~> 0.11.1'
 #gem 'delayed_job_active_record'
 
 group :development, :test do

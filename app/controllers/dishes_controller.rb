@@ -18,7 +18,17 @@ class DishesController < ApplicationController
     @dish = Dish.new
     @specialities = Speciality.all
   end
-
+  def upvote 
+      @dish = Dish.find(params[:id])
+      @dish.liked_by current_client
+      redirect_to @dish
+    end  
+    
+    def downvote
+      @dish = Dish.find(params[:id])
+      @dish.downvote_from current_client
+      redirect_to @dish
+    end
   # GET /dishes/1/edit
   def edit
     @specialities = Speciality.all
