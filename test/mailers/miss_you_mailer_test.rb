@@ -7,6 +7,6 @@ class MissYouMailerTest < ActionMailer::TestCase
 		assert_not ActionMailer::Base.deliveries.empty?
 		assert_equal ["dinnerqr@gmail.com"], email.from
 		assert_equal [client.email], email.to
-		assert_equal "Gracias por tu visita", email.subject 
+		assert_equal "Gra por tu visita", email.subject 
 	end 
 end
