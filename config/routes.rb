@@ -74,6 +74,9 @@ Rails.application.routes.draw do
 
   get 'statistics' => 'statistics#show'
 
+  get 'addfavorites' => 'dishes#add_favorite'
+  get 'rmfavorites' => 'dishes#remove_favorite'
+  
   resources :dishes do 
   member do
     put "like", to: "dishes#upvote"

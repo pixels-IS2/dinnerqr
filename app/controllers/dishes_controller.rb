@@ -33,7 +33,16 @@ class DishesController < ApplicationController
   def edit
     @specialities = Speciality.all
   end
-
+  def add_favorite
+    @dish = Dish.find(params[:id])
+    @dish.update_attribute(:favorite,true)
+    redirect_to @dish
+  end
+  def remove_favorite
+    @dish = Dish.find(params[:id])
+    @dish.update_attribute(:favorite,true)
+    redirect_to @dish
+  end
   # POST /dishes
   # POST /dishes.json
   def create
