@@ -15,6 +15,10 @@ class Order < ApplicationRecord
         return Orderdish.joins(:dish).group('name').sum('quantity')
         #return Orderdish.joins(:dish).group('name')
     end
+    def self.sales_by_today
+        return Order.where("DATE(created_at) = ?", Date.today).group("DATE(created_at)").sum("price")
+        #return las ventas del dia
+    end
 
     def self.dishmax
         return Orderdish.joins(:dish).group('name').sum('quantity')
