@@ -45,7 +45,12 @@
     <%= form.label :price %>
     <%= form.number_field :price, id: :dish_price,class:"form-control" %>
   </div>
-
+  
+  <div class="field">
+    <%= form.label :favorite %>
+    <%= form.check_box :favorite ,class:"form-control" %>
+  </div>
+  
   <div class="actions">
     <%= form.submit "Submit",type:"submit",class:"btn btn-lg btn-template-primary"%>
   </div>
