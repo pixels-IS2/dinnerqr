@@ -10,6 +10,12 @@ class OrderViewsController < ApplicationController
     @historyClient = @historyClient.paginate(:page => 1, :per_page => 12)
   end
   
+  def topDish
+    @topDish = Order.top_dish current_client
+    
+    
+  end
+  
   def ordersChef
     @ordersChef = Orderdish.orders_chef current_chef
     @ordersChef = @ordersChef.paginate(:page => 1, :per_page => 12)

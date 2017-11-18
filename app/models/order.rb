@@ -9,7 +9,10 @@ class Order < ApplicationRecord
     	historyClient = client.orders.joins(:orderdishes, :dishes).select("orders.*, orders.id   as orderId, orders.created_at as created, orderdishes.*, dishes.*, dishes.price as dishprice")
     	return historyClient
     end
-    
+    def self.top_dish client
+        topDish=client.orders.joins(:orderdishes,:dishes).select('dishes.*,dishes.name as name, count(dishes.id) AS counter').group('name').order('counter DESC').first(3)
+        return topDish
+    end
     K=[]
     def self.sales_by_dish
         return Orderdish.joins(:dish).group('name').sum('quantity')
@@ -31,9 +34,8 @@ class Order < ApplicationRecord
     def self.client
         return Order.group("client_id").count
 
-
-
     end
+
 
     def self.mesa
         return Order.group("table_id").count

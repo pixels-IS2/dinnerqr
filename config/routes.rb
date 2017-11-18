@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'historyClient' => 'order_views#historyClient'
 
+  get 'topDish' => 'order_views#topDish'
   #put 'order_views/ordersChef' => 'order_views#ordersChef'
   
   #resources :order_views do
