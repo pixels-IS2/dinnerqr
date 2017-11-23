@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   resources :orders
   resources :tables
   resources :specialities
+  resources :qrs
   get 'menu' => 'menu#menu'
 
   devise_for :chefs, controllers: {

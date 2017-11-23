@@ -1,0 +1,21 @@
+<% if @client.name.nil? %>
+<% 	 name = @client.email %>
+<% else %>
+<%   name = @client.name %>
+<% end %>
+<h1> Welcome to DinnerQR, <%=name %> </h1>
+<br/>
+<p> Upload a QR image and click the QR next to it to make an order. </p>
+<br/>
+
+<form class="edit_client" id="edit_client" enctype="multipart/form-data" action= " /qrs " accept-charset="UTF-8" method="post">
+	<div class="field">
+		<input type="file" name="client[photo]" id="client_photo">
+	</div>
+
+	<div class="field">
+		<input type="submit" name="client[photo]" id="client_photo">
+	</div>
+</form>
+
+<%= link_to "submit por helper", qrs_path, method: :post %>

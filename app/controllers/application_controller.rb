@@ -8,8 +8,10 @@ class ApplicationController < ActionController::Base
  
  def after_sign_in_path_for(resource)
 
-  if resource.class == Chef || resource.class== Waiter || resource.class== Client
+  if resource.class == Chef || resource.class== Waiter
     menu_path 
+  elsif resource.class == Client
+    new_qr_path
   else
     dishes_path 
   end
