@@ -13,7 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require jquery
-//= require bootstrap-sprockets
+//= require bootstrap
 //= require highcharts
 //= require chartkick
 //= rails_admin/custom/ui.js

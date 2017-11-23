@@ -1,62 +1,82 @@
-
-<div class="aboutUs">
-
-  <h1 align=center>
-  
-    <%= @dish.name %>
-  </h1>
-<p>
-  
-  <br>
+<div class="polaroid">
   <% if @dish.nil? %>
     <h1> Sin plato</h1>
   <% else %>
-  <%= image_tag @dish.photo.url(:thumb) %>
+  <%= image_tag @dish.photo.url(:medium), style:"width:100%" %>
   <%end%>
-</p>
 
-
-<p>
-  <strong>State:</strong>
-  <%= @dish.state %>
-</p>
-<%= link_to like_dish_path(@dish), method: :put do %>
-  Upvote
-  <%= @dish.get_upvotes.size %>
-<% end %>
-
-<%= link_to dislike_dish_path(@dish), method: :put do %>
-  Downvote
-  <%= @dish.get_downvotes.size %>
-<% end %>
-
-<p>
-  <strong>Description:</strong>
-  <%= @dish.description %>
-</p>
-
-<p>
-  <strong>Speciality:</strong>
-  <%= @dish.speciality.name %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @dish.price %>
-</p>
-<h3>Comments</h3>
-<ul>
-  <% @comments.each do |comment| %>
-    <li>
-      <%= comment.body %> - <%= comment.client.email %>
-    </li>
+    <h4><%= @dish.name %></h4>
+  <p>
+    <strong>State:</strong>
+    <%= @dish.state %>
+  </p>
+  <%= link_to like_dish_path(@dish), method: :put do %>
+    <i class="fa fa-thumbs-up"></i>
+    <%= @dish.get_upvotes.size %>
   <% end %>
-  <%= will_paginate @comments %>
   
-</ul>
+  <%= link_to dislike_dish_path(@dish), method: :put do %>
+    <i class="fa fa-thumbs-down"></i>
+    
+    <%= @dish.get_downvotes.size %>
+  <% end %>
+  
+  <p>
+    <strong>Description:</strong>
+    <%= @dish.description %>
+  </p>
+  
+  <p>
+    <strong>Speciality:</strong>
+    <%= @dish.speciality.name %>
+  </p>
+  
+  <p>
+    <strong>Price:</strong>
+    <%= @dish.price %>
+  </p>
+
+</div>
+
+
+
+
+
+
+
+<div class="aboutUs">
+
+
+
+
+<h3>Comments</h3>
+
+<table class="table table-inverse">
+  <thead >
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @comments.each do |comment| %>
+        <tr>
+          <th scope="row"><%= comment.id %></th>
+          <td><%= comment.client.email %></td>
+          <td><%= comment.body %></td>
+        </tr>
+      <% end %>
+      
+    </tbody>
+  
+</table>
+
+
 <%= render "comments/form" %>
 
-
+<%= will_paginate @comments %>
+  
 
 <%= link_to 'Back', dishes_path %>
 </div>

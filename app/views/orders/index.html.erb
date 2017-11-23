@@ -1,6 +1,6 @@
 <h1>Orders</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Price</th>
@@ -22,6 +22,7 @@
   </tbody>
 </table>
 
+<%= will_paginate @orders %>
 <br>
 
-<%= link_to 'New Order', new_order_path %>
+<%= link_to 'New Order', new_order_path ,class:"btn btn-lg btn-template-primary"%>
